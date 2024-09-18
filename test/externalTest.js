@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const assert = require('assert')
-const mineflayer = require('../')
+const reinarpg-bot = require('../')
 const commonTest = require('./externalTests/plugins/testCommon')
 const mc = require('minecraft-protocol')
 const fs = require('fs')
@@ -33,7 +33,7 @@ const download = require('minecraft-wrap').download
 
 const MC_SERVER_PATH = path.join(__dirname, 'server')
 
-for (const supportedVersion of mineflayer.testedVersions) {
+for (const supportedVersion of reinarpg-bot.testedVersions) {
   let PORT = 25565
   const registry = require('prismarine-registry')(supportedVersion)
   const version = registry.version
@@ -54,7 +54,7 @@ for (const supportedVersion of mineflayer.testedVersions) {
     before(function (done) {
       this.timeout(1000 * 60)
       function begin () {
-        bot = mineflayer.createBot({
+        bot = reinarpg-bot.createBot({
           username: 'flatbot',
           viewDistance: 'tiny',
           port: PORT,

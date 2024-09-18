@@ -15,7 +15,7 @@
 import sys, re
 from javascript import require, On, Once, console
 
-mineflayer = require("mineflayer", "latest")
+reinarpg-bot = require("reinarpg-bot", "latest")
 Vec3 = require("vec3").Vec3
 
 print(sys.argv)
@@ -27,14 +27,14 @@ host = sys.argv[1]
 port = sys.argv[2]
 username = sys.argv[3] if len(sys.argv) > 3 else "boat"
 
-bot = mineflayer.createBot({
+bot = reinarpg-bot.createBot({
     "host": host,
     "port": port,
     "username": username,
     "port": port
 })
 
-Item = require("prismarine-item")(bot.registry)
+Item = require("reinarpg-item")(bot.registry)
 
 
 @On(bot, "chat")

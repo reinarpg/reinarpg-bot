@@ -1,12 +1,12 @@
-## mineflayer-navigate
+## reinarpg-bot-navigate
 
-[navigate](https://github.com/andrewrk/mineflayer-navigate/) - Лёгкое передвижение с помощью поиска путей уровня A*.
+[navigate](https://github.com/andrewrk/reinarpg-bot-navigate/) - Лёгкое передвижение с помощью поиска путей уровня A*.
 
 <iframe type="text/html" width="640" height="360" src="http://www.youtube.com/embed/O6lQdmRz8eE" frameborder="0"></iframe>
 
 ## rbot
 
-[rom1504/rbot](https://github.com/rom1504/rbot) - Умный бот, созданный на основе mineflayer.
+[rom1504/rbot](https://github.com/rom1504/rbot) - Умный бот, созданный на основе reinarpg-bot.
 
 <iframe type="text/html" width="640" height="360" src="http://www.youtube.com/embed/0cQxg9uDnzA" frameborder="0"></iframe>
 

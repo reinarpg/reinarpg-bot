@@ -1,13 +1,13 @@
-## mineflayer-navigate
+## reinarpg-bot-navigate
 
-[navigate](https://github.com/andrewrk/mineflayer-navigate/) - get around
+[navigate](https://github.com/andrewrk/reinarpg-bot-navigate/) - get around
    easily using A* pathfinding
 
 <iframe type="text/html" width="640" height="360" src="http://www.youtube.com/embed/O6lQdmRz8eE" frameborder="0"></iframe>
 
 ## rbot
 
-[rom1504/rbot](https://github.com/rom1504/rbot) smart bot based on mineflayer
+[rom1504/rbot](https://github.com/rom1504/rbot) smart bot based on reinarpg-bot
 
 <iframe type="text/html" width="640" height="360" src="http://www.youtube.com/embed/0cQxg9uDnzA" frameborder="0"></iframe>
 

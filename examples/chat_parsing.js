@@ -8,8 +8,8 @@ bot has just left!
 bot has just rejoined!
 bot has just left!
 */
-const mineflayer = require('mineflayer')
-const bot = mineflayer.createBot({
+const reinarpg-bot = require('reinarpg-bot')
+const bot = reinarpg-bot.createBot({
   host: 'localhost',
   username: 'bot'
 })
@@ -36,20 +36,20 @@ bot.on('chat:who_just_joined', matches => {
 })
 
 async function makeChatMessages () {
-  let bot1 = mineflayer.createBot({
+  let bot1 = reinarpg-bot.createBot({
     host: 'localhost',
     username: 'bot1'
   })
   let bot2
   setTimeout(() => bot1.quit(), 1500)
   setTimeout(() => {
-    bot1 = mineflayer.createBot({
+    bot1 = reinarpg-bot.createBot({
       host: 'localhost',
       username: 'bot1'
     })
   }, 1750)
   setTimeout(() => {
-    bot2 = mineflayer.createBot({
+    bot2 = reinarpg-bot.createBot({
       host: 'localhost',
       username: 'bot2'
     }, 2000)

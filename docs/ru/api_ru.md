@@ -14,7 +14,7 @@
     - [mcdata.entities](#mcdataentities)
   - [Classes](#classes)
     - [vec3](#vec3)
-    - [mineflayer.Location](#mineflayerlocation)
+    - [reinarpg-bot.Location](#mineflayerlocation)
     - [Entity](#entity)
       - [Player Skin Data](#player-skin-data)
     - [Block](#block)
@@ -25,8 +25,8 @@
       - [window.withdraw(itemType, metadata, count, nbt)](#windowwithdrawitemtype-metadata-count-nbt)
       - [window.close()](#windowclose)
     - [Recipe](#recipe)
-    - [mineflayer.Container](#mineflayercontainer)
-    - [mineflayer.Furnace](#mineflayerfurnace)
+    - [reinarpg-bot.Container](#mineflayercontainer)
+    - [reinarpg-bot.Furnace](#mineflayerfurnace)
       - [furnace "update"](#furnace-update)
       - [furnace.takeInput()](#furnacetakeinput)
       - [furnace.takeFuel()](#furnacetakefuel)
@@ -38,7 +38,7 @@
       - [furnace.outputItem()](#furnaceoutputitem)
       - [furnace.fuel](#furnacefuel)
       - [furnace.progress](#furnaceprogress)
-    - [mineflayer.EnchantmentTable](#mineflayerenchantmenttable)
+    - [reinarpg-bot.EnchantmentTable](#mineflayerenchantmenttable)
       - [enchantmentTable "ready"](#enchantmenttable-ready)
       - [enchantmentTable.targetItem()](#enchantmenttabletargetitem)
       - [enchantmentTable.xpseed](#enchantmenttablexpseed)
@@ -47,18 +47,18 @@
       - [enchantmentTable.takeTargetItem()](#enchantmenttabletaketargetitem)
       - [enchantmentTable.putTargetItem(item)](#enchantmenttableputtargetitemitem)
       - [enchantmentTable.putLapis(item)](#enchantmenttableputlapisitem)
-    - [mineflayer.anvil](#mineflayeranvil)
+    - [reinarpg-bot.anvil](#mineflayeranvil)
       - [anvil.combine(itemOne, itemTwo[, name])](#anvilcombineitemone-itemtwo-name)
       - [anvil.combine(item[, name])](#anvilcombineitem-name)
       - [villager "ready"](#villager-ready)
       - [villager.trades](#villagertrades)
       - [villager.trade(tradeIndex, [times])](#villagertradetradeindex-times)
-    - [mineflayer.ScoreBoard](#mineflayerscoreboard)
+    - [reinarpg-bot.ScoreBoard](#mineflayerscoreboard)
       - [ScoreBoard.name](#scoreboardname)
       - [ScoreBoard.title](#scoreboardtitle)
       - [ScoreBoard.itemsMap](#scoreboarditemsmap)
       - [ScoreBoard.items](#scoreboarditems)
-    - [mineflayer.Team](#mineflayerteam)
+    - [reinarpg-bot.Team](#mineflayerteam)
       - [Team.name](#teamname)
       - [Team.friendlyFire](#teamfriendlyfire)
       - [Team.nameTagVisibility](#teamnametagvisibility)
@@ -67,7 +67,7 @@
       - [Team.prefix](#teamprefix)
       - [Team.suffix](#teamsuffix)
       - [Team.members](#teammembers)
-    - [mineflayer.BossBar](#mineflayerbossbar)
+    - [reinarpg-bot.BossBar](#mineflayerbossbar)
       - [BossBar.title](#bossbartitle)
       - [BossBar.health](#bossbarhealth)
       - [BossBar.dividers](#bossbardividers)
@@ -76,7 +76,7 @@
       - [BossBar.isDragonBar](#bossbarisdragonbar)
       - [BossBar.createFog](#bossbarcreatefog)
       - [BossBar.color](#bossbarcolor)
-    - [mineflayer.Particle](#mineflayerparticle)
+    - [reinarpg-bot.Particle](#mineflayerparticle)
       - [Particle.id](#particleid)
       - [Particle.name](#particlename)
       - [Particle.position](#particleposition)
@@ -85,7 +85,7 @@
       - [Particle.count](#particlecount)
       - [Particle.movementSpeed](#particlemovementspeed)
   - [Bot](#bot)
-    - [mineflayer.createBot(options)](#mineflayercreatebotoptions)
+    - [reinarpg-bot.createBot(options)](#mineflayercreatebotoptions)
     - [Properties](#properties)
       - [bot.registry](#botregistry)
       - [bot.world](#botworld)
@@ -408,13 +408,13 @@
 Функции и методы, требующие точного аргумента позиции, как правило, используют `Vec3`,
 а также массив с тремя значениями и объект с `x`, `y`, `z`.
 
-### mineflayer.Location
+### reinarpg-bot.Location
 
 ### Entity
 
 Энтити (существо) - это игроки, мобы и объекты. Вы также можете получить доступ
 к своему существу, используя `bot.entity`.
-Смотрите [prismarine-entity](https://github.com/PrismarineJS/prismarine-entity).
+Смотрите [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity).
 
 #### Player Skin Data
 
@@ -430,7 +430,7 @@
 
 ### Block
 
-Смотрите [prismarine-block](https://github.com/PrismarineJS/prismarine-block).
+Смотрите [reinarpg-block](https://github.com/PrismarineJS/reinarpg-block).
 
 `block.blockEntity` является дополнительным полем с данными блок-существ в виде `Object`.
 ```js
@@ -453,7 +453,7 @@
 
 ### Item
 
-Смотрите [prismarine-item](https://github.com/PrismarineJS/prismarine-item).
+Смотрите [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item).
 
 ### windows.Window (base class)
 
@@ -485,12 +485,12 @@
 
 Смотрите [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe).
 
-### mineflayer.Container
+### reinarpg-bot.Container
 
 Дополнение к `windows.Window` для сундуков, раздатчиков и прочих.
 Смотрите `bot.openContainer(chestBlock или minecartchestEntity)`.
 
-### mineflayer.Furnace
+### reinarpg-bot.Furnace
 
 Дополнение к `windows.Window` для печки, плавильни и прочих.
 Смотрите `bot.openFurnace(furnaceBlock)`.
@@ -546,7 +546,7 @@
 
 Возвращает прогресс плавки предмета от `0` до `1`.
 
-### mineflayer.EnchantmentTable
+### reinarpg-bot.EnchantmentTable
 
 Дополнение к `windows.Window` для стола зачарований.
 Смотрите `bot.openEnchantmentTable(enchantmentTableBlock)`.
@@ -606,7 +606,7 @@
 Возращает `Promise` с `void` в качестве аргумента при завершении.
 
 
-### mineflayer.anvil
+### reinarpg-bot.anvil
 
 Дополнение к `windows.Window` для наковальни.
 Смотрите `bot.openAnvil(anvilBlock)`.
@@ -665,7 +665,7 @@
 #### villager.trade(tradeIndex, [times])
 Подобно [bot.trade(villagerInstance, tradeIndex, [times])](#bottradevillagerinstance-tradeindex-times)
 
-### mineflayer.ScoreBoard
+### reinarpg-bot.ScoreBoard
 
 #### ScoreBoard.name
 
@@ -701,7 +701,7 @@
 ]
 ```
 
-### mineflayer.Team
+### reinarpg-bot.Team
 
 #### Team.name
 
@@ -735,7 +735,7 @@
 
 Массив с участниками команды. Ники игроков и UUID существ.
 
-### mineflayer.BossBar
+### reinarpg-bot.BossBar
 
 #### BossBar.title
 
@@ -769,7 +769,7 @@ UUID существа, который определяется боссом.
 
 Определяет цвет боссбара. Может быть `pink`, `blue`, `red`, `green`, `yellow`, `purple`, `white`.
 
-### mineflayer.Particle
+### reinarpg-bot.Particle
 
 #### Particle.id
 
@@ -801,7 +801,7 @@ UUID существа, который определяется боссом.
 
 ## Bot
 
-### mineflayer.createBot(options)
+### reinarpg-bot.createBot(options)
 
 Создаёт и возвращает экземпляр класса бота.
 `options` - это объект, который содержит в себе :
@@ -818,8 +818,8 @@ UUID существа, который определяется боссом.
  * `keepAlive` : Отправка пакета активности, по умолчанию включено.
  * `checkTimeoutInterval` : По умолчанию `30*1000` (30 сек.), проверяет, получен ли пакет активности, иначе отключается.
  * `loadInternalPlugins` : Загрузка плагинов, по умолчанию включено.
- * `storageBuilder` : Необязательная функция, принимающая в качестве аргумента версию и название мира (`worldName`) и возвращающая экземпляр чего-либо с тем же API, что и `prismarine-provider-anvil`. Будет использовано для сохранения мира.
- * `client` : Экземпляр `node-minecraft-protocol`, если не указан, mineflayer создает свой собственный клиент. Это может быть нужно для использования mineflayer через прокси многих клиентов или ванильного клиента и mineflayer клиента.
+ * `storageBuilder` : Необязательная функция, принимающая в качестве аргумента версию и название мира (`worldName`) и возвращающая экземпляр чего-либо с тем же API, что и `reinarpg-anvil`. Будет использовано для сохранения мира.
+ * `client` : Экземпляр `node-minecraft-protocol`, если не указан, reinarpg-bot создает свой собственный клиент. Это может быть нужно для использования reinarpg-bot через прокси многих клиентов или ванильного клиента и reinarpg-bot клиента.
  * `brand` : Название версии, которое будет использовать клиент. По умолчанию `vanilla`. Может использоваться для имитации пользовательских клиентов для серверов, которым это требуется.
  * `respawn` : Отвечает за автоматическое возрождение бота, по умолчанию включено.
  * `plugins` : Объект : По умолчанию `{}`
@@ -841,11 +841,11 @@ UUID существа, который определяется боссом.
 
 #### bot.registry
 
-Экземпляр `minecraft-data` используемый ботом. Передайте это конструкторам, которые ожидают `minecraft-data`, таким как `prismarine-block`.
+Экземпляр `minecraft-data` используемый ботом. Передайте это конструкторам, которые ожидают `minecraft-data`, таким как `reinarpg-block`.
 
 #### bot.world
 
-Синхронное представление мира. Смотрите [prismarine-world](http://github.com/PrismarineJS/prismarine-world).
+Синхронное представление мира. Смотрите [reinarpg-world](http://github.com/PrismarineJS/reinarpg-world).
 
 ##### world "blockUpdate" (oldBlock, newBlock)
 
@@ -875,7 +875,7 @@ UUID существа, который определяется боссом.
 
 #### bot.heldItem
 
-Предмет, который держит бот. Представляет экземпляр [prismarine-item](https://github.com/PrismarineJS/prismarine-item), основанный на мета-данных, нбт-данных и т.д.
+Предмет, который держит бот. Представляет экземпляр [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item), основанный на мета-данных, нбт-данных и т.д.
 
 #### bot.usingHeldItem
 
@@ -1764,7 +1764,7 @@ function somePlugin (bot, options) {
   bot.someFunction = someFunction
 }
 
-const bot = mineflayer.createBot({})
+const bot = reinarpg-bot.createBot({})
 bot.loadPlugin(somePlugin)
 bot.once('login', () => {
   bot.someFunction() // Yay!
@@ -2103,7 +2103,7 @@ bot.once('login', () => {
 
 Может использоваться для проверки особой для текущей версии Майнкрафт возможности. Обычно это требуется только для обработки функций, зависящих от версии.
 
-Список возможностей можно найти в файле [./lib/features.json](https://github.com/PrismarineJS/mineflayer/blob/master/lib/features.json).
+Список возможностей можно найти в файле [./lib/features.json](https://github.com/reinarpg/reinarpg-bot/blob/master/lib/features.json).
 
 #### bot.waitForTicks(ticks)
 
@@ -2201,7 +2201,7 @@ bot.once('login', () => {
 Выдёт боту указанный предмет в слоте инвентаря.
 
  * `slot` - Номер слота (например: 36 - первый слот в хотбаре).
- * `item` - Экземпляр [prismarine-item](https://github.com/PrismarineJS/prismarine-item), содержащий мета-данные, нбт-данные и т.д.
+ * `item` - Экземпляр [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item), содержащий мета-данные, нбт-данные и т.д.
     Если `item` равен `null`, предмет в указанном слоте удаляется.
 
 Если этот метод что-либо изменит, вы можете узнать об этом через `bot.inventory.on("updateSlot")`.

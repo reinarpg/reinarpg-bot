@@ -6,7 +6,7 @@
 
 const fs = require('fs')
 const util = require('util')
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 const readFile = (fileName) => util.promisify(fs.readFile)(fileName, 'utf8')
 
 const config = {
@@ -19,7 +19,7 @@ const config = {
 function makeBot ([_u, _p], ix) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const bot = mineflayer.createBot({
+      const bot = reinarpg-bot.createBot({
         username: _u,
         password: _p,
         host: config.host,

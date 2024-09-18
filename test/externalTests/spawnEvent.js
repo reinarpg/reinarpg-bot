@@ -1,9 +1,9 @@
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 const { once } = require('../../lib/promise_utils')
 
 module.exports = () => async (bot) => {
   // Test spawn event on login
-  const spawnBot = mineflayer.createBot({
+  const spawnBot = reinarpg-bot.createBot({
     username: 'spawnbot',
     viewDistance: 'tiny',
     port: bot.test.port,

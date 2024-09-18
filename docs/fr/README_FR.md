@@ -1,13 +1,13 @@
 # Mineflayer
 
-[![NPM version](https://badge.fury.io/js/mineflayer.svg)](http://badge.fury.io/js/mineflayer)
-[![Build Status](https://github.com/PrismarineJS/mineflayer/workflows/CI/badge.svg)](https://github.com/PrismarineJS/mineflayer/actions?query=workflow%3A%22CI%22)
+[![NPM version](https://badge.fury.io/js/reinarpg-bot.svg)](http://badge.fury.io/js/reinarpg-bot)
+[![Build Status](https://github.com/reinarpg/reinarpg-bot/workflows/CI/badge.svg)](https://github.com/reinarpg/reinarpg-bot/actions?query=workflow%3A%22CI%22)
 [![Discord](https://img.shields.io/badge/chat-on%20discord-brightgreen.svg)](https://discord.gg/GsEFRM8)
 [![Gitter](https://img.shields.io/badge/chat-on%20gitter-brightgreen.svg)](https://gitter.im/PrismarineJS/general)
 [![Irc](https://img.shields.io/badge/chat-on%20irc-brightgreen.svg)](https://irc.gitter.im/)
-[![Issue Hunt](https://github.com/BoostIO/issuehunt-materials/blob/master/v1/issuehunt-shield-v1.svg)](https://issuehunt.io/r/PrismarineJS/mineflayer)
+[![Issue Hunt](https://github.com/BoostIO/issuehunt-materials/blob/master/v1/issuehunt-shield-v1.svg)](https://issuehunt.io/r/reinarpg/reinarpg-bot)
 
-[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/PrismarineJS/mineflayer)
+[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/reinarpg/reinarpg-bot)
 
 | <sub>EN</sub> [Anglais](../README.md) | <sub>RU</sub> [Russe](../ru/README_RU.md) | <sub>ES</sub> [Espagnol](../es/README_ES.md) | <sub>FR</sub> [Français](README_FR.md) | <sub>TR</sub> [Türkçe](../tr/README_TR.md) | <sub>ZH</sub> [Chinois](../zh/README_ZH_CN.md) | <sub>BR</sub> [Portuguese](../br/README_BR.md) |
 |-------------------------|----------------------------|----------------------------|----------------------------|----------------------------|----------------------------|----------------------------|
@@ -32,23 +32,23 @@ Si c'est la première fois que vous utilisez Node.js, il vaut mieux commencer av
 
 ### Projets à venir:
 
- Visite cette page pour voir nos projets [projets](https://github.com/PrismarineJS/mineflayer/wiki/Big-Prismarine-projects). 
+ Visite cette page pour voir nos projets [projets](https://github.com/reinarpg/reinarpg-bot/wiki/Big-Prismarine-projects). 
  
 ## Installation
 
 En premier installer Node.js (version minimale requise: 14) sur [nodejs.org](https://nodejs.org/) puis taper dans la console:
 
-`npm install mineflayer`
+`npm install reinarpg-bot`
 
 ## Documentation
 
 | lien | description |
 |---|---|
-| [tutoriel](tutorial.md) | Démarre par un tutoriel node js et mineflayer |
+| [tutoriel](tutorial.md) | Démarre par un tutoriel node js et reinarpg-bot |
 | [FAQ](FAQ.md) | Une question? Regardez d'abord ici ! |
 | [API](api.md) [unstable_api.md](unstable_api.md) | L'API intégrale |
-| [changement](history.md) | Les derniers changements dans mineflayer |
-| [exemples](https://github.com/PrismarineJS/mineflayer/tree/master/examples) | quelques exemples réalisables avec mineflayer |
+| [changement](history.md) | Les derniers changements dans reinarpg-bot |
+| [exemples](https://github.com/reinarpg/reinarpg-bot/tree/master/examples) | quelques exemples réalisables avec reinarpg-bot |
 
 
 ## Pour Aider
@@ -59,7 +59,7 @@ Allez lire [CONTRIBUTING.md](CONTRIBUTING.md) et [prismarine-contribute](https:/
 
 **Vidéos**
 
-Un tutoriel vidéo qui explique comment mettre en place un robot mineflayer est disponible [ici.](https://www.youtube.com/watch?v=ltWosy4Z0Kw)
+Un tutoriel vidéo qui explique comment mettre en place un robot reinarpg-bot est disponible [ici.](https://www.youtube.com/watch?v=ltWosy4Z0Kw)
 
 Si vous voulez en apprendre plus, des video peuvent être trouvées [ici,](https://www.youtube.com/playlist?list=PLh_alXmxHmzGy3FKbo95AkPp5D8849PEV) et le code source correspondant peut être trouvé [ici.](https://github.com/TheDudeFromCI/Mineflayer-Youtube-Tutorials)
 
@@ -68,7 +68,7 @@ Si vous voulez en apprendre plus, des video peuvent être trouvées [ici,](https
 [<img src="https://img.youtube.com/vi/ssWE0kXDGJE/0.jpg" alt="tutorial 3" width="200">](https://www.youtube.com/watch?v=ssWE0kXDGJE)
 [<img src="https://img.youtube.com/vi/walbRk20KYU/0.jpg" alt="tutorial 4" width="200">](https://www.youtube.com/watch?v=walbRk20KYU)
 
-**Introduction à mineflayer**
+**Introduction à reinarpg-bot**
 
 Si aucune version n'est specifiée, la version du serveur est automatiquement détectée.
 Vous pouvez toujours en specifier une manuellement dans les options:
@@ -76,9 +76,9 @@ Par exemple `version:"1.16.5"`.
 
 ### Echo Example
 ```js
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 
-const bot = mineflayer.createBot({
+const bot = reinarpg-bot.createBot({
   host: 'localhost', // optionel
   port: 25565, // optionel
   username: 'email@example.com', // l'email et le mot de passe sont requis seulement pour les serveurs
@@ -101,7 +101,7 @@ bot.on('error', err => console.log(err))
 Grace au projet [prismarine-viewer](https://github.com/PrismarineJS/prismarine-viewer), il est maintenant possible de voir ce que votre robot fait.
 Il suffit de lancer `npm install prismarine-viewer` dans votre console et d'ajouter ceci à votre code:
 ```js
-const mineflayerViewer = require('prismarine-viewer').mineflayer
+const mineflayerViewer = require('prismarine-viewer').reinarpg-bot
 bot.once('spawn', () => {
   mineflayerViewer(bot, { port: 3007, firstPerson: true })
 })
@@ -114,21 +114,21 @@ et vous obtiendrez un affichage en *direct* qui ressemble à ceci:
 
 | exemple | description |
 |---|---|
-|[maps](https://github.com/PrismarineJS/mineflayer/tree/master/examples/viewer) | afficher ce que votre robot fait en direct |
-|[pathfinder](https://github.com/Karang/mineflayer-pathfinder/blob/master/examples/test.js) | Faire votre robot se déplacer la oû vous voulez |
-|[coffre](https://github.com/PrismarineJS/mineflayer/blob/master/examples/chest.js) | Utiliser les coffres, fours, distrubuteurs, tables d'enchantements |
-|[pelteuse](https://github.com/PrismarineJS/mineflayer/blob/master/examples/digger.js) | Aprener comment créer un robot simple capable de creuser |
-|[discord](https://github.com/PrismarineJS/mineflayer/blob/master/examples/discord.js) | connectez un bot discord avec un robot mineflayer |
-|[jumper](https://github.com/PrismarineJS/mineflayer/blob/master/examples/jumper.js) | Un robot simple qui peut bouger, sauter, conduire des véhicules, attaquer des créatures proches |
-|[ansi](https://github.com/PrismarineJS/mineflayer/blob/master/examples/ansi.js) | Afficher le chat du robot avec les couleurs du chat dans votre terminal |
-|[guard](https://github.com/PrismarineJS/mineflayer/blob/master/examples/guard.js) | Faire un robot qui garde une zone definie |
-|[multiple-from-file](https://github.com/PrismarineJS/mineflayer/blob/master/examples/multiple_from_file.js) | fichier texte avec tous vos comptes minecraft |
+|[maps](https://github.com/reinarpg/reinarpg-bot/tree/master/examples/viewer) | afficher ce que votre robot fait en direct |
+|[pathfinder](https://github.com/Karang/reinarpg-bot-pathfinder/blob/master/examples/test.js) | Faire votre robot se déplacer la oû vous voulez |
+|[coffre](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/chest.js) | Utiliser les coffres, fours, distrubuteurs, tables d'enchantements |
+|[pelteuse](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/digger.js) | Aprener comment créer un robot simple capable de creuser |
+|[discord](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/discord.js) | connectez un bot discord avec un robot reinarpg-bot |
+|[jumper](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/jumper.js) | Un robot simple qui peut bouger, sauter, conduire des véhicules, attaquer des créatures proches |
+|[ansi](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/ansi.js) | Afficher le chat du robot avec les couleurs du chat dans votre terminal |
+|[guard](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/guard.js) | Faire un robot qui garde une zone definie |
+|[multiple-from-file](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/multiple_from_file.js) | fichier texte avec tous vos comptes minecraft |
 
-Et de nombreux exemples dans le dossier [exemples](https://github.com/PrismarineJS/mineflayer/tree/master/examples)
+Et de nombreux exemples dans le dossier [exemples](https://github.com/reinarpg/reinarpg-bot/tree/master/examples)
 
 ### Modules
 
-Beaucoup de development arrive à l'interieur de petit package npm, qui sont utilisé par mineflayer
+Beaucoup de development arrive à l'interieur de petit package npm, qui sont utilisé par reinarpg-bot
 
 #### The Node Way&trade;
 
@@ -136,25 +136,25 @@ Beaucoup de development arrive à l'interieur de petit package npm, qui sont uti
 
 #### Modules
 
-Voici les modules principales qui contruisent mineflayer:
+Voici les modules principales qui contruisent reinarpg-bot:
 
 | module | description |
 |---|---|
 | [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | Traduis et serialise les packets minecraft, plus l'authentication et l'encryption.
 | [minecraft-data](https://github.com/PrismarineJS/minecraft-data) | Module qui provide des données minecraft pour les clients minecraft, les serveurs et les librairies.
 | [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics) | provide les moteurs de physique pour les entitées minecraft.
-| [prismarine-chunk](https://github.com/PrismarineJS/prismarine-chunk) | Une class pour contenir les chunks minecraft
+| [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk) | Une class pour contenir les chunks minecraft
 | [node-vec3](https://github.com/PrismarineJS/node-vec3) | Mathematique de vecteur 3D
-| [prismarine-block](https://github.com/PrismarineJS/prismarine-block) | Represente un block minecraft avec les données associés.
-| [prismarine-chat](https://github.com/PrismarineJS/prismarine-chat) | Une traducteur pour les messages de chat minecraft (extracté depuis mineflayer)
+| [reinarpg-block](https://github.com/PrismarineJS/reinarpg-block) | Represente un block minecraft avec les données associés.
+| [prismarine-chat](https://github.com/PrismarineJS/prismarine-chat) | Une traducteur pour les messages de chat minecraft (extracté depuis reinarpg-bot)
 | [node-yggdrasil](https://github.com/PrismarineJS/node-yggdrasil) | Une librairies Node.js pour intéragir avecles systeme d'authenfication de mojang, connue sous le nom de Yggdrasil
-| [prismarine-world](https://github.com/PrismarineJS/prismarine-world) | l'implementation des mondes pour prismarine
+| [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world) | l'implementation des mondes pour prismarine
 | [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows) | Represente une fenetre minecraft
-| [prismarine-item](https://github.com/PrismarineJS/prismarine-item) | Contient les items minecraft et les donnnées qui y sont associé
+| [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) | Contient les items minecraft et les donnnées qui y sont associé
 | [prismarine-nbt](https://github.com/PrismarineJS/prismarine-nbt) | Un traducteur NBT pour node-minecraft-protocol
 | [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe) | Contient les récettes minecraft
 | [prismarine-biome](https://github.com/PrismarineJS/prismarine-biome) | Contient les biome et leur données 
-| [prismarine-entity](https://github.com/PrismarineJS/prismarine-entity) | Represente une entitées minecraft
+| [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity) | Represente une entitées minecraft
 
 
 ### Debug
@@ -177,29 +177,29 @@ Mineflayer peut être amélioré avec plusieurs plugins; tout le monde peut cré
 
 Les plugins les plus récents et les plus utiles sont :
 
- * [pathfinder](https://github.com/PrismarineJS/mineflayer-pathfinder) - advanced A* pathfinding avec de nombres paramètres configurables
+ * [pathfinder](https://github.com/reinarpg/reinarpg-bot-pathfinder) - advanced A* pathfinding avec de nombres paramètres configurables
  * [prismarine-viewer](https://github.com/PrismarineJS/prismarine-viewer) - Un simple inspecteur web de chunk
- * [web-inventory](https://github.com/ImHarvol/mineflayer-web-inventory) - un inspecteur d'inventaire en ligne
- * [statemachine](https://github.com/PrismarineJS/mineflayer-statemachine) - Une API pour state machine pour robots aux comportements complexes
- * [Armor Manager](https://github.com/PrismarineJS/MineflayerArmorManager) - gestion d'armure automatique
- * [Collect Block](https://github.com/PrismarineJS/mineflayer-collectblock) - Une API rapide et flexible pour colleter des blocs.
- * [Dashboard](https://github.com/wvffle/mineflayer-dashboard) - intertace en ligne pour robots mineflayer
- * [PVP](https://github.com/PrismarineJS/mineflayer-pvp) - Une API facile pour les combats contre les entités et les joueurs.
- * [auto-eat](https://github.com/LINKdiscordd/mineflayer-auto-eat) - pour manger automatiquement de la nouriture.
- * [Tool](https://github.com/PrismarineJS/mineflayer-tool) - Un plugin pour choisir automatiquement le meilleur outil pour une tâche donnée
+ * [web-inventory](https://github.com/ImHarvol/reinarpg-bot-web-inventory) - un inspecteur d'inventaire en ligne
+ * [statemachine](https://github.com/reinarpg/reinarpg-bot-statemachine) - Une API pour state machine pour robots aux comportements complexes
+ * [Armor Manager](https://github.com/reinarpg/reinarpg-botArmorManager) - gestion d'armure automatique
+ * [Collect Block](https://github.com/reinarpg/reinarpg-bot-collectblock) - Une API rapide et flexible pour colleter des blocs.
+ * [Dashboard](https://github.com/wvffle/reinarpg-bot-dashboard) - intertace en ligne pour robots reinarpg-bot
+ * [PVP](https://github.com/reinarpg/reinarpg-bot-pvp) - Une API facile pour les combats contre les entités et les joueurs.
+ * [auto-eat](https://github.com/LINKdiscordd/reinarpg-bot-auto-eat) - pour manger automatiquement de la nouriture.
+ * [Tool](https://github.com/reinarpg/reinarpg-bot-tool) - Un plugin pour choisir automatiquement le meilleur outil pour une tâche donnée
  * [Hawkeye](https://github.com/sefirosweb/minecraftHawkEye) - Un plugin pour viser à la perfection avec des arcs.
 
 
 Laissez un coup d'oeil à ses projets :
  
- * [radar](https://github.com/andrewrk/mineflayer-radar/) - interface web utilisant un canvas et une communication socket.io. [YouTube Demo](https://www.youtube.com/watch?v=FjDmAfcVulQ)
- * [blockfinder](https://github.com/Darthfett/mineflayer-blockFinder) - trouver des blocs dans un monde 3D
- * [scaffold](https://github.com/PrismarineJS/mineflayer-scaffold) - trouver le meilleur chemin vers une destination précise en cassant et dispoant des blocs
+ * [radar](https://github.com/andrewrk/reinarpg-bot-radar/) - interface web utilisant un canvas et une communication socket.io. [YouTube Demo](https://www.youtube.com/watch?v=FjDmAfcVulQ)
+ * [blockfinder](https://github.com/Darthfett/reinarpg-bot-blockFinder) - trouver des blocs dans un monde 3D
+ * [scaffold](https://github.com/reinarpg/reinarpg-bot-scaffold) - trouver le meilleur chemin vers une destination précise en cassant et dispoant des blocs
    [YouTube Demo](http://youtu.be/jkg6psMUSE0)
  * [auto-auth](https://github.com/G07cha/MineflayerAutoAuth) - remplissage de compte de capchat pour serveur hors-ligne
- * [Bloodhound](https://github.com/Nixes/mineflayer-bloodhound) - determiner ce qui a attaqué une autre entité.
- * [tps](https://github.com/SiebeDW/mineflayer-tps) - trouver le tps du serveur
- * [panorama](https://github.com/IceTank/mineflayer-panorama) - prendre des photos panoramiques de vos mondes.
+ * [Bloodhound](https://github.com/Nixes/reinarpg-bot-bloodhound) - determiner ce qui a attaqué une autre entité.
+ * [tps](https://github.com/SiebeDW/reinarpg-bot-tps) - trouver le tps du serveur
+ * [panorama](https://github.com/IceTank/reinarpg-bot-panorama) - prendre des photos panoramiques de vos mondes.
 
 ## Projets utilisant Mineflayer
 
@@ -207,14 +207,14 @@ Laissez un coup d'oeil à ses projets :
    - [YouTube - créé un escalier en collimasson](https://www.youtube.com/watch?v=UM1ZV5200S0)
    - [YouTube - réplicé une contruction](https://www.youtube.com/watch?v=0cQxg9uDnzA)
  * [Darthfett/Helperbot](https://github.com/Darthfett/Helperbot)
- * [vogonistic/voxel](https://github.com/vogonistic/mineflayer-voxel) - visualiser se qui se passe avec son robot grâce à [voxel.js](https://www.voxeljs.com/)
+ * [vogonistic/voxel](https://github.com/vogonistic/reinarpg-bot-voxel) - visualiser se qui se passe avec son robot grâce à [voxel.js](https://www.voxeljs.com/)
  * [JonnyD/Skynet](https://github.com/JonnyD/Skynet) -  Afficher les info des joueurs sur une API en ligne
  * [MinecraftChat](https://github.com/rom1504/MinecraftChat) (derniere version open source, par AlexKvazos) -  Un client minecraft basé seulement sur le chat<https://minecraftchat.net/>
  * [Cheese Bot](https://github.com/Minecheesecraft/Cheese-Bot) - Un robot basé sur les plugins, qui a une jolie interface. Réalisée avec Node-Webkit. http://bot.ezcha.net/
  * [Chaoscraft](https://github.com/schematical/chaoscraft) - Des robots minecraft qui utilisent des algorithmes génétiques, regarder [ces videos youtube](https://www.youtube.com/playlist?list=PLLkpLgU9B5xJ7Qy4kOyBJl5J6zsDIMceH)
  * [hexatester/minetelegram](https://github.com/hexatester/minetelegram) -  Minecraft - une API telgram, construite sur Mineflayer et Telegraf.
- * [ProZedd/mineflayer-builder](https://github.com/PrismarineJS/mineflayer-builder) - "Imprimme" un .schematic dans Minecraft
- * [et beaucoup plus](https://github.com/PrismarineJS/mineflayer/network/dependents) - Tous les les projets utilisant Mineflayer
+ * [ProZedd/reinarpg-bot-builder](https://github.com/reinarpg/reinarpg-bot-builder) - "Imprimme" un .schematic dans Minecraft
+ * [et beaucoup plus](https://github.com/reinarpg/reinarpg-bot/network/dependents) - Tous les les projets utilisant Mineflayer
 
 
 ## Test

@@ -15,4 +15,4 @@ These methods and classes are useful in some special cases but are not stable an
 
 `bot._client` is created using [node-minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol).
 It handles writing and reading packet.
-Its behaviour can change (for example at each new minecraft version) so it's better to use mineflayer methods if possible.
+Its behaviour can change (for example at each new minecraft version) so it's better to use reinarpg-bot methods if possible.

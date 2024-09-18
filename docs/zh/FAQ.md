@@ -15,7 +15,7 @@ client.on('end', () => {})
 ### 我无法在自定义服务器上获取聊天事件，如何解决?
 
 Spigot 服务器, 特别是一些插件, 使用的是自定义聊天格式,您需要使用自定义正则表达式/解析器对其进行解析。
-阅读并改编[chat_parsing.js](https://github.com/PrismarineJS/mineflayer/blob/master/examples/chat_parsing.js)使其适用于您的特定聊天插件. 或者阅读 http://prismarinejs.github.io/mineflayer/#/tutorial?id=custom-chat
+阅读并改编[chat_parsing.js](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/chat_parsing.js)使其适用于您的特定聊天插件. 或者阅读 http://prismarinejs.github.io/reinarpg-bot/#/tutorial?id=custom-chat
 
 ### 如何用自定义插件在聊天中收集信息 ?
 
@@ -64,7 +64,7 @@ bot.on('messagestr', msg => {
 bot.chat('/give @p minecraft:diamond_sword')
 ```
 
-### 是否可以使用bot = mineflayer.createbot登录多个帐户  同时分别控制它们 ?
+### 是否可以使用bot = reinarpg-bot.createbot登录多个帐户  同时分别控制它们 ?
 
 通过调用createBot创建不同的bot实例，然后为每个实例执行不同的操作，请参考 multiple.js
 
@@ -74,11 +74,11 @@ bot.inventory.items() 返回机器人的物品数组. 您可以使用递归函�
 
 ### 如何检查发送/接收的数据包 ?
 
-启用调试模式 https://github.com/PrismarineJS/mineflayer#debug
+启用调试模式 https://github.com/reinarpg/reinarpg-bot#debug
 
 ### 我希望即使在服务器有延迟的情况下也能避免断开连接，如何实现这一点 ?
 
-一种方法是增加 [checkTimeoutInterval](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/API.md#mccreateclientoptions) 选项的值(在createBot中设置)  (例如 `300*1000` 这是5分钟，而不是默认的30秒). 如果仍然断开连接，可以使用类似于此示例的方法自动重新连接 https://github.com/PrismarineJS/mineflayer/blob/master/examples/reconnector.js
+一种方法是增加 [checkTimeoutInterval](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/API.md#mccreateclientoptions) 选项的值(在createBot中设置)  (例如 `300*1000` 这是5分钟，而不是默认的30秒). 如果仍然断开连接，可以使用类似于此示例的方法自动重新连接 https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js
 
 ### 如何获取物品的 lore / text?
 
@@ -111,7 +111,7 @@ function getLore (item) {
 
 ### 如何从控制台发送消息到服务器?
 
-您可以使用类似`repl`的库来读取控制台输入的内容并用`bot.chat()`发送它。 你可以在这查看例子 [点这里](https://github.com/PrismarineJS/mineflayer/blob/master/examples/repl.js)
+您可以使用类似`repl`的库来读取控制台输入的内容并用`bot.chat()`发送它。 你可以在这查看例子 [点这里](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/repl.js)
 
 ### 创建插件时，如何将另一个插件指定为依赖项？
 
@@ -121,7 +121,7 @@ function getLore (item) {
 
 ### 如何使用socks5代理？
 
-在对象的选项中 `mineflayer.createBot(options)`,从选项对象中删除你的 `host` 选项,声明以下变量 `PROXY_IP, PROXY_PORT, PROXY_USERNAME, PROXY_PASSWORD, MC_SERVER_IP, MC_SERVER_PORT` 并将其添加到选项对象中:
+在对象的选项中 `reinarpg-bot.createBot(options)`,从选项对象中删除你的 `host` 选项,声明以下变量 `PROXY_IP, PROXY_PORT, PROXY_USERNAME, PROXY_PASSWORD, MC_SERVER_IP, MC_SERVER_PORT` 并将其添加到选项对象中:
 ```js
 connect: (client) => {
   socks.createConnection({
@@ -153,7 +153,7 @@ connect: (client) => {
 
 ### `UnhandledPromiseRejectionWarning: Error: Failed to read asymmetric key`
 
-当你给 mineflayer 设定了错误的服务器版本，或者 mineflayer 检测到错误的服务器版本时会发生这种情况
+当你给 reinarpg-bot 设定了错误的服务器版本，或者 reinarpg-bot 检测到错误的服务器版本时会发生这种情况
 
 ### `TypeError: Cannot read property '?' of undefined`
 

@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 
 const OPTIONS = {
   username: 'i_am_u9g',
@@ -18,7 +18,7 @@ function injectModules (bot) {
 }
 
 function initBot () {
-  const bot = mineflayer.createBot(OPTIONS)
+  const bot = reinarpg-bot.createBot(OPTIONS)
   injectModules(bot)
 
   bot.on('end', initBot) // auto restart

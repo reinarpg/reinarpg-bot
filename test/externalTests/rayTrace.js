@@ -1,5 +1,5 @@
 const assert = require('assert')
-const { BlockFace } = require('prismarine-world').iterators
+const { BlockFace } = require('reinarpg-world').iterators
 
 module.exports = () => async (bot) => {
   const { position } = bot.entity

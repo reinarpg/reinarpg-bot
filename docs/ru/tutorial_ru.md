@@ -281,15 +281,15 @@ for (const item of array) {
 NPM автоматически устанавливается, когда вы устанавливаете Node.  
 NPM используется для получения библиотек, которые другие люди создали для удобства.  
 Вы можете посмотреть библиотеки на [сайте](https://www.npmjs.com/) и затем установить их, используя команду `npm install` в вашем терминале.  
-Например, чтобы скачать библиотеку Mineflayer, вам нужно прописать `npm install mineflayer`  
+Например, чтобы скачать библиотеку Mineflayer, вам нужно прописать `npm install reinarpg-bot`  
 
 Теперь Node может получить доступ к установленной библиотеке с помощью функции `require()`.
 
 ```js
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 ```
 
-После этого будет доступна переменная `mineflayer`, представляющая все функции Mineflayer.
+После этого будет доступна переменная `reinarpg-bot`, представляющая все функции Mineflayer.
 
 ### Создание бота
 
@@ -299,9 +299,9 @@ const mineflayer = require('mineflayer')
 Снизу представлены начальные действия для создания бота.
 
 ```js
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 
-const bot = mineflayer.createBot()
+const bot = reinarpg-bot.createBot()
 ```
 
 Если вы запустите этот код, вы заметите, что программа не останавливатся. Если вы хотите остановить работающую программу, нажмите `Ctrl` + `c`  
@@ -310,14 +310,14 @@ const bot = mineflayer.createBot()
 
 
 ```js
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 
 const options = {
   host: 'localhost', // Измените это на айпи сервера, который вам нужен.
   port: 25565 // Измените это на порт сервера, который вам нужен.
 }
 
-const bot = mineflayer.createBot(options)
+const bot = reinarpg-bot.createBot(options)
 ```
 
 #### Объекты в Javascript
@@ -343,7 +343,7 @@ console.log(object.number) // Выведет число 10
 Вы также можете создать объект одной строкой.
 
 ```js
-const bot = mineflayer.createBot({ host: 'localhost', port: 25565 })
+const bot = reinarpg-bot.createBot({ host: 'localhost', port: 25565 })
 ```
 
 #### Присоединение
@@ -353,7 +353,7 @@ const bot = mineflayer.createBot({ host: 'localhost', port: 25565 })
 Чтобы зайти на конкретный лицензионный аккаунт, вы должны использовать `username` вместе с `password`
 
 ```js
-const bot = mineflayer.createBot({
+const bot = reinarpg-bot.createBot({
   host: 'localhost',
   port: 25565,
   username: 'Player',
@@ -368,7 +368,7 @@ const bot = mineflayer.createBot({
 Поэтому многие используют аргументы командной строки.
 
 ```js
-const bot = mineflayer.createBot({
+const bot = reinarpg-bot.createBot({
   host: process.argv[2],
   port: parseInt(process.argv[3]),
   username: process.argv[4],
@@ -418,7 +418,7 @@ bot.once('spawn', () => {
 
 ### Прослушивание событий
 
-Объект бота имеет множество полезных [событий](http://prismarinejs.github.io/mineflayer/#/api_ru?id=events).
+Объект бота имеет множество полезных [событий](http://prismarinejs.github.io/reinarpg-bot/#/api_ru?id=events).
 Вы можете прослушивать события используя методы `bot.on()` или `bot.once()` для объекта бота, они принимают имя события и функцию.  
 Чтобы удалить какой-либо прослушиватель событий, используйте метод `bot.removeListener()`.
 
@@ -429,7 +429,7 @@ bot.once('spawn', () => {
 - `bot.removeListener(eventName, listener)`
   Удаляет `listener` для события `eventName`. Чтобы это использовать, вам нужно либо определить вашу функцию с помощью `function myNamedFunc() {}`, либо поместить вашу функцию в переменную с помощью `const myNamedFunc = () => {}`. Затем вы можете использовать `myNamedFunc` в аргументе слушателя.
 
-События имеет не только объект бота, например у [`Сундуков`](http://prismarinejs.github.io/mineflayer/#/api_ru?id=mineflayerchest), [`Печек`](http://prismarinejs.github.io/mineflayer/#/api_ru?id=mineflayerfurnace), [`Раздатчиков`](http://prismarinejs.github.io/mineflayer/#/api_ru?id=mineflayerdispenser), [`Столов зачарования`](http://prismarinejs.github.io/mineflayer/#/api_ru?id=mineflayerenchantmenttable), [`Жителей`](http://prismarinejs.github.io/mineflayer/#/api_ru?id=mineflayervillager) также есть свои события.
+События имеет не только объект бота, например у [`Сундуков`](http://prismarinejs.github.io/reinarpg-bot/#/api_ru?id=mineflayerchest), [`Печек`](http://prismarinejs.github.io/reinarpg-bot/#/api_ru?id=mineflayerfurnace), [`Раздатчиков`](http://prismarinejs.github.io/reinarpg-bot/#/api_ru?id=mineflayerdispenser), [`Столов зачарования`](http://prismarinejs.github.io/reinarpg-bot/#/api_ru?id=mineflayerenchantmenttable), [`Жителей`](http://prismarinejs.github.io/reinarpg-bot/#/api_ru?id=mineflayervillager) также есть свои события.
 
 ### Промисы
 [Промисы](https://nodejs.dev/learn/understanding-javascript-promises) - это функции, которые вы можете использовать с помощью переменной `await` для ожидания, пока какая-либо функция не завершится (вы также можете прервать await, чтобы не ожидать результата).
@@ -484,7 +484,7 @@ async function craft (bot) {
 К тому времени как код уже выполняет второй `bot.craft()`, первый ещё возможно даже не закончился, а значит ресурсов для палок ещё нет.  
 Использование промисов может исправить это, потому что будет известно, когда закончится выполнение `bot.craft()`.
 
-Больше о методе `bot.craft()` [здесь](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api_ru.md#botcraftrecipe-count-craftingtable).
+Больше о методе `bot.craft()` [здесь](https://github.com/reinarpg/reinarpg-bot/blob/master/docs/api_ru.md#botcraftrecipe-count-craftingtable).
 
 ## Продвинутым
 
@@ -558,8 +558,8 @@ c, 3
 
 ### Создание события для чата
 
-Вы можете создать свои собственные события для чата, используя метод [`bot.chatAddPattern()`](http://prismarinejs.github.io/mineflayer/#/api_ru?id=#botchataddpatternpattern-chattype-description). Полезно для серверов с плагинами, который меняют формат чата на сервере.
-Метод [`bot.chatAddPattern()`](http://prismarinejs.github.io/mineflayer/#/api_ru?id=botchataddpatternpattern-chattype-description) принимает три аргумента :
+Вы можете создать свои собственные события для чата, используя метод [`bot.chatAddPattern()`](http://prismarinejs.github.io/reinarpg-bot/#/api_ru?id=#botchataddpatternpattern-chattype-description). Полезно для серверов с плагинами, который меняют формат чата на сервере.
+Метод [`bot.chatAddPattern()`](http://prismarinejs.github.io/reinarpg-bot/#/api_ru?id=botchataddpatternpattern-chattype-description) принимает три аргумента :
 
 - `pattern` - Регулярное выражение для совпадения с сообщением.
 - `chatType` - Вид сообщения. Является названием события, который будет срабатывать при совпадении с шаблоном. Например: "chat" или "whisper".
@@ -645,10 +645,10 @@ mkdir my_scripts
 cd my_scripts
 ```
 
-Установите `mineflayer`:
+Установите `reinarpg-bot`:
 
 ```bash
-npm install mineflayer
+npm install reinarpg-bot
 ```
 
 Теперь вы можете скопировать и хранить все свои скрипты в папке `my_scripts` во внутреннем хранилище.

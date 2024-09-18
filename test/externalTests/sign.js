@@ -2,7 +2,7 @@ const assert = require('assert')
 const Vec3 = require('vec3')
 
 module.exports = () => async (bot) => {
-  const Item = require('prismarine-item')(bot.registry)
+  const Item = require('reinarpg-item')(bot.registry)
   const lowerBlock = bot.blockAt(bot.entity.position.offset(0, -1, 0))
 
   let signItem = null

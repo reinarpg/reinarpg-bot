@@ -21,8 +21,8 @@ client.on('end', () => {})
 ### I'm not getting chat event on a custom server, how can I solve it ?
 
 Spigot servers, in particular some plugins, use custom chat formats, you need to parse it with a custom regex / parser.
-Read and adapt [chat_parsing.js](https://github.com/PrismarineJS/mineflayer/blob/master/examples/chat_parsing.js) to make it work for your particular
-chat plugin. Also read http://prismarinejs.github.io/mineflayer/#/tutorial?id=custom-chat
+Read and adapt [chat_parsing.js](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/chat_parsing.js) to make it work for your particular
+chat plugin. Also read http://prismarinejs.github.io/reinarpg-bot/#/tutorial?id=custom-chat
 
 ### How can I collect info from an custom plugin in chat ?
 
@@ -70,7 +70,7 @@ By using `bot.chat()`.
 bot.chat('/give @p diamond')
 ```
 
-### Is it possible to login multiple accounts using bot = mineflayer.createbot while controlling them all separately ?
+### Is it possible to login multiple accounts using bot = reinarpg-bot.createbot while controlling them all separately ?
 
 Create different bot instances by calling createBot then do different things for each, see multiple.js
 
@@ -80,11 +80,11 @@ bot.inventory.items() returns an array of the bot's items. You can use a recursi
 
 ### How do I check packets that are sent/received ?
 
-Enabled debug mode https://github.com/PrismarineJS/mineflayer#debug
+Enabled debug mode https://github.com/reinarpg/reinarpg-bot#debug
 
 ### I want to avoid disconnection even in case of server lag, how can I achieve this ?
 
-One way is to increase the [checkTimeoutInterval](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/API.md#mccreateclientoptions) option (to set in createBot) to an higher value (for example `300*1000` which is 5min instead of the default 30s). If you still get disconnected, you can auto reconnect using something like this example https://github.com/PrismarineJS/mineflayer/blob/master/examples/reconnector.js
+One way is to increase the [checkTimeoutInterval](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/API.md#mccreateclientoptions) option (to set in createBot) to an higher value (for example `300*1000` which is 5min instead of the default 30s). If you still get disconnected, you can auto reconnect using something like this example https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js
 
 ### How to get the lore / text of an item ?
 
@@ -116,7 +116,7 @@ function getLore (item) {
 
 ### How can I send message from the console to the server?
 
-You can use a library like `repl` to read the console input and use `bot.chat()` to send it. You can find an example [here.](https://github.com/PrismarineJS/mineflayer/blob/master/examples/repl.js)
+You can use a library like `repl` to read the console input and use `bot.chat()` to send it. You can find an example [here.](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/repl.js)
 
 ### When creating a plugin, how can I specify another plugin as a dependency?
 
@@ -126,7 +126,7 @@ Note that the order in which plugins are loaded is dynamic, so you should never 
 
 ### How can I use a socks5 proxy?
 
-In the options object for `mineflayer.createBot(options)`, remove your `host` option from the options object, have the following variables declared `PROXY_IP, PROXY_PORT, PROXY_USERNAME, PROXY_PASSWORD, MC_SERVER_ADDRESS, MC_SERVER_PORT` and add this to your options object:
+In the options object for `reinarpg-bot.createBot(options)`, remove your `host` option from the options object, have the following variables declared `PROXY_IP, PROXY_PORT, PROXY_USERNAME, PROXY_PASSWORD, MC_SERVER_ADDRESS, MC_SERVER_PORT` and add this to your options object:
 ```js
 connect: (client) => {
     socks.createConnection({
@@ -159,7 +159,7 @@ connect: (client) => {
 
 ### `UnhandledPromiseRejectionWarning: Error: Failed to read asymmetric key`
 
-This is what happens when either you gave mineflayer the wrong server version, or mineflayer detects the wrong server version
+This is what happens when either you gave reinarpg-bot the wrong server version, or reinarpg-bot detects the wrong server version
 
 ### `TypeError: Cannot read property '?' of undefined`
 

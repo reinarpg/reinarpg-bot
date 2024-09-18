@@ -21,7 +21,7 @@ client.on('end', () => {})
 ### Я не получаю событие чата на сервере, как я могу это решить?
 
 Сервера Spigot, в частности некоторые плагины, используют разные форматы чата, вам необходимо проанализировать его с помощью регулярного выражения/парсера.
-Посмотрите и измените скрипт [chat_parsing.js](https://github.com/PrismarineJS/mineflayer/blob/master/examples/chat_parsing.js), чтобы он работал для вашего плагина на чат, также прочтите http://prismarinejs.github.io/mineflayer/#/tutorial?id=custom-chat
+Посмотрите и измените скрипт [chat_parsing.js](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/chat_parsing.js), чтобы он работал для вашего плагина на чат, также прочтите http://prismarinejs.github.io/reinarpg-bot/#/tutorial?id=custom-chat
 
 ### Как я могу собрать информацию из плагина в чате?
 
@@ -70,9 +70,9 @@ bot.on('messagestr', msg => {
 bot.chat('/give @p diamond')
 ```
 
-### Можно ли войти в несколько учетных записей с помощью bot = mineflayer.createbot, контролируя их все по отдельности?
+### Можно ли войти в несколько учетных записей с помощью bot = reinarpg-bot.createbot, контролируя их все по отдельности?
 
-Создавайте разные экземпляры ботов, вызывая createBot, затем выполняйте разные действия для каждого. [Пример](https://github.com/PrismarineJS/mineflayer/blob/master/examples/multiple.js).
+Создавайте разные экземпляры ботов, вызывая createBot, затем выполняйте разные действия для каждого. [Пример](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/multiple.js).
 
 ### Как заставить бота выбросить все вещи их инвентаря?
 
@@ -80,11 +80,11 @@ bot.chat('/give @p diamond')
 
 ### Как проверить отправленные/полученные пакеты?
 
-Включите отладку https://github.com/PrismarineJS/mineflayer#debug
+Включите отладку https://github.com/reinarpg/reinarpg-bot#debug
 
 ### Я хочу избежать отключения бота от сервера даже в случае задержки сервера, как мне этого добиться?
 
-Один из способов - увеличить параметр [checkTimeoutInterval](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/API.md#mccreateclientoptions) (передаваемый в createBot) к более высокому значению (Например `300*1000`, что составляет 5 минут вместо обычных 30 сек.). Если вы всё ещё сталкиваетесь с данной проблемой, вы можете автоматически переподключиться, используя что-то вроде этого примера https://github.com/PrismarineJS/mineflayer/blob/master/examples/reconnector.js
+Один из способов - увеличить параметр [checkTimeoutInterval](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/API.md#mccreateclientoptions) (передаваемый в createBot) к более высокому значению (Например `300*1000`, что составляет 5 минут вместо обычных 30 сек.). Если вы всё ещё сталкиваетесь с данной проблемой, вы можете автоматически переподключиться, используя что-то вроде этого примера https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js
 
 ### Как получить описание/текст предмета?
 
@@ -116,7 +116,7 @@ function getLore (item) {
 
 ### Как я могу отправить сообщение из консоли на сервер?
 
-Вы можете использовать библиотеку, такую как `repl`, чтобы прочитать ввод консоли и использовать `bot.chat()` для его отправки. Вы можете найти пример [здесь](https://github.com/PrismarineJS/mineflayer/blob/master/examples/repl.js).
+Вы можете использовать библиотеку, такую как `repl`, чтобы прочитать ввод консоли и использовать `bot.chat()` для его отправки. Вы можете найти пример [здесь](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/repl.js).
 
 ### Как я могу использовать другой плагин в качестве зависимости при создании своего плагина?
 
@@ -126,7 +126,7 @@ function getLore (item) {
 
 ### Как я могу использовать прокси socks5?
 
-В объекте с настройками для `mineflayer.createBot(options)` удалите опцию `host`, объявите переменные `PROXY_IP, PROXY_PORT, PROXY_USERNAME, PROXY_PASSWORD, MC_SERVER_ADDRESS, MC_SERVER_PORT`, затем добавьте это в свой объект с настройками:
+В объекте с настройками для `reinarpg-bot.createBot(options)` удалите опцию `host`, объявите переменные `PROXY_IP, PROXY_PORT, PROXY_USERNAME, PROXY_PASSWORD, MC_SERVER_ADDRESS, MC_SERVER_PORT`, затем добавьте это в свой объект с настройками:
 ```js
 connect: (client) => {
     socks.createConnection({
@@ -159,7 +159,7 @@ connect: (client) => {
 
 ### `UnhandledPromiseRejectionWarning: Error: Failed to read asymmetric key`
 
-Эта ошибка означает, что вы ввели неправильную версию сервера, либо mineflayer обнаруживает её неправильно.
+Эта ошибка означает, что вы ввели неправильную версию сервера, либо reinarpg-bot обнаруживает её неправильно.
 
 ### `TypeError: Cannot read property '?' of undefined`
 

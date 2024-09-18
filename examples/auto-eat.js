@@ -1,7 +1,7 @@
-const mineflayer = require('mineflayer')
-const autoeat = require('mineflayer-auto-eat')
+const reinarpg-bot = require('reinarpg-bot')
+const autoeat = require('reinarpg-bot-auto-eat')
 
-const bot = mineflayer.createBot({
+const bot = reinarpg-bot.createBot({
   host: process.argv[2],
   port: process.argv[3],
   username: process.argv[4],

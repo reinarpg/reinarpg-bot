@@ -1,7 +1,7 @@
 const assert = require('assert')
 
 module.exports = () => async (bot) => {
-  const Item = require('prismarine-item')(bot.registry)
+  const Item = require('reinarpg-item')(bot.registry)
 
   await bot.test.becomeCreative()
   await bot.test.clearInventory()

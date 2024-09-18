@@ -1,6 +1,6 @@
-## mineflayer-navigate
+## reinarpg-bot-navigate
 
-[navigate](https://github.com/andrewrk/mineflayer-navigate/) -  轻松使用A*寻路
+[navigate](https://github.com/andrewrk/reinarpg-bot-navigate/) -  轻松使用A*寻路
 
 <iframe type="text/html" width="640" height="360" src="http://www.youtube.com/embed/O6lQdmRz8eE" frameborder="0"></iframe>
 

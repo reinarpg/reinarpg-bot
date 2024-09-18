@@ -1,18 +1,18 @@
 from javascript import require, On
-mineflayer = require('mineflayer')
-pathfinder = require('mineflayer-pathfinder')
+reinarpg-bot = require('reinarpg-bot')
+pathfinder = require('reinarpg-bot-pathfinder')
 
 RANGE_GOAL = 1
 BOT_USERNAME = 'python'
 
-bot = mineflayer.createBot({
+bot = reinarpg-bot.createBot({
   'host': '127.0.0.1',
   'port': 25565,
   'username': BOT_USERNAME
 })
 
 bot.loadPlugin(pathfinder.pathfinder)
-print("Started mineflayer")
+print("Started reinarpg-bot")
 
 @On(bot, 'spawn')
 def handle(*args):

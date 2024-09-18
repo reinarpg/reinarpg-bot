@@ -280,15 +280,15 @@ The last thing you need to know is how to use the [Node Package Manager](https:/
 NPM is automatically installed when you install Node.  
 NPM is used to get useful packages that other people created that can do useful things for you.  
 You can search for packages on [their website](https://www.npmjs.com/), and then install them using the `npm install` command in your terminal.  
-To install Mineflayer for example, run `npm install mineflayer`  
+To install Mineflayer for example, run `npm install reinarpg-bot`  
 
 Then, Node can access installed modules by using the `require()` function.
 
 ```js
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 ```
 
-After this, the `mineflayer` variable can be used to access all the features of Mineflayer.
+After this, the `reinarpg-bot` variable can be used to access all the features of Mineflayer.
 
 ### Creating a bot
 
@@ -298,9 +298,9 @@ If you don't know any of the terms above, you should go back to the [previous se
 Below is the absolute minimum necessary to create a Mineflayer bot.
 
 ```js
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 
-const bot = mineflayer.createBot()
+const bot = reinarpg-bot.createBot()
 ```
 
 If you run this example, you'll notice that your program will not stop. If you want to stop your currently running program, press `Ctrl` + `c`  
@@ -309,14 +309,14 @@ If you want to choose which server you want your bot to connect to, you have to 
 
 
 ```js
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 
 const options = {
   host: 'localhost', // Change this to the ip you want.
   port: 25565 // Change this to the port you want.
 }
 
-const bot = mineflayer.createBot(options)
+const bot = reinarpg-bot.createBot(options)
 ```
 
 #### Javascript objects
@@ -342,7 +342,7 @@ The value can be anything, even other object. If the value is a function, that f
 You can also create the object in-line.
 
 ```js
-const bot = mineflayer.createBot({ host: 'localhost', port: 25565 })
+const bot = reinarpg-bot.createBot({ host: 'localhost', port: 25565 })
 ```
 
 #### Logging in
@@ -352,7 +352,7 @@ If you supply the `createBot` with an `username` option, it will log in with tha
 To log into a specific account, you have to supply both the `username` and the `password`
 
 ```js
-const bot = mineflayer.createBot({
+const bot = reinarpg-bot.createBot({
   host: 'localhost',
   port: 25565,
   username: 'Player',
@@ -367,7 +367,7 @@ This means that everyone has to change the server address and login settings to 
 To counter this, a lot of people use command line arguments.
 
 ```js
-const bot = mineflayer.createBot({
+const bot = reinarpg-bot.createBot({
   host: process.argv[2],
   port: parseInt(process.argv[3]),
   username: process.argv[4],
@@ -417,7 +417,7 @@ bot.once('spawn', () => {
 
 ### Listening for an event
 
-The bot object has many useful [events](http://prismarinejs.github.io/mineflayer/#/api?id=events).
+The bot object has many useful [events](http://prismarinejs.github.io/reinarpg-bot/#/api?id=events).
 You can listen for an event by using either `bot.on()` method or `bot.once()` method of the bot object, which takes the name of an event and a function.
 To remove specific listener you can use `bot.removeListener()` method.
 
@@ -428,7 +428,7 @@ To remove specific listener you can use `bot.removeListener()` method.
 - `bot.removeListener(eventName, listener)`
   Removes the specified `listener` for the event named `eventName`. In order to use this you either need to define your function with `function myNamedFunc() {}` or put your function in a variable with `const myNamedFunc = () => {}`. You can then use `myNamedFunc` in the listener argument.
 
-Not only bot object, [`Chest`](http://prismarinejs.github.io/mineflayer/#/api?id=mineflayerchest), [`Furnace`](http://prismarinejs.github.io/mineflayer/#/api?id=mineflayerfurnace), [`Dispenser`](http://prismarinejs.github.io/mineflayer/#/api?id=mineflayerdispenser), [`EnchantmentTable`](http://prismarinejs.github.io/mineflayer/#/api?id=mineflayerenchantmenttable), [`Villager`](http://prismarinejs.github.io/mineflayer/#/api?id=mineflayervillager) object also have their own events!
+Not only bot object, [`Chest`](http://prismarinejs.github.io/reinarpg-bot/#/api?id=mineflayerchest), [`Furnace`](http://prismarinejs.github.io/reinarpg-bot/#/api?id=mineflayerfurnace), [`Dispenser`](http://prismarinejs.github.io/reinarpg-bot/#/api?id=mineflayerdispenser), [`EnchantmentTable`](http://prismarinejs.github.io/reinarpg-bot/#/api?id=mineflayerenchantmenttable), [`Villager`](http://prismarinejs.github.io/reinarpg-bot/#/api?id=mineflayervillager) object also have their own events!
 
 ### Promises
 A [promise](https://nodejs.dev/learn/understanding-javascript-promises) is a function that you can use the `await` variable to wait on until it's job is complete. (you can omit the await to not wait for results)
@@ -483,7 +483,7 @@ The reason the incorrect approach is wrong is because when `bot.craft()` is call
 By the time the code reaches the second `bot.craft()`, the first probably hasn't finished yet, which means the wanted resource is not available yet.  
 Using promises can fix this because they will only be called after the `bot.craft()` is finished.
 
-More on the [bot.craft()](https://github.com/PrismarineJS/mineflayer/blob/master/docs/api.md#botcraftrecipe-count-craftingtable) method.
+More on the [bot.craft()](https://github.com/reinarpg/reinarpg-bot/blob/master/docs/api.md#botcraftrecipe-count-craftingtable) method.
 
 ## Advanced
 
@@ -557,8 +557,8 @@ In general, you'll want to use `for of` instead of `for in` so make sure you don
 
 ### Creating an event from chat
 
-You can create your own event from chat using [`bot.chatAddPattern()`](http://prismarinejs.github.io/mineflayer/#/api?id=botchataddpatternpattern-chattype-description) method. Useful for Bukkit servers where the chat format changes a lot.
-[`bot.chatAddPattern()`](http://prismarinejs.github.io/mineflayer/#/api?id=botchataddpatternpattern-chattype-description) method takes three arguments :
+You can create your own event from chat using [`bot.chatAddPattern()`](http://prismarinejs.github.io/reinarpg-bot/#/api?id=botchataddpatternpattern-chattype-description) method. Useful for Bukkit servers where the chat format changes a lot.
+[`bot.chatAddPattern()`](http://prismarinejs.github.io/reinarpg-bot/#/api?id=botchataddpatternpattern-chattype-description) method takes three arguments :
 
 - `pattern` - regular expression (regex) to match chat
 - `chatType` - the event the bot emits when the pattern matches. e.g. "chat" or "whisper"
@@ -644,10 +644,10 @@ mkdir my_scripts
 cd my_scripts
 ```
 
-Install `mineflayer`:
+Install `reinarpg-bot`:
 
 ```bash
-npm install mineflayer
+npm install reinarpg-bot
 ```
 
 Now you can copy / store all of your scripts into `my_scripts` folder inside Internal Storage.

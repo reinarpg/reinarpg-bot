@@ -4,7 +4,7 @@ const { once } = require('../../lib/promise_utils')
 
 module.exports = () => async (bot) => {
   // Test spawn event on death
-  const Item = require('prismarine-item')(bot.registry)
+  const Item = require('reinarpg-item')(bot.registry)
 
   let signItem = null
   for (const name in bot.registry.itemsByName) {

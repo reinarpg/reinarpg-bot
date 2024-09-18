@@ -3,8 +3,8 @@
 // "place crystal near bot" - find a block near the bot that has a block empty above it, then place a crystal on it
 // "place crystal near ExplodeMe" - find a block near the player with username "ExplodeMe" that has an empty block above it, then place a crystal on it
 
-const mineflayer = require('mineflayer')
-const pathfinder = require('mineflayer-pathfinder')
+const reinarpg-bot = require('reinarpg-bot')
+const pathfinder = require('reinarpg-bot-pathfinder')
 const { Vec3 } = require('vec3')
 const AABB = require('prismarine-physics/lib/aabb')
 
@@ -12,7 +12,7 @@ if (process.argv.length < 4 || process.argv.length > 6) {
   console.log('Usage : node ansi.js <host> <port> [<name>] [<password>]')
   process.exit(1)
 }
-const bot = mineflayer.createBot({
+const bot = reinarpg-bot.createBot({
   host: process.argv[2],
   port: parseInt(process.argv[3]),
   username: process.argv[4] ? process.argv[4] : 'crystal_bot',

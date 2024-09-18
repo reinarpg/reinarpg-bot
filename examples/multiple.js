@@ -1,4 +1,4 @@
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 
 if (process.argv.length < 3 || process.argv.length > 5) {
   console.log('Usage : node multiple.js <host> <port>')
@@ -10,7 +10,7 @@ function next () {
   if (i < 10) {
     i++
     setTimeout(() => {
-      createBot(`mineflayer-bot${i}`)
+      createBot(`reinarpg-bot-bot${i}`)
       next()
     }, 100)
   }
@@ -18,7 +18,7 @@ function next () {
 next()
 
 function createBot (name) {
-  mineflayer.createBot({
+  reinarpg-bot.createBot({
     host: process.argv[2],
     port: parseInt(process.argv[3]),
     username: name

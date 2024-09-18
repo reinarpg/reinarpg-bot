@@ -1,9 +1,9 @@
 {
-  "name": "mineflayer-example",
+  "name": "reinarpg-bot-example",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "prismarine-provider-anvil": "^2.3.0"
+    "reinarpg-anvil": "^2.3.0"
   },
-  "description": "A mineflayer example"
+  "description": "A reinarpg-bot example"
 }

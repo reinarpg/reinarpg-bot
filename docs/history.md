@@ -1,82 +1,82 @@
 ## 4.20.1
-* [Add bossBarCreated event in index.d.ts (#3340)](https://github.com/PrismarineJS/mineflayer/commit/8299288526cd7ff24bcd87511814221f8ad62507) (thanks @gguio)
-* [Update scoreboard.js (#3318)](https://github.com/PrismarineJS/mineflayer/commit/195b3cbd70a110080af9b77a4659991c5d9e484a) (thanks @vicdum)
-* [Fix hardcoded diggingface for cancel digging (#3322)](https://github.com/PrismarineJS/mineflayer/commit/ab78bf855929a476386b5eb6efcf3b271d02455e) (thanks @Vinciepincie)
-* [Fix 1.20.4 server resource pack error (#3320)](https://github.com/PrismarineJS/mineflayer/commit/7c01eeb970647ed2933c10cb2b94fd7b44c777f5) (thanks @TerminalCalamitas)
-* [Fix scoreboard delete handler not first checking if scoreboard exists (#3324)](https://github.com/PrismarineJS/mineflayer/commit/d9e9e15aeb646d81da2a3e2987566de47e3bae04) (thanks @Ynfuien)
+* [Add bossBarCreated event in index.d.ts (#3340)](https://github.com/reinarpg/reinarpg-bot/commit/8299288526cd7ff24bcd87511814221f8ad62507) (thanks @gguio)
+* [Update scoreboard.js (#3318)](https://github.com/reinarpg/reinarpg-bot/commit/195b3cbd70a110080af9b77a4659991c5d9e484a) (thanks @vicdum)
+* [Fix hardcoded diggingface for cancel digging (#3322)](https://github.com/reinarpg/reinarpg-bot/commit/ab78bf855929a476386b5eb6efcf3b271d02455e) (thanks @Vinciepincie)
+* [Fix 1.20.4 server resource pack error (#3320)](https://github.com/reinarpg/reinarpg-bot/commit/7c01eeb970647ed2933c10cb2b94fd7b44c777f5) (thanks @TerminalCalamitas)
+* [Fix scoreboard delete handler not first checking if scoreboard exists (#3324)](https://github.com/reinarpg/reinarpg-bot/commit/d9e9e15aeb646d81da2a3e2987566de47e3bae04) (thanks @Ynfuien)
 
 ## 4.20.0
-* [Update api.md - addChatPattern[Set] link to example of usage (#3304)](https://github.com/PrismarineJS/mineflayer/commit/bb3e5877b7b3b8ab063b39a5b47d103b819da1c2) (thanks @boly38)
-* [Fixed deleted scoreboards not being removed from ScoreBoard.positions (#3306)](https://github.com/PrismarineJS/mineflayer/commit/643023df91bf428d3e7d30e8f2eab97e3238b0b2) (thanks @Ynfuien)
-* [Support 1.20.4 (#3310)](https://github.com/PrismarineJS/mineflayer/commit/aa99daa7d63ee9549f2dda5a79c140e30e19a89b) (thanks @rom1504)
+* [Update api.md - addChatPattern[Set] link to example of usage (#3304)](https://github.com/reinarpg/reinarpg-bot/commit/bb3e5877b7b3b8ab063b39a5b47d103b819da1c2) (thanks @boly38)
+* [Fixed deleted scoreboards not being removed from ScoreBoard.positions (#3306)](https://github.com/reinarpg/reinarpg-bot/commit/643023df91bf428d3e7d30e8f2eab97e3238b0b2) (thanks @Ynfuien)
+* [Support 1.20.4 (#3310)](https://github.com/reinarpg/reinarpg-bot/commit/aa99daa7d63ee9549f2dda5a79c140e30e19a89b) (thanks @rom1504)
 
 ## 4.19.0
-* [Clarify readme createBot username handling (#3300)](https://github.com/PrismarineJS/mineflayer/commit/7a2680bc07f53d16626679537ea1f07aae180549) (thanks @extremeheat)
-* [fix world typing (#3302)](https://github.com/PrismarineJS/mineflayer/commit/5dc36d6cdeaf4be72ea023827d45b9d78e575f66) (thanks @GenerelSchwerz)
-* [modified the README.md files for other languages and fixed a linking issue at those files. (#3297)](https://github.com/PrismarineJS/mineflayer/commit/cc98f1307e3ab48477d2a9ff29da4447f42b30bc) (thanks @Axwaizee)
-* [formatted docs/README.md for easy copy (#3295)](https://github.com/PrismarineJS/mineflayer/commit/468c8aa9d382a7872ec991c3b834b98cbe495e8d) (thanks @Axwaizee)
-* [Added missing bot.teams definition (#3294)](https://github.com/PrismarineJS/mineflayer/commit/fb8ee7aa619bd38cc97d5dbd870bb11455d51d39) (thanks @Ynfuien)
-* [Timeout for bot.tabComplete() (#3293)](https://github.com/PrismarineJS/mineflayer/commit/4231a169d579d08ac7b9ec0694e18b1f6ac837ea) (thanks @Ynfuien)
-* [:label: Update types to be updated with what's in JavaScript (#3287)](https://github.com/PrismarineJS/mineflayer/commit/210785e86c031f7e3323d7d2ffe5152d2d4a5eb6) (thanks @fantomitechno)
-* [Fixed some typo (#3290)](https://github.com/PrismarineJS/mineflayer/commit/ba53a953d03a6edb34aa5bf38bccde58e65d816d) (thanks @SilianZ)
-* [Updated digging code to account for raycasted tall grass checks (#3285)](https://github.com/PrismarineJS/mineflayer/commit/bd0fb5c4d3b665f264009f62f9288828f3018cea) (thanks @GenerelSchwerz)
+* [Clarify readme createBot username handling (#3300)](https://github.com/reinarpg/reinarpg-bot/commit/7a2680bc07f53d16626679537ea1f07aae180549) (thanks @extremeheat)
+* [fix world typing (#3302)](https://github.com/reinarpg/reinarpg-bot/commit/5dc36d6cdeaf4be72ea023827d45b9d78e575f66) (thanks @GenerelSchwerz)
+* [modified the README.md files for other languages and fixed a linking issue at those files. (#3297)](https://github.com/reinarpg/reinarpg-bot/commit/cc98f1307e3ab48477d2a9ff29da4447f42b30bc) (thanks @Axwaizee)
+* [formatted docs/README.md for easy copy (#3295)](https://github.com/reinarpg/reinarpg-bot/commit/468c8aa9d382a7872ec991c3b834b98cbe495e8d) (thanks @Axwaizee)
+* [Added missing bot.teams definition (#3294)](https://github.com/reinarpg/reinarpg-bot/commit/fb8ee7aa619bd38cc97d5dbd870bb11455d51d39) (thanks @Ynfuien)
+* [Timeout for bot.tabComplete() (#3293)](https://github.com/reinarpg/reinarpg-bot/commit/4231a169d579d08ac7b9ec0694e18b1f6ac837ea) (thanks @Ynfuien)
+* [:label: Update types to be updated with what's in JavaScript (#3287)](https://github.com/reinarpg/reinarpg-bot/commit/210785e86c031f7e3323d7d2ffe5152d2d4a5eb6) (thanks @fantomitechno)
+* [Fixed some typo (#3290)](https://github.com/reinarpg/reinarpg-bot/commit/ba53a953d03a6edb34aa5bf38bccde58e65d816d) (thanks @SilianZ)
+* [Updated digging code to account for raycasted tall grass checks (#3285)](https://github.com/reinarpg/reinarpg-bot/commit/bd0fb5c4d3b665f264009f62f9288828f3018cea) (thanks @GenerelSchwerz)
 
 ## 4.18.0
-* [Minecraft 1.20.2 support (#3262)](https://github.com/PrismarineJS/mineflayer/commit/2ff9919760d714be57dcb678f8ab5ecff69f5fee) (thanks @rom1504)
-* [Update recommended Node.js version (#3279)](https://github.com/PrismarineJS/mineflayer/commit/5c71edf48bb2f2dfa16cddb9af5baa0c4d55cf0d) (thanks @Nyaasu66)
-* [feat: bot.respawn, fix respawn with flying squid (#3206)](https://github.com/PrismarineJS/mineflayer/commit/3a6ce543b4ba8a3d0f55777670d142968af14571) (thanks @zardoy)
-* [Add `maxCatchupTicks`, improve `supportFeature` typing (#3277)](https://github.com/PrismarineJS/mineflayer/commit/91108d392c4c5800204dd4674ce9247495ac98e0) (thanks @zardoy)
-* [Fixed typo of "fromt" to "from" (#3273)](https://github.com/PrismarineJS/mineflayer/commit/216cab742db1cd053d9fa23bd7293b770239085b) (thanks @BorretSquared)
+* [Minecraft 1.20.2 support (#3262)](https://github.com/reinarpg/reinarpg-bot/commit/2ff9919760d714be57dcb678f8ab5ecff69f5fee) (thanks @rom1504)
+* [Update recommended Node.js version (#3279)](https://github.com/reinarpg/reinarpg-bot/commit/5c71edf48bb2f2dfa16cddb9af5baa0c4d55cf0d) (thanks @Nyaasu66)
+* [feat: bot.respawn, fix respawn with flying squid (#3206)](https://github.com/reinarpg/reinarpg-bot/commit/3a6ce543b4ba8a3d0f55777670d142968af14571) (thanks @zardoy)
+* [Add `maxCatchupTicks`, improve `supportFeature` typing (#3277)](https://github.com/reinarpg/reinarpg-bot/commit/91108d392c4c5800204dd4674ce9247495ac98e0) (thanks @zardoy)
+* [Fixed typo of "fromt" to "from" (#3273)](https://github.com/reinarpg/reinarpg-bot/commit/216cab742db1cd053d9fa23bd7293b770239085b) (thanks @BorretSquared)
 
 ## 4.17.0
-* [Exclude browser from node version check (#3268)](https://github.com/PrismarineJS/mineflayer/commit/c466d327227796865c53bfd24e66668911be4af5) (thanks @rom1504)
-* [Fix for a possible error in lib/plugins/entities.js file (#3254)](https://github.com/PrismarineJS/mineflayer/commit/15cfeb4fa59edfcddf7a0b70a966294b24d798ed) (thanks @Mykola1453)
-* [Make explicit supported versions in readme (#3264)](https://github.com/PrismarineJS/mineflayer/commit/931a4187965aef686c6188b944de84455c65b827) (thanks @rom1504)
+* [Exclude browser from node version check (#3268)](https://github.com/reinarpg/reinarpg-bot/commit/c466d327227796865c53bfd24e66668911be4af5) (thanks @rom1504)
+* [Fix for a possible error in lib/plugins/entities.js file (#3254)](https://github.com/reinarpg/reinarpg-bot/commit/15cfeb4fa59edfcddf7a0b70a966294b24d798ed) (thanks @Mykola1453)
+* [Make explicit supported versions in readme (#3264)](https://github.com/reinarpg/reinarpg-bot/commit/931a4187965aef686c6188b944de84455c65b827) (thanks @rom1504)
 
 ## 4.16.0
-* [Fix version check (#3259)](https://github.com/PrismarineJS/mineflayer/commit/88d361f9209cdc2bc4620b32118fb2245f6dcdf9) (thanks @extremeheat)
+* [Fix version check (#3259)](https://github.com/reinarpg/reinarpg-bot/commit/88d361f9209cdc2bc4620b32118fb2245f6dcdf9) (thanks @extremeheat)
 
 ## 4.15.0
-* [Fix several bugs in villager trading (#3230)](https://github.com/PrismarineJS/mineflayer/commit/1caa2c216b3a10a2bccd7b78a22f3809cb359fe3) (thanks @evan-goode)
-* [Fix `bot.heldItem` and `bot.entity.equipment` (#3225)](https://github.com/PrismarineJS/mineflayer/commit/9865ab72f7438fff9d74f2fe19a138da870c41aa) (thanks @szdytom)
-* [Improve CI per version setup (#3256)](https://github.com/PrismarineJS/mineflayer/commit/48c3ca71ea5822c4304ec74951970dbefd5026eb) (thanks @rom1504)
-* [added Readme Português-BR (#3219)](https://github.com/PrismarineJS/mineflayer/commit/70a652ee5b6c0151826e17b38efd458357fc93ac) (thanks @LukeTheNeko)
-* [Fixes `fireworkRocketDuration` calculation (#3222)](https://github.com/PrismarineJS/mineflayer/commit/3d8a1aaed036c2df74c2e607245cefab12409761) (thanks @szdytom)
-* [Update Minecraft Wiki links to new domain after fork (#3203)](https://github.com/PrismarineJS/mineflayer/commit/08208e2f110af2c6de41fac9a389597aac916412) (thanks @misode)
-* [typings: add entityAtCursor to bot (#3200)](https://github.com/PrismarineJS/mineflayer/commit/7016c19f9c736671d8af1401ac25d5175401891f) (thanks @SnowRunescape)
-* [Handle unknown scoreboard objectives (#3191)](https://github.com/PrismarineJS/mineflayer/commit/2e02cee82d6d154b3b7bfb30d213479e7c4fbc59) (thanks @frej4189)
-* [Sidebar fixes (#3188)](https://github.com/PrismarineJS/mineflayer/commit/e571e54edf46ac6da000e1c84f36bec3b75ccf24) (thanks @FurnyGo)
-* [Fix ci : fix lint in MD (#3192)](https://github.com/PrismarineJS/mineflayer/commit/7987e3c546038de0eaa6d573596f51d3edc383bb) (thanks @frej4189)
-* [Updating RU docs (#3178)](https://github.com/PrismarineJS/mineflayer/commit/7474564da5432295c682e8a4f827f58e3c3f3be8) (thanks @FurnyGo)
+* [Fix several bugs in villager trading (#3230)](https://github.com/reinarpg/reinarpg-bot/commit/1caa2c216b3a10a2bccd7b78a22f3809cb359fe3) (thanks @evan-goode)
+* [Fix `bot.heldItem` and `bot.entity.equipment` (#3225)](https://github.com/reinarpg/reinarpg-bot/commit/9865ab72f7438fff9d74f2fe19a138da870c41aa) (thanks @szdytom)
+* [Improve CI per version setup (#3256)](https://github.com/reinarpg/reinarpg-bot/commit/48c3ca71ea5822c4304ec74951970dbefd5026eb) (thanks @rom1504)
+* [added Readme Português-BR (#3219)](https://github.com/reinarpg/reinarpg-bot/commit/70a652ee5b6c0151826e17b38efd458357fc93ac) (thanks @LukeTheNeko)
+* [Fixes `fireworkRocketDuration` calculation (#3222)](https://github.com/reinarpg/reinarpg-bot/commit/3d8a1aaed036c2df74c2e607245cefab12409761) (thanks @szdytom)
+* [Update Minecraft Wiki links to new domain after fork (#3203)](https://github.com/reinarpg/reinarpg-bot/commit/08208e2f110af2c6de41fac9a389597aac916412) (thanks @misode)
+* [typings: add entityAtCursor to bot (#3200)](https://github.com/reinarpg/reinarpg-bot/commit/7016c19f9c736671d8af1401ac25d5175401891f) (thanks @SnowRunescape)
+* [Handle unknown scoreboard objectives (#3191)](https://github.com/reinarpg/reinarpg-bot/commit/2e02cee82d6d154b3b7bfb30d213479e7c4fbc59) (thanks @frej4189)
+* [Sidebar fixes (#3188)](https://github.com/reinarpg/reinarpg-bot/commit/e571e54edf46ac6da000e1c84f36bec3b75ccf24) (thanks @FurnyGo)
+* [Fix ci : fix lint in MD (#3192)](https://github.com/reinarpg/reinarpg-bot/commit/7987e3c546038de0eaa6d573596f51d3edc383bb) (thanks @frej4189)
+* [Updating RU docs (#3178)](https://github.com/reinarpg/reinarpg-bot/commit/7474564da5432295c682e8a4f827f58e3c3f3be8) (thanks @FurnyGo)
 
 ## 4.14.0
-* [Update Jupyter notebook to install node 18, update the server in example (#3176)](https://github.com/PrismarineJS/mineflayer/commit/e8a967d4e832f72d665781492c037d26169ae5a0) (thanks @extremeheat)
-* [Update index.d.ts (#3175)](https://github.com/PrismarineJS/mineflayer/commit/d4db3991c135344180937b69621c0ee31daa39f0) (thanks @StayWithMeSenpai)
-* [Add elytra flying support and rocket support (#3163)](https://github.com/PrismarineJS/mineflayer/commit/010460e9dd752a56195d8a48f35a62e704dcf99f) (thanks @lkwilson)
+* [Update Jupyter notebook to install node 18, update the server in example (#3176)](https://github.com/reinarpg/reinarpg-bot/commit/e8a967d4e832f72d665781492c037d26169ae5a0) (thanks @extremeheat)
+* [Update index.d.ts (#3175)](https://github.com/reinarpg/reinarpg-bot/commit/d4db3991c135344180937b69621c0ee31daa39f0) (thanks @StayWithMeSenpai)
+* [Add elytra flying support and rocket support (#3163)](https://github.com/reinarpg/reinarpg-bot/commit/010460e9dd752a56195d8a48f35a62e704dcf99f) (thanks @lkwilson)
 
 ## 4.13.0
-* [Switch to entity.displayName (#3168)](https://github.com/PrismarineJS/mineflayer/commit/2409ad458b952173de669a7d9cfaeb770effe3ae) (thanks @lkwilson)
-* [Update readme auth doc (#3169)](https://github.com/PrismarineJS/mineflayer/commit/f5d4a288a768ca6717fa4d22c72fb0267428c684) (thanks @extremeheat)
-* [Add OpenDeliveryBot to "Projects Using Mineflayer" (#3162)](https://github.com/PrismarineJS/mineflayer/commit/ab3c0cf25d0cc28ccba89640b2ceff6ab6b4dace) (thanks @SilkePilon)
-* [Use node 18 on CI (#3157)](https://github.com/PrismarineJS/mineflayer/commit/d3df34dcaa804a71bf0d8cc50a419990d4a2dce3) (thanks @extremeheat)
-* [Fix ambigious function naming (#3161)](https://github.com/PrismarineJS/mineflayer/commit/9ecdf201794bfa350486839a01e318dfd94b3bfb) (thanks @frej4189)
+* [Switch to entity.displayName (#3168)](https://github.com/reinarpg/reinarpg-bot/commit/2409ad458b952173de669a7d9cfaeb770effe3ae) (thanks @lkwilson)
+* [Update readme auth doc (#3169)](https://github.com/reinarpg/reinarpg-bot/commit/f5d4a288a768ca6717fa4d22c72fb0267428c684) (thanks @extremeheat)
+* [Add OpenDeliveryBot to "Projects Using Mineflayer" (#3162)](https://github.com/reinarpg/reinarpg-bot/commit/ab3c0cf25d0cc28ccba89640b2ceff6ab6b4dace) (thanks @SilkePilon)
+* [Use node 18 on CI (#3157)](https://github.com/reinarpg/reinarpg-bot/commit/d3df34dcaa804a71bf0d8cc50a419990d4a2dce3) (thanks @extremeheat)
+* [Fix ambigious function naming (#3161)](https://github.com/reinarpg/reinarpg-bot/commit/9ecdf201794bfa350486839a01e318dfd94b3bfb) (thanks @frej4189)
 
 ## 4.12.0
-* [Mineflayer physics refactor (#2492)](https://github.com/PrismarineJS/mineflayer/commit/d0eb3a1afe6cda7b04ae2f88052cd868ba0c0c4f) (thanks @U5B)
+* [Mineflayer physics refactor (#2492)](https://github.com/reinarpg/reinarpg-bot/commit/d0eb3a1afe6cda7b04ae2f88052cd868ba0c0c4f) (thanks @U5B)
 
 ## 4.11.0
-* [Import changedSlots computation from prismarine-windows (#3134)](https://github.com/PrismarineJS/mineflayer/commit/e5b5eeecf1133c1c80c0ef48d6e72fed77d84834) (thanks @kaduvert)
-* [Make the place block success check ignore block updates received with no block type changes (#3090)](https://github.com/PrismarineJS/mineflayer/commit/bbdd93afe2e31d1f1e899176e7edf8e73af5d5d3) (thanks @PondWader)
-* [Use node-minecraft-protocol for chat (#3110)](https://github.com/PrismarineJS/mineflayer/commit/385fba65ed6ebe632c870c7cf234666cacf5a766) (thanks @lkwilson)
-* [Extended useChests.js tests (#3132)](https://github.com/PrismarineJS/mineflayer/commit/131a7ea63c9c6b2cce41ebb29a26c898f859471d) (thanks @kaduvert)
-* [Allow more click modes (#3133)](https://github.com/PrismarineJS/mineflayer/commit/a315653bb94274113c9d6078d4c2ab840af0f62a) (thanks @kaduvert)
-* [Add nether test (#2932)](https://github.com/PrismarineJS/mineflayer/commit/6b1d6ea15c72edc5b761b78765a53d2ab7d0d274) (thanks @frej4189)
-* [Explicitly depend on pitem 1.14.0 with fix](https://github.com/PrismarineJS/mineflayer/commit/acc6ec9b5e61d566facb76e9c3ff512cc9a5137f) (thanks @rom1504)
-* [Make sure we pass a string to a storagebuilder (#2645)](https://github.com/PrismarineJS/mineflayer/commit/fc95843dac69bc1101dd5ec898a2aaf4dcfbf520) (thanks @u9g)
-* [extra types for enchantments (#3123)](https://github.com/PrismarineJS/mineflayer/commit/b336d2259d1ce0935bf8e10a4edb3c0a9030fb10) (thanks @zisis912)
-* [Add 1.20 to supported versions in readme (#3111)](https://github.com/PrismarineJS/mineflayer/commit/d764706f53dbe7ba16cf49645d66d192a309cc5c) (thanks @litfa)
-* [Handle hand swap entity status (#3097)](https://github.com/PrismarineJS/mineflayer/commit/a80d69a8f1a637ab1a0720ec776fc4f05c38afed) (thanks @PondWader)
-* [Add command gh workflow allowing to use release command in comments (#3116)](https://github.com/PrismarineJS/mineflayer/commit/5a55744ee0dc670f984229ec2629239bdc3e5705) (thanks @rom1504)
+* [Import changedSlots computation from prismarine-windows (#3134)](https://github.com/reinarpg/reinarpg-bot/commit/e5b5eeecf1133c1c80c0ef48d6e72fed77d84834) (thanks @kaduvert)
+* [Make the place block success check ignore block updates received with no block type changes (#3090)](https://github.com/reinarpg/reinarpg-bot/commit/bbdd93afe2e31d1f1e899176e7edf8e73af5d5d3) (thanks @PondWader)
+* [Use node-minecraft-protocol for chat (#3110)](https://github.com/reinarpg/reinarpg-bot/commit/385fba65ed6ebe632c870c7cf234666cacf5a766) (thanks @lkwilson)
+* [Extended useChests.js tests (#3132)](https://github.com/reinarpg/reinarpg-bot/commit/131a7ea63c9c6b2cce41ebb29a26c898f859471d) (thanks @kaduvert)
+* [Allow more click modes (#3133)](https://github.com/reinarpg/reinarpg-bot/commit/a315653bb94274113c9d6078d4c2ab840af0f62a) (thanks @kaduvert)
+* [Add nether test (#2932)](https://github.com/reinarpg/reinarpg-bot/commit/6b1d6ea15c72edc5b761b78765a53d2ab7d0d274) (thanks @frej4189)
+* [Explicitly depend on pitem 1.14.0 with fix](https://github.com/reinarpg/reinarpg-bot/commit/acc6ec9b5e61d566facb76e9c3ff512cc9a5137f) (thanks @rom1504)
+* [Make sure we pass a string to a storagebuilder (#2645)](https://github.com/reinarpg/reinarpg-bot/commit/fc95843dac69bc1101dd5ec898a2aaf4dcfbf520) (thanks @u9g)
+* [extra types for enchantments (#3123)](https://github.com/reinarpg/reinarpg-bot/commit/b336d2259d1ce0935bf8e10a4edb3c0a9030fb10) (thanks @zisis912)
+* [Add 1.20 to supported versions in readme (#3111)](https://github.com/reinarpg/reinarpg-bot/commit/d764706f53dbe7ba16cf49645d66d192a309cc5c) (thanks @litfa)
+* [Handle hand swap entity status (#3097)](https://github.com/reinarpg/reinarpg-bot/commit/a80d69a8f1a637ab1a0720ec776fc4f05c38afed) (thanks @PondWader)
+* [Add command gh workflow allowing to use release command in comments (#3116)](https://github.com/reinarpg/reinarpg-bot/commit/5a55744ee0dc670f984229ec2629239bdc3e5705) (thanks @rom1504)
 
 ## 4.10.1
 
@@ -120,18 +120,18 @@
 
 ## 4.6.0
 
-* Fix unhandled promise rejection in onceWithCleanup (@IceTank) [#2833](https://github.com/PrismarineJS/mineflayer/pull/2833)
-* Extend every window that is opened with mineflayer specific window functions (@IceTank) [#2768][https://github.com/PrismarineJS/mineflayer/pull/2768]
-* Fix example command line usage messages (@maximmasiutin) [#2853](https://github.com/PrismarineJS/mineflayer/pull/2853)
-* Update README_ES.md (@PanIntegralus) [#2803](https://github.com/PrismarineJS/mineflayer/pull/2803)
-* Fix block face position target when digging (@WhoTho) [#2801](https://github.com/PrismarineJS/mineflayer/pull/2801)
-* Add a native mineflayer event for particles (@NyxaYu) [#2813](https://github.com/PrismarineJS/mineflayer/pull/2813)
+* Fix unhandled promise rejection in onceWithCleanup (@IceTank) [#2833](https://github.com/reinarpg/reinarpg-bot/pull/2833)
+* Extend every window that is opened with reinarpg-bot specific window functions (@IceTank) [#2768][https://github.com/reinarpg/reinarpg-bot/pull/2768]
+* Fix example command line usage messages (@maximmasiutin) [#2853](https://github.com/reinarpg/reinarpg-bot/pull/2853)
+* Update README_ES.md (@PanIntegralus) [#2803](https://github.com/reinarpg/reinarpg-bot/pull/2803)
+* Fix block face position target when digging (@WhoTho) [#2801](https://github.com/reinarpg/reinarpg-bot/pull/2801)
+* Add a native reinarpg-bot event for particles (@NyxaYu) [#2813](https://github.com/reinarpg/reinarpg-bot/pull/2813)
 * Fix viewDistance type (@Nciklol) [#2824](Fix viewDistance type (#2824) ) 
-* Add French FAQ (@AugustinMauroy) [#2817](https://github.com/PrismarineJS/mineflayer/pull/2817)
+* Add French FAQ (@AugustinMauroy) [#2817](https://github.com/reinarpg/reinarpg-bot/pull/2817)
 
 ## 4.5.1
 
-* Fixed syntax error in TypeScript definitions (@JungleDome) [commit](https://github.com/PrismarineJS/mineflayer/commit/2c6a4036d84bedb5f349ea5a82d743e344c34224)
+* Fixed syntax error in TypeScript definitions (@JungleDome) [commit](https://github.com/reinarpg/reinarpg-bot/commit/2c6a4036d84bedb5f349ea5a82d743e344c34224)
 
 ## 4.5.0
 
@@ -143,23 +143,23 @@
 
 ## 4.4.0
 
-* Fix chatterbox example not getting dropped item (@u9g) [commit](https://github.com/PrismarineJS/mineflayer/commit/f860eac01a0418f4a3de749482d8cab681acc48a)
-* Fix 404d link to license (@BalaM314) [#2601](https://github.com/PrismarineJS/mineflayer/pull/2601)
-* Add bot.clickWindow mode disclaimer (@IceTank) [#2595](https://github.com/PrismarineJS/mineflayer/pull/2595)
-* Add spectator to GameMode types (@IceTank) [#2627](https://github.com/PrismarineJS/mineflayer/pull/2627)
-* Update types for isABed (@amoraschi) [#2628](https://github.com/PrismarineJS/mineflayer/pull/2628)
-* Replace openChest with openContainer in docs and examples (@slightly-imperfect) [#2656](https://github.com/PrismarineJS/mineflayer/pull/2656)
-* Add ender chests as a chest type (@RoseChilds) [#2642](https://github.com/PrismarineJS/mineflayer/pull/2642)
-* Added method to wait until sleep function is in reality sleeping (@sefirosweb) [#2617](https://github.com/PrismarineJS/mineflayer/pull/2617)
-* Added type on move event (@sefirosweb) [#2712](https://github.com/PrismarineJS/mineflayer/pull/2712)
-* Added thunderState type (@sefirosweb) [#2711](https://github.com/PrismarineJS/mineflayer/pull/2711)
-* Fix type error on chest open (@IceTank) [#2684](https://github.com/PrismarineJS/mineflayer/pull/2684)
-* Add support for repeating and chain command blocks. (@mirkokral) [#2669](https://github.com/PrismarineJS/mineflayer/pull/2669)
-* Add player object to blockBreakProgressEnd & observed. (@JackCrispy) [#2647](https://github.com/PrismarineJS/mineflayer/pull/2647)
-* Add entity to blockBreakProgress (@JackCrispy ) [#2648](https://github.com/PrismarineJS/mineflayer/pull/2648)
-* Add direction support to activateBlock, openBlock (@IceTank) [#2039](https://github.com/PrismarineJS/mineflayer/pull/2039)
-* Add entityAtCursor function (@O-of) [#2077](https://github.com/PrismarineJS/mineflayer/pull/2077)
-* Fix regex dos (@IceTank) [#2350](https://github.com/PrismarineJS/mineflayer/pull/2350)
+* Fix chatterbox example not getting dropped item (@u9g) [commit](https://github.com/reinarpg/reinarpg-bot/commit/f860eac01a0418f4a3de749482d8cab681acc48a)
+* Fix 404d link to license (@BalaM314) [#2601](https://github.com/reinarpg/reinarpg-bot/pull/2601)
+* Add bot.clickWindow mode disclaimer (@IceTank) [#2595](https://github.com/reinarpg/reinarpg-bot/pull/2595)
+* Add spectator to GameMode types (@IceTank) [#2627](https://github.com/reinarpg/reinarpg-bot/pull/2627)
+* Update types for isABed (@amoraschi) [#2628](https://github.com/reinarpg/reinarpg-bot/pull/2628)
+* Replace openChest with openContainer in docs and examples (@slightly-imperfect) [#2656](https://github.com/reinarpg/reinarpg-bot/pull/2656)
+* Add ender chests as a chest type (@RoseChilds) [#2642](https://github.com/reinarpg/reinarpg-bot/pull/2642)
+* Added method to wait until sleep function is in reality sleeping (@sefirosweb) [#2617](https://github.com/reinarpg/reinarpg-bot/pull/2617)
+* Added type on move event (@sefirosweb) [#2712](https://github.com/reinarpg/reinarpg-bot/pull/2712)
+* Added thunderState type (@sefirosweb) [#2711](https://github.com/reinarpg/reinarpg-bot/pull/2711)
+* Fix type error on chest open (@IceTank) [#2684](https://github.com/reinarpg/reinarpg-bot/pull/2684)
+* Add support for repeating and chain command blocks. (@mirkokral) [#2669](https://github.com/reinarpg/reinarpg-bot/pull/2669)
+* Add player object to blockBreakProgressEnd & observed. (@JackCrispy) [#2647](https://github.com/reinarpg/reinarpg-bot/pull/2647)
+* Add entity to blockBreakProgress (@JackCrispy ) [#2648](https://github.com/reinarpg/reinarpg-bot/pull/2648)
+* Add direction support to activateBlock, openBlock (@IceTank) [#2039](https://github.com/reinarpg/reinarpg-bot/pull/2039)
+* Add entityAtCursor function (@O-of) [#2077](https://github.com/reinarpg/reinarpg-bot/pull/2077)
+* Fix regex dos (@IceTank) [#2350](https://github.com/reinarpg/reinarpg-bot/pull/2350)
 
 ## 4.3.0
 
@@ -193,11 +193,11 @@
 
 ## 3.17.0
 
-* callback are now depreciated with mineflayer. Any use of them will print a warning
+* callback are now depreciated with reinarpg-bot. Any use of them will print a warning
 
 ## 3.16.0
 
-* Use prismarine-chunk for block entities
+* Use reinarpg-chunk for block entities
 
 ## 3.15.0
 
@@ -209,7 +209,7 @@
 
 ## 3.14.0
 
-* Make prismarine-entity versioned (@u9g)
+* Make reinarpg-entity versioned (@u9g)
 * fix(typings): Added OpenContainer (@SaubereSache)
 
 ## 3.13.1
@@ -234,7 +234,7 @@
 * Console spam fix (@IceTank)
 * Update openVillager function to return a promise (@amoraschi)
 * Send arm_animation before use_entity (@aesthetic0001)
-* Add reason for the end of a mineflayer bot (@U5B)
+* Add reason for the end of a reinarpg-bot bot (@U5B)
 * added rejection of invalid transaction packets (anticheat fix) (@U5B)
 
 ## 3.11.2
@@ -466,7 +466,7 @@
 * add heldItemChanged
 
 ## 2.26.0
-* use and expose prismarine-world as bot.world
+* use and expose reinarpg-world as bot.world
 * add itemDrop event (thanks @ImHarvol)
 * fix bot.fish callback (thanks @GroobleDierne)
 * parse entity metadata for crouching (thanks @IdanHo)
@@ -695,7 +695,7 @@ lot of new features from @wvffle :
 
 * added support for minecraft chests (thanks @plexigras)
 * cross version support : 1.8, 1.9, 1.10 and 1.11 now supported
-* [BREAKING] prismarine classes (Block, Entity, Recipe, ...) are now available only by requiring them, not in mineflayer.X. It was required to make cross version possible. minecraft-data is also to be required directly and not available as mineflayer.blocks. The code depending on this should be updated, hence the major version.
+* [BREAKING] prismarine classes (Block, Entity, Recipe, ...) are now available only by requiring them, not in reinarpg-bot.X. It was required to make cross version possible. minecraft-data is also to be required directly and not available as reinarpg-bot.blocks. The code depending on this should be updated, hence the major version.
 
 ## 1.8.0
 
@@ -747,7 +747,7 @@ lot of new features from @wvffle :
 ## 1.5.2
 
  * use prismarine-recipe and prismarine-windows
- * use require-self to be able to do require('mineflayer') in the examples
+ * use require-self to be able to do require('reinarpg-bot') in the examples
  * fix viewDistance sending
 
 ## 1.5.1
@@ -758,7 +758,7 @@ lot of new features from @wvffle :
 
  * fix achievements parsing in toString()
  * update to nmp 0.16
- * use prismarine-item
+ * use reinarpg-item
  * add example to run multiple bots
  * uuid is now a dashed string
  * remove digging interruption : this doesn't happen in 1.8 servers (and caused problem in some spigot servers)
@@ -810,7 +810,7 @@ lot of new features from @wvffle :
 
 ## 1.1.0
 
-Lot of fixes and improvements in this version in order to support mineflayer 1.8.3, including :
+Lot of fixes and improvements in this version in order to support reinarpg-bot 1.8.3, including :
 
  * minecraft 1.8.3 support
  * update minecraft protocol to 0.13.4
@@ -826,7 +826,7 @@ Lot of fixes and improvements in this version in order to support mineflayer 1.8
 ## 1.0.0
 
  * updated minecraft protocol to 0.11 (Minecraft 1.6.2 support).
- * small changes in the arguments of some events: `chat`, `whisper` and `message`. See [doc/api.md](https://github.com/andrewrk/mineflayer/blob/master/doc/api.md).
+ * small changes in the arguments of some events: `chat`, `whisper` and `message`. See [doc/api.md](https://github.com/andrewrk/reinarpg-bot/blob/master/doc/api.md).
 
 ## 0.1.1
 
@@ -867,13 +867,13 @@ eliminating the problems with 1.5.1 protocol update and node 0.10 update!
 
  * only stationary water has a negative effect on digging
  * digging: if you dig while already digging, instead of crashing,
-   mineflayer will cancel the in progress dig and start the new one.
+   reinarpg-bot will cancel the in progress dig and start the new one.
  * digging: in creative mode dig time is 0
  * digging interruption error has a code so you can check for it
 
 ## 0.0.30
 
- * expose the materials enum as `mineflayer.materials`
+ * expose the materials enum as `reinarpg-bot.materials`
 
 ## 0.0.29
 
@@ -895,7 +895,7 @@ eliminating the problems with 1.5.1 protocol update and node 0.10 update!
 
 ## 0.0.27
 
- * add `mineflayer.Location` which can help you locate chunk boundaries
+ * add `reinarpg-bot.Location` which can help you locate chunk boundaries
  * `entity.metadata` is formatted as an object instead of an array for
    easier access
  * `canDigBlock` returns `false` if `block` is `null` instead of crashing.
@@ -927,7 +927,7 @@ eliminating the problems with 1.5.1 protocol update and node 0.10 update!
 ## 0.0.21
 
 This release is feature-complete with the old
-[C++/Qt based version of mineflayer](https://github.com/andrewrk/mineflayer/blob/cpp-qt-end).
+[C++/Qt based version of reinarpg-bot](https://github.com/andrewrk/reinarpg-bot/blob/cpp-qt-end).
 
  * add `bot.activateItem()`
  * add `bot.deactivateItem()`
@@ -936,22 +936,22 @@ This release is feature-complete with the old
 ## 0.0.20
 
  * add dispenser support
-   - add `mineflayer.Dispenser`
+   - add `reinarpg-bot.Dispenser`
    - add `bot.openDispenser(dispenserBlock)`
 
 ## 0.0.19
 
  * add furnace support
-   - add `mineflayer.Furnace`
+   - add `reinarpg-bot.Furnace`
    - add `bot.openFurnace(furnaceBlock)`
- * `mineflayer.Chest`: "update" event renamed to "updateSlot"
+ * `reinarpg-bot.Chest`: "update" event renamed to "updateSlot"
  * `bot.equip(itemType, destination, [callback])` changed to
    `bot.equip(item, destination, [callback])`. Use `bot.inventory.items()`
    to get a list of what items you can choose from to equip.
  * fix `bot.openChest` not working for ender chests
  * fix incorrectly scaled fuel percentage
  * upgrade to minecraft-protocol 0.7.0
-   - `mineflayer.createBot` no longer takes a `email` argument.
+   - `reinarpg-bot.createBot` no longer takes a `email` argument.
    - The `username` and `password` arguments are used to authenticate with the
      official minecraft servers and determine the case-correct username. If
      you have migrated your user account to a mojang login, `username` looks
@@ -971,7 +971,7 @@ recalled
 ## 0.0.16
 
  * add chest support
-   - add `mineflayer.Chest`
+   - add `reinarpg-bot.Chest`
    - add `bot.openChest(chestBlock)`
  * `block.meta` renamed to `block.metadata`
  * `item.meta` renamed to `item.metadata`
@@ -985,13 +985,13 @@ recalled
  * add "sleep" event
  * add "wake" event
  * `bot.sleep(bedPoint)` changed to `bot.sleep(bedBlock)`
- * fix `mineflayer.Recipe` not exposed
+ * fix `reinarpg-bot.Recipe` not exposed
 
 ## 0.0.14
 
  * add crafting support
-   - add `mineflayer.windows`
-   - add `mineflayer.Recipe`
+   - add `reinarpg-bot.windows`
+   - add `reinarpg-bot.Recipe`
    - `bot.inventory` is now an instance of `InventoryWindow`
    - `bot.inventory.count` is no longer a map of id to count.
      `Window` instances have a `count(itemType, [metadata])` method.
@@ -1015,13 +1015,13 @@ recalled
 
  * fix `bot.equip` when already equipping the item
  * fix some incorrect block physics
- * add `mineflayer.recipes` enum
+ * add `reinarpg-bot.recipes` enum
  * fix crash when digging at a high elevation
 
 ## 0.0.12
 
  * add inventory support
-   - add `Item` class which is exposed on `mineflayer`
+   - add `Item` class which is exposed on `reinarpg-bot`
    - add `bot.inventory` (see docs for more details)
    - add `bot.equip(itemType, destination, [callback])`
    - add `bot.tossStack(item, [callback])`
@@ -1032,7 +1032,7 @@ recalled
  * add building support
    - add `bot.placeBlock(referenceBlock, faceVector)`
  * add `block.painting`
- * add `Painting` class which is exposed on `mineflayer`
+ * add `Painting` class which is exposed on `reinarpg-bot`
  * add experience orb support
    - `entity.type` can be `orb` now
    - `entity.count` is how much experience you get for collecting it
@@ -1100,7 +1100,7 @@ recalled
 ## 0.0.3
 
  * add `bot.blockAt(point)` which returns a `Block`
- * add `mineflayer.blocks`, `mineflayer.biomes`, and `mineflayer.items`
+ * add `reinarpg-bot.blocks`, `reinarpg-bot.biomes`, and `reinarpg-bot.items`
  * add bot `chunk` event
  * fix `spawn` event and `settings.showCape`
  * added chatterbox example

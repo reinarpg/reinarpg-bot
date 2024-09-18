@@ -1,7 +1,7 @@
-const mineflayer = require('mineflayer') // eslint-disable-line
+const reinarpg-bot = require('reinarpg-bot') // eslint-disable-line
 
 /**
- * @param {mineflayer.Bot} bot // to enable intellisense
+ * @param {reinarpg-bot.Bot} bot // to enable intellisense
  */
 
 module.exports = bot => {

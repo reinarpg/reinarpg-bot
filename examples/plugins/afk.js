@@ -1,6 +1,6 @@
 /*
-  Make a function that is exported, this will be the "inject function", which is called when loading the plugin into mineflayer.
-  You can load this plugin into mineflayer in three ways:
+  Make a function that is exported, this will be the "inject function", which is called when loading the plugin into reinarpg-bot.
+  You can load this plugin into reinarpg-bot in three ways:
 
   1.
   ```

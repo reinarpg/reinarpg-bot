@@ -14,7 +14,7 @@
     - [mcdata.entities](#mcdataentities)
   - [Classes](#classes)
     - [vec3](#vec3)
-    - [mineflayer.Location](#mineflayerlocation)
+    - [reinarpg-bot.Location](#mineflayerlocation)
     - [Entity](#entity)
     - [Block](#block)
     - [Biome](#biome)
@@ -24,8 +24,8 @@
       - [window.withdraw(itemType, metadata, count, [callback])](#windowwithdrawitemtype-metadata-count-callback)
       - [window.close()](#windowclose)
     - [Recipe](#recipe)
-    - [mineflayer.Container](#mineflayercontainer)
-    - [mineflayer.Furnace](#mineflayerfurnace)
+    - [reinarpg-bot.Container](#mineflayercontainer)
+    - [reinarpg-bot.Furnace](#mineflayerfurnace)
       - [furnace "update"](#furnace-update)
       - [furnace.takeInput([callback])](#furnacetakeinputcallback)
       - [furnace.takeFuel([callback])](#furnacetakefuelcallback)
@@ -37,7 +37,7 @@
       - [furnace.outputItem()](#furnaceoutputitem)
       - [furnace.fuel](#furnacefuel)
       - [furnace.progress](#furnaceprogress)
-    - [mineflayer.EnchantmentTable](#mineflayerenchantmenttable)
+    - [reinarpg-bot.EnchantmentTable](#mineflayerenchantmenttable)
       - [enchantmentTable "ready"](#enchantmenttable-ready)
       - [enchantmentTable.targetItem()](#enchantmenttabletargetitem)
       - [enchantmentTable.xpseed](#enchantmenttablexpseed)
@@ -46,18 +46,18 @@
       - [enchantmentTable.takeTargetItem([callback])](#enchantmenttabletaketargetitemcallback)
       - [enchantmentTable.putTargetItem(item, [callback])](#enchantmenttableputtargetitemitem-callback)
       - [enchantmentTable.putLapis(item, [callback])](#enchantmenttableputlapisitem-callback)
-    - [mineflayer.anvil](#mineflayeranvil)
+    - [reinarpg-bot.anvil](#mineflayeranvil)
       - [anvil.combine(itemOne, itemTwo[, name, callback])](#anvilcombineitemone-itemtwo-name-callback)
       - [anvil.combine(item[, name, callback])](#anvilcombineitem-name-callback)
       - [villager "ready"](#villager-ready)
       - [villager.trades](#villagertrades)
       - [villager.trade(tradeIndex, [times], [cb])](#villagertradetradeindex-times-cb)
-    - [mineflayer.ScoreBoard](#mineflayerscoreboard)
+    - [reinarpg-bot.ScoreBoard](#mineflayerscoreboard)
       - [ScoreBoard.name](#scoreboardname)
       - [ScoreBoard.title](#scoreboardtitle)
       - [ScoreBoard.itemsMap](#scoreboarditemsmap)
       - [ScoreBoard.items](#scoreboarditems)
-    - [mineflayer.Team](#mineflayerteam)
+    - [reinarpg-bot.Team](#mineflayerteam)
       - [Team.name](#teamname)
       - [Team.friendlyFire](#teamfriendlyfire)
       - [Team.nameTagVisibility](#teamnametagvisibility)
@@ -66,7 +66,7 @@
       - [Team.prefix](#teamprefix)
       - [Team.suffix](#teamsuffix)
       - [Team.members](#teammembers)
-    - [mineflayer.BossBar](#mineflayerbossbar)
+    - [reinarpg-bot.BossBar](#mineflayerbossbar)
       - [BossBar.title](#bossbartitle)
       - [BossBar.health](#bossbarhealth)
       - [BossBar.dividers](#bossbardividers)
@@ -76,7 +76,7 @@
       - [BossBar.createFog](#bossbarcreatefog)
       - [BossBar.color](#bossbarcolor)
   - [Bot](#bot)
-    - [mineflayer.createBot(options)](#mineflayercreatebotoptions)
+    - [reinarpg-bot.createBot(options)](#mineflayercreatebotoptions)
     - [Properties](#properties)
       - [bot.world](#botworld)
         - [world "blockUpdate" (oldBlock, newBlock)](#world-blockupdate-oldblock-newblock)
@@ -369,7 +369,7 @@ entities indexed by id
 
 See [andrewrk/node-vec3](https://github.com/andrewrk/node-vec3)
 
-All points in mineflayer are supplied as instances of this class.
+All points in reinarpg-bot are supplied as instances of this class.
 
  * x - south
  * y - up
@@ -379,18 +379,18 @@ Functions and methods which require a point argument accept `Vec3` instances
 as well as an array with 3 values, and an object with `x`, `y`, and `z`
 properties.
 
-### mineflayer.Location
+### reinarpg-bot.Location
 
 ### Entity
 
 实体表示玩家、怪物和对象.
 
 它们在许多事件中被触发, 您可以使用 `bot.entity`.访问自己的实体
-见 [prismarine-entity](https://github.com/PrismarineJS/prismarine-entity)
+见 [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity)
 
 ### Block
 
-See [prismarine-block](https://github.com/PrismarineJS/prismarine-block)
+See [reinarpg-block](https://github.com/PrismarineJS/reinarpg-block)
 
 Also `block.blockEntity` is additional field with block entity data as `Object`
 ```js
@@ -413,7 +413,7 @@ See [prismarine-biome](https://github.com/PrismarineJS/prismarine-biome)
 
 ### Item
 
-See [prismarine-item](https://github.com/PrismarineJS/prismarine-item)
+See [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item)
 
 ### windows.Window (base class)
 
@@ -443,12 +443,12 @@ This function also returns a `Promise`, with `void` as its argument upon complet
 
 See [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe)
 
-### mineflayer.Container
+### reinarpg-bot.Container
 
 Extends windows.Window for chests, dispensers, etc...
 See `bot.openContainer(chestBlock or minecartchestEntity)`.
 
-### mineflayer.Furnace
+### reinarpg-bot.Furnace
 
 Extends windows.Window for furnace, smelter, etc...
 See `bot.openFurnace(furnaceBlock)`.
@@ -503,7 +503,7 @@ How much fuel is left between 0 and 1.
 
 How much cooked the input is between 0 and 1.
 
-### mineflayer.EnchantmentTable
+### reinarpg-bot.EnchantmentTable
 
 Extends windows.Window for enchantment tables
 See `bot.openEnchantmentTable(enchantmentTableBlock)`.
@@ -568,7 +568,7 @@ This function also returns a `Promise`, with `void` as its argument upon complet
 
  * `callback(err)`
 
-### mineflayer.anvil
+### reinarpg-bot.anvil
 
 Extends windows.Window for anvils
 See `bot.openAnvil(anvilBlock)`.
@@ -630,7 +630,7 @@ Looks like:
 #### villager.trade(tradeIndex, [times], [cb])
 Is the same as [bot.trade(villagerInstance, tradeIndex, [times], [cb])](#bottradevillagerinstance-tradeindex-times-cb)
 
-### mineflayer.ScoreBoard
+### reinarpg-bot.ScoreBoard
 
 #### ScoreBoard.name
 
@@ -660,7 +660,7 @@ Is the same as [bot.trade(villagerInstance, tradeIndex, [times], [cb])](#bottrad
 ]
 ```
 
-### mineflayer.Team
+### reinarpg-bot.Team
 
 #### Team.name
 
@@ -692,7 +692,7 @@ Color (or formatting) name of team, 如 `dark_green`, `red`, `underlined`
 
 Array of team members. Usernames for players and UUIDs for other entities.
 
-### mineflayer.BossBar
+### reinarpg-bot.BossBar
 
 #### BossBar.title
 
@@ -728,7 +728,7 @@ Determines what color the boss bar color is,  `pink`, `blue`, `red`, `green`, `y
 
 ## Bot
 
-### mineflayer.createBot(options)
+### reinarpg-bot.createBot(options)
 
 创建并返回bot类的实例。
 `options` 是包含可选属性的对象 :
@@ -765,7 +765,7 @@ Determines what color the boss bar color is,  `pink`, `blue`, `red`, `green`, `y
 
 #### bot.world
 
-A sync representation of the world. 查看以下位置的文档： http://github.com/PrismarineJS/prismarine-world
+A sync representation of the world. 查看以下位置的文档： http://github.com/PrismarineJS/reinarpg-world
 
 ##### world "blockUpdate" (oldBlock, newBlock)
 
@@ -800,7 +800,7 @@ Bot自己的实体. 见 `Entity`.
 
 #### bot.heldItem
 
-机器人手中的物品, represented as a [prismarine-item](https://github.com/PrismarineJS/prismarine-item) instance specified with arbitrary metadata, nbtdata, etc.
+机器人手中的物品, represented as a [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) instance specified with arbitrary metadata, nbtdata, etc.
 
 #### bot.usingHeldItem
 
@@ -1651,7 +1651,7 @@ function somePlugin (bot, options) {
   bot.myPlugin.someFunction = someFunction
 }
 
-const bot = mineflayer.createBot({})
+const bot = reinarpg-bot.createBot({})
 bot.loadPlugin(somePlugin)
 bot.once('login', function () {
   bot.myPlugin.someFunction() // Yay!
@@ -2007,7 +2007,7 @@ All options attributes are false by default, except mode which is 2 (as to repli
 
 This can be used to check is a specific feature is available in the current Minecraft version. This is usually only required for handling version-specific functionality.
 
-The list of available features can be found inside the [./lib/features.json](https://github.com/PrismarineJS/mineflayer/blob/master/lib/features.json) file.
+The list of available features can be found inside the [./lib/features.json](https://github.com/reinarpg/reinarpg-bot/blob/master/lib/features.json) file.
 
 #### bot.waitForTicks(ticks)
 
@@ -2101,7 +2101,7 @@ Gives the bot the specified item in the specified inventory slot.
 If called twice on the same slot before first callback exceeds, first callback will have an error parameter
 
  * `slot` is in inventory window coordinates (where 36 is the first quickbar slot, etc.).
- * `item` is a [prismarine-item](https://github.com/PrismarineJS/prismarine-item) instance specified with arbitrary metadata, nbtdata, etc.
+ * `item` is a [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) instance specified with arbitrary metadata, nbtdata, etc.
     If `item` is `null`, the item at the specified slot is deleted.
  * `callback(err)` (optional) is a callback which gets fired when the servers sets the slot
 

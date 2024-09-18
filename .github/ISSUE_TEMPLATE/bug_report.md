@@ -7,10 +7,10 @@ assignees: ''
 
 ---
 
-- [ ] The [FAQ](https://github.com/PrismarineJS/mineflayer/blob/master/docs/FAQ.md) doesn't contain a resolution to my issue 
+- [ ] The [FAQ](https://github.com/reinarpg/reinarpg-bot/blob/master/docs/FAQ.md) doesn't contain a resolution to my issue 
 
 ## Versions
- - mineflayer: #.#.#
+ - reinarpg-bot: #.#.#
  - server: vanilla/spigot/paper #.#.#
  - node: #.#.#
 

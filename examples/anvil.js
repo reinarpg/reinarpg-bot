@@ -1,5 +1,5 @@
 /**
- * This example demonstrates how to use anvils w/ mineflayer
+ * This example demonstrates how to use anvils w/ reinarpg-bot
  *  the options are: (<Option> are required, [<Option>] are optional)
  * 1. "anvil combine <itemName1> <itemName2> [<name>]"
  * 2. "anvil rename <itemName> <name>"
@@ -15,14 +15,14 @@
  * say xp
  * say anvil combine diamond_sword enchanted_book
  */
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 
 if (process.argv.length < 4 || process.argv.length > 6) {
   console.log('Usage : node anvil.js <host> <port> [<name>] [<password>]')
   process.exit(1)
 }
 
-const bot = mineflayer.createBot({
+const bot = reinarpg-bot.createBot({
   host: process.argv[2],
   port: parseInt(process.argv[3]),
   username: process.argv[4] ? process.argv[4] : 'anvilman',

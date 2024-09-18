@@ -1,16 +1,16 @@
 /* eslint-env mocha */
 
-const mineflayer = require('../')
+const reinarpg-bot = require('../')
 const vec3 = require('vec3')
 const mc = require('minecraft-protocol')
 const assert = require('assert')
 const { sleep } = require('../lib/promise_utils')
 const nbt = require('prismarine-nbt')
 
-for (const supportedVersion of mineflayer.testedVersions) {
+for (const supportedVersion of reinarpg-bot.testedVersions) {
   const registry = require('prismarine-registry')(supportedVersion)
   const version = registry.version
-  const Chunk = require('prismarine-chunk')(supportedVersion)
+  const Chunk = require('reinarpg-chunk')(supportedVersion)
   const hasSignedChat = registry.supportFeature('signedChat')
 
   function chatText (text) {
@@ -59,7 +59,7 @@ for (const supportedVersion of mineflayer.testedVersions) {
         port: 25567
       })
       server.on('listening', () => {
-        bot = mineflayer.createBot({
+        bot = reinarpg-bot.createBot({
           username: 'player',
           version: supportedVersion,
           port: 25567
@@ -891,9 +891,9 @@ for (const supportedVersion of mineflayer.testedVersions) {
 
       const zombieId = entities.zombie ? entities.zombie.id : entities.Zombie.id
       let bedBlock
-      if (mineflayer.supportFeature('oneBlockForSeveralVariations', version.majorVersion)) {
+      if (reinarpg-bot.supportFeature('oneBlockForSeveralVariations', version.majorVersion)) {
         bedBlock = blocks.bed
-      } else if (mineflayer.supportFeature('blockSchemeIsFlat', version.majorVersion)) {
+      } else if (reinarpg-bot.supportFeature('blockSchemeIsFlat', version.majorVersion)) {
         bedBlock = blocks.red_bed
       }
       const bedId = bedBlock.id
@@ -927,7 +927,7 @@ for (const supportedVersion of mineflayer.testedVersions) {
           chunk.setBlockType(beds[bed].foot, bedId)
         }
 
-        if (mineflayer.supportFeature('blockStateId', version.majorVersion)) {
+        if (reinarpg-bot.supportFeature('blockStateId', version.majorVersion)) {
           chunk.setBlockStateId(beds[0].foot, 3 + bedBlock.minStateId) // { facing: north, occupied: false, part: foot }
           chunk.setBlockStateId(beds[0].head, 2 + bedBlock.minStateId) // { facing:north, occupied: false, part: head }
 
@@ -939,7 +939,7 @@ for (const supportedVersion of mineflayer.testedVersions) {
 
           chunk.setBlockStateId(beds[3].foot, 11 + bedBlock.minStateId) // { facing: west, occupied: false, part: foot }
           chunk.setBlockStateId(beds[3].head, 10 + bedBlock.minStateId) // { facing: west, occupied: false, part: head }
-        } else if (mineflayer.supportFeature('blockMetadata', version.majorVersion)) {
+        } else if (reinarpg-bot.supportFeature('blockMetadata', version.majorVersion)) {
           chunk.setBlockData(beds[0].foot, 2) // { facing: north, occupied: false, part: foot }
           chunk.setBlockData(beds[0].head, 10) // { facing:north, occupied: false, part: head }
 

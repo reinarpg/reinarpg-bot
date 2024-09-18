@@ -1,6 +1,6 @@
 // This example describes how to login using a launcher_profiles folder instead of a usual minecraft username & password
 
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 const path = require('path')
 
 if (process.argv.length !== 5) {
@@ -21,7 +21,7 @@ const session = {
   }
 }
 
-const bot = mineflayer.createBot({
+const bot = reinarpg-bot.createBot({
   host: process.argv[2],
   port: parseInt(process.argv[3]),
   session

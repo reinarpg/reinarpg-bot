@@ -1,5 +1,5 @@
 /*
- * This example is an easy way to connect mineflayer to the node:readline module
+ * This example is an easy way to connect reinarpg-bot to the node:readline module
  * See: https://nodejs.org/api/readline.html
  * Using this, we can make a simple terminal-to-ingame-chat interface
  *
@@ -11,7 +11,7 @@ if (process.argv.length < 4 || process.argv.length > 6) {
   process.exit(1)
 }
 
-const mineflayer = require('mineflayer') // load mineflayer library
+const reinarpg-bot = require('reinarpg-bot') // load reinarpg-bot library
 const readline = require('node:readline') // load the node.js readline module
 
 // bot options
@@ -22,7 +22,7 @@ const options = {
   auth: process.argv[5] || 'offline'
 }
 
-const bot = mineflayer.createBot(options) // join the minecraft server
+const bot = reinarpg-bot.createBot(options) // join the minecraft server
 
 const rl = readline.createInterface({ // creates our readline interface with our console as input and output
   input: process.stdin,

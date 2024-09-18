@@ -1,9 +1,9 @@
 # Mineflayer
 
-[![NPM version](https://img.shields.io/npm/v/mineflayer.svg?color=success&label=npm%20package&logo=npm)](https://www.npmjs.com/package/mineflayer)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/PrismarineJS/mineflayer/ci.yml.svg?label=CI&logo=github&logoColor=lightgrey)](https://github.com/PrismarineJS/mineflayer/actions?query=workflow%3A%22CI%22)
-[![Try it on gitpod](https://img.shields.io/static/v1.svg?label=try&message=on%20gitpod&color=brightgreen&logo=gitpod)](https://gitpod.io/#https://github.com/PrismarineJS/mineflayer)
-[![Open In Colab](https://img.shields.io/static/v1.svg?label=open&message=on%20colab&color=blue&logo=google-colab)](https://colab.research.google.com/github/PrismarineJS/mineflayer/blob/master/docs/mineflayer.ipynb)
+[![NPM version](https://img.shields.io/npm/v/reinarpg-bot.svg?color=success&label=npm%20package&logo=npm)](https://www.npmjs.com/package/reinarpg-bot)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/reinarpg/reinarpg-bot/ci.yml.svg?label=CI&logo=github&logoColor=lightgrey)](https://github.com/reinarpg/reinarpg-bot/actions?query=workflow%3A%22CI%22)
+[![Try it on gitpod](https://img.shields.io/static/v1.svg?label=try&message=on%20gitpod&color=brightgreen&logo=gitpod)](https://gitpod.io/#https://github.com/reinarpg/reinarpg-bot)
+[![Open In Colab](https://img.shields.io/static/v1.svg?label=open&message=on%20colab&color=blue&logo=google-colab)](https://colab.research.google.com/github/reinarpg/reinarpg-bot/blob/master/docs/reinarpg-bot.ipynb)
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/PrismarineJS)](https://github.com/sponsors/PrismarineJS)
 
 [![Official Discord](https://img.shields.io/static/v1.svg?label=OFFICIAL&message=DISCORD&color=blue&logo=discord&style=for-the-badge)](https://discord.gg/GsEFRM8)
@@ -13,7 +13,7 @@
 
 Create Minecraft bots with a powerful, stable, and high level JavaScript [API](api.md), also usable from Python.
 
-First time using Node.js? You may want to start with the [tutorial](tutorial.md). Know Python? Checkout some [Python examples](https://github.com/PrismarineJS/mineflayer/tree/master/examples/python) and try out [Mineflayer on Google Colab](https://colab.research.google.com/github/PrismarineJS/mineflayer/blob/master/docs/mineflayer.ipynb).
+First time using Node.js? You may want to start with the [tutorial](tutorial.md). Know Python? Checkout some [Python examples](https://github.com/reinarpg/reinarpg-bot/tree/master/examples/python) and try out [Mineflayer on Google Colab](https://colab.research.google.com/github/reinarpg/reinarpg-bot/blob/master/docs/reinarpg-bot.ipynb).
 
 ## Features
 
@@ -31,17 +31,17 @@ First time using Node.js? You may want to start with the [tutorial](tutorial.md)
 
 ### Roadmap
 
- Checkout [this page](https://github.com/PrismarineJS/mineflayer/wiki/Big-Prismarine-projects) to see what our current projects are.
+ Checkout [this page](https://github.com/reinarpg/reinarpg-bot/wiki/Big-Prismarine-projects) to see what our current projects are.
 
 ## Installation
 
 First install Node.js >= 18 from [nodejs.org](https://nodejs.org/) then:
 
 ```bash
-npm install mineflayer
+npm install reinarpg-bot
 ```
 
-To update mineflayer (or any Node.js) package and its dependencies, use 
+To update reinarpg-bot (or any Node.js) package and its dependencies, use 
 ```bash
 npm update
 ```
@@ -50,11 +50,11 @@ npm update
 
 | link | description |
 |---|---|
-|[tutorial](tutorial.md) | Begin with Node.js and mineflayer |
+|[tutorial](tutorial.md) | Begin with Node.js and reinarpg-bot |
 | [FAQ.md](FAQ.md) | Got a question ? go there first |
 | **[api.md](api.md)** <br/>[unstable_api.md](unstable_api.md) | The full API reference |
-| [history.md](history.md) | The changelog for mineflayer |
-| [examples/](https://github.com/PrismarineJS/mineflayer/tree/master/examples) | Checkout all the mineflayer examples |
+| [history.md](history.md) | The changelog for reinarpg-bot |
+| [examples/](https://github.com/reinarpg/reinarpg-bot/tree/master/examples) | Checkout all the reinarpg-bot examples |
 
 
 ## Contribute
@@ -81,9 +81,9 @@ Without auth specified, the mojang auth style will be guessed.
 
 ### Echo Example
 ```js
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 
-const bot = mineflayer.createBot({
+const bot = reinarpg-bot.createBot({
   host: 'localhost', // minecraft server ip
   username: 'Bot', // username to join as if auth is `offline`, else a unique identifier for this account. Switch if you want to change accounts
   auth: 'microsoft' // for offline mode servers, you can set this to 'offline'
@@ -113,7 +113,7 @@ For more information on bot options see node-minecraft-protocol's [API doc](http
 To join a Realm that your Minecraft account has been invited to, you can pass a `realms` object with a selector function like below.
 
 ```js
-const client = mineflayer.createBot({
+const client = reinarpg-bot.createBot({
   username: 'email@example.com', // minecraft username
   realms: {
     // This function is called with an array of Realms the account can join. It should return the one it wants to join.
@@ -128,7 +128,7 @@ const client = mineflayer.createBot({
 Thanks to the [prismarine-viewer](https://github.com/PrismarineJS/prismarine-viewer) project, it's possible to display in a browser window what your bot is doing.
 Just run `npm install prismarine-viewer` and add this to your bot:
 ```js
-const { mineflayer: mineflayerViewer } = require('prismarine-viewer')
+const { reinarpg-bot: mineflayerViewer } = require('prismarine-viewer')
 bot.once('spawn', () => {
   mineflayerViewer(bot, { port: 3007, firstPerson: true }) // port is the minecraft server port, if first person is false, you get a bird's-eye view
 })
@@ -141,21 +141,21 @@ And you'll get a *live* view looking like this:
 
 | example | description |
 |---|---|
-|[viewer](https://github.com/PrismarineJS/mineflayer/tree/master/examples/viewer) | Display your bot world view in the browser |
-|[pathfinder](https://github.com/PrismarineJS/mineflayer/tree/master/examples/pathfinder) | Make your bot go to any location automatically |
-|[chest](https://github.com/PrismarineJS/mineflayer/blob/master/examples/chest.js) | Use chests, furnaces, dispensers, enchantment tables |
-|[digger](https://github.com/PrismarineJS/mineflayer/blob/master/examples/digger.js) | Learn how to create a simple bot that is capable of digging blocks |
-|[discord](https://github.com/PrismarineJS/mineflayer/blob/master/examples/discord.js) | Connect a discord bot with a mineflayer bot |
-|[jumper](https://github.com/PrismarineJS/mineflayer/blob/master/examples/jumper.js) | Learn how to move, jump, ride vehicles, attack nearby entities |
-|[ansi](https://github.com/PrismarineJS/mineflayer/blob/master/examples/ansi.js) | Display your bot's chat with all of the chat colors shown in your terminal |
-|[guard](https://github.com/PrismarineJS/mineflayer/blob/master/examples/guard.js) | Make a bot guard a defined area from nearby mobs |
-|[multiple-from-file](https://github.com/PrismarineJS/mineflayer/blob/master/examples/multiple_from_file.js) | Add a text file with accounts and have them all login |
+|[viewer](https://github.com/reinarpg/reinarpg-bot/tree/master/examples/viewer) | Display your bot world view in the browser |
+|[pathfinder](https://github.com/reinarpg/reinarpg-bot/tree/master/examples/pathfinder) | Make your bot go to any location automatically |
+|[chest](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/chest.js) | Use chests, furnaces, dispensers, enchantment tables |
+|[digger](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/digger.js) | Learn how to create a simple bot that is capable of digging blocks |
+|[discord](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/discord.js) | Connect a discord bot with a reinarpg-bot bot |
+|[jumper](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/jumper.js) | Learn how to move, jump, ride vehicles, attack nearby entities |
+|[ansi](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/ansi.js) | Display your bot's chat with all of the chat colors shown in your terminal |
+|[guard](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/guard.js) | Make a bot guard a defined area from nearby mobs |
+|[multiple-from-file](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/multiple_from_file.js) | Add a text file with accounts and have them all login |
 
-And many more in the [examples](https://github.com/PrismarineJS/mineflayer/tree/master/examples) folder.
+And many more in the [examples](https://github.com/reinarpg/reinarpg-bot/tree/master/examples) folder.
 
 ### Modules
 
-A lot of the active development is happening inside of small npm packages which are used by mineflayer.
+A lot of the active development is happening inside of small npm packages which are used by reinarpg-bot.
 
 #### The Node Way&trade;
 
@@ -163,25 +163,25 @@ A lot of the active development is happening inside of small npm packages which 
 
 #### Modules
 
-These are the main modules that make up mineflayer:
+These are the main modules that make up reinarpg-bot:
 
 | module | description |
 |---|---|
 | [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | Parse and serialize minecraft packets, plus authentication and encryption.
 | [minecraft-data](https://github.com/PrismarineJS/minecraft-data) | Language independent module providing minecraft data for minecraft clients, servers and libraries.
 | [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics) | Provide the physics engine for minecraft entities
-| [prismarine-chunk](https://github.com/PrismarineJS/prismarine-chunk) | A class to hold chunk data for Minecraft
+| [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk) | A class to hold chunk data for Minecraft
 | [node-vec3](https://github.com/PrismarineJS/node-vec3) | 3d vector math with robust unit tests
-| [prismarine-block](https://github.com/PrismarineJS/prismarine-block) | Represent a minecraft block with its associated data
-| [prismarine-chat](https://github.com/PrismarineJS/prismarine-chat) | A parser for a minecraft chat message (extracted from mineflayer)
+| [reinarpg-block](https://github.com/PrismarineJS/reinarpg-block) | Represent a minecraft block with its associated data
+| [prismarine-chat](https://github.com/PrismarineJS/prismarine-chat) | A parser for a minecraft chat message (extracted from reinarpg-bot)
 | [node-yggdrasil](https://github.com/PrismarineJS/node-yggdrasil) | Node.js library to interact with Mojang's authentication system, known as Yggdrasil
-| [prismarine-world](https://github.com/PrismarineJS/prismarine-world) | The core implementation of worlds for prismarine
+| [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world) | The core implementation of worlds for prismarine
 | [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows) | Represent minecraft windows
-| [prismarine-item](https://github.com/PrismarineJS/prismarine-item) | Represent a minecraft item with its associated data
+| [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) | Represent a minecraft item with its associated data
 | [prismarine-nbt](https://github.com/PrismarineJS/prismarine-nbt) | An NBT parser for node-minecraft-protocol
 | [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe) | Represent minecraft recipes
 | [prismarine-biome](https://github.com/PrismarineJS/prismarine-biome) | Represent a minecraft biome with its associated data
-| [prismarine-entity](https://github.com/PrismarineJS/prismarine-entity) | Represent a minecraft entity
+| [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity) | Represent a minecraft entity
 
 
 ### Debug
@@ -205,31 +205,31 @@ higher level API on top of Mineflayer.
 
 The most updated and useful are :
 
- * [pathfinder](https://github.com/Karang/mineflayer-pathfinder) - advanced A* pathfinding with a lot of configurable features
+ * [pathfinder](https://github.com/Karang/reinarpg-bot-pathfinder) - advanced A* pathfinding with a lot of configurable features
  * [prismarine-viewer](https://github.com/PrismarineJS/prismarine-viewer) - simple web chunk viewer
- * [web-inventory](https://github.com/ImHarvol/mineflayer-web-inventory) - web based inventory viewer
- * [statemachine](https://github.com/PrismarineJS/mineflayer-statemachine) - A state machine API for more complex bot behaviors
+ * [web-inventory](https://github.com/ImHarvol/reinarpg-bot-web-inventory) - web based inventory viewer
+ * [statemachine](https://github.com/reinarpg/reinarpg-bot-statemachine) - A state machine API for more complex bot behaviors
  * [Armor Manager](https://github.com/G07cha/MineflayerArmorManager) - automatic armor management
- * [Dashboard](https://github.com/wvffle/mineflayer-dashboard) - Frontend dashboard for mineflayer bot
- * [PVP](https://github.com/PrismarineJS/mineflayer-pvp) - Easy API for basic PVP and PVE.
- * [Auto Eat](https://github.com/link-discord/mineflayer-auto-eat) - Automatic eating of food.
- * [Auto Crystal](https://github.com/link-discord/mineflayer-autocrystal) - Automatic placing & breaking of end crystals.
- * [Tool](https://github.com/TheDudeFromCI/mineflayer-tool) - A utility for automatic tool/weapon selection with a high level API.
+ * [Dashboard](https://github.com/wvffle/reinarpg-bot-dashboard) - Frontend dashboard for reinarpg-bot bot
+ * [PVP](https://github.com/reinarpg/reinarpg-bot-pvp) - Easy API for basic PVP and PVE.
+ * [Auto Eat](https://github.com/link-discord/reinarpg-bot-auto-eat) - Automatic eating of food.
+ * [Auto Crystal](https://github.com/link-discord/reinarpg-bot-autocrystal) - Automatic placing & breaking of end crystals.
+ * [Tool](https://github.com/TheDudeFromCI/reinarpg-bot-tool) - A utility for automatic tool/weapon selection with a high level API.
  * [Hawkeye](https://github.com/sefirosweb/minecraftHawkEye) - A utility for using auto-aim with bows.
- * [GUI](https://github.com/firejoust/mineflayer-GUI) - Interact with nested GUI windows using async/await
- * [Projectile](https://github.com/firejoust/mineflayer-projectile) - Get the required launch angle for projectiles
- * [Movement](https://github.com/firejoust/mineflayer-movement) - Smooth and realistic player movement, best suited for PvP
- * [Collect Block](https://github.com/PrismarineJS/mineflayer-collectblock) - Quick and simple block collection API.
+ * [GUI](https://github.com/firejoust/reinarpg-bot-GUI) - Interact with nested GUI windows using async/await
+ * [Projectile](https://github.com/firejoust/reinarpg-bot-projectile) - Get the required launch angle for projectiles
+ * [Movement](https://github.com/firejoust/reinarpg-bot-movement) - Smooth and realistic player movement, best suited for PvP
+ * [Collect Block](https://github.com/reinarpg/reinarpg-bot-collectblock) - Quick and simple block collection API.
 
  But also check out :
 
- * [radar](https://github.com/andrewrk/mineflayer-radar/) - web based radar
+ * [radar](https://github.com/andrewrk/reinarpg-bot-radar/) - web based radar
    interface using canvas and socket.io. [YouTube Demo](https://www.youtube.com/watch?v=FjDmAfcVulQ)
  * [auto-auth](https://github.com/G07cha/MineflayerAutoAuth) - chat-based bot authentication
- * [Bloodhound](https://github.com/Nixes/mineflayer-bloodhound) - determine who and what is responsible for damage to another entity
- * [tps](https://github.com/SiebeDW/mineflayer-tps) - get the current tps (processed tps)
- * [panorama](https://github.com/IceTank/mineflayer-panorama) - take Panorama Images of your world
- * [player-death-event](https://github.com/tuanzisama/mineflayer-death-event) - emit player death event in Mineflayer.
+ * [Bloodhound](https://github.com/Nixes/reinarpg-bot-bloodhound) - determine who and what is responsible for damage to another entity
+ * [tps](https://github.com/SiebeDW/reinarpg-bot-tps) - get the current tps (processed tps)
+ * [panorama](https://github.com/IceTank/reinarpg-bot-panorama) - take Panorama Images of your world
+ * [player-death-event](https://github.com/tuanzisama/reinarpg-bot-death-event) - emit player death event in Mineflayer.
 
 ## Projects Using Mineflayer
 
@@ -238,16 +238,16 @@ The most updated and useful are :
    - [YouTube - building a spiral staircase](https://www.youtube.com/watch?v=UM1ZV5200S0)
    - [YouTube - replicating a building](https://www.youtube.com/watch?v=0cQxg9uDnzA)
  * [Darthfett/Helperbot](https://github.com/Darthfett/Helperbot)
- * [vogonistic/voxel](https://github.com/vogonistic/mineflayer-voxel) - visualize what
+ * [vogonistic/voxel](https://github.com/vogonistic/reinarpg-bot-voxel) - visualize what
    the bot is up to using voxel.js
  * [JonnyD/Skynet](https://github.com/JonnyD/Skynet) -  log player activity onto an online API
  * [MinecraftChat](https://github.com/rom1504/MinecraftChat) (last open source version, built by AlexKvazos) -  Minecraft web based chat client
  * [Cheese Bot](https://github.com/Minecheesecraft/Cheese-Bot) - Plugin based bot with a clean GUI. Made with Node-Webkit.
  * [Chaoscraft](https://github.com/schematical/chaoscraft) - Minecraft bot using genetic algorithms, see [its youtube videos](https://www.youtube.com/playlist?list=PLLkpLgU9B5xJ7Qy4kOyBJl5J6zsDIMceH)
- * [hexatester/minetelegram](https://github.com/hexatester/minetelegram) -  Minecraft - Telegram bridge, build on top of mineflayer & telegraf.
- * [PrismarineJS/mineflayer-builder](https://github.com/PrismarineJS/mineflayer-builder) - Prints minecraft schematics in survival, keeping orientation
+ * [hexatester/minetelegram](https://github.com/hexatester/minetelegram) -  Minecraft - Telegram bridge, build on top of reinarpg-bot & telegraf.
+ * [reinarpg/reinarpg-bot-builder](https://github.com/reinarpg/reinarpg-bot-builder) - Prints minecraft schematics in survival, keeping orientation
  * [SilkePilon/OpenDeliveryBot](https://github.com/SilkePilon/OpenDeliveryBot) - Minecraft bot in python to deliver items from place to place.
- * [and hundreds more](https://github.com/PrismarineJS/mineflayer/network/dependents) - All the projects that github detected are using mineflayer
+ * [and hundreds more](https://github.com/reinarpg/reinarpg-bot/network/dependents) - All the projects that github detected are using reinarpg-bot
 
 
 ## Testing

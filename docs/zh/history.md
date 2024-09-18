@@ -1,6 +1,6 @@
 ## 3.14.0
 
-* Make prismarine-entity versioned (@u9g)
+* Make reinarpg-entity versioned (@u9g)
 * fix(typings): Added OpenContainer (@SaubereSache)
 
 ## 3.13.1
@@ -25,7 +25,7 @@
 * 修复控制台垃圾信息 (@IceTank)
 * Update openVillager function to return a promise (@amoraschi)
 * Send arm_animation before use_entity (@aesthetic0001)
-* Add reason for the end of a mineflayer bot (@U5B)
+* Add reason for the end of a reinarpg-bot bot (@U5B)
 * added rejection of invalid transaction packets (anticheat fix) (@U5B)
 
 ## 3.11.2
@@ -257,7 +257,7 @@
 * add heldItemChanged
 
 ## 2.26.0
-* use and expose prismarine-world as bot.world
+* use and expose reinarpg-world as bot.world
 * add itemDrop event (thanks @ImHarvol)
 * fix bot.fish callback (thanks @GroobleDierne)
 * parse entity metadata for crouching (thanks @IdanHo)
@@ -486,7 +486,7 @@ lot of new features from @wvffle :
 
 * added support for minecraft chests (thanks @plexigras)
 * cross version support : 1.8, 1.9, 1.10 and 1.11 now supported
-* [BREAKING] prismarine classes (Block, Entity, Recipe, ...) are now available only by requiring them, not in mineflayer.X. It was required to make cross version possible. minecraft-data is also to be required directly and not available as mineflayer.blocks. The code depending on this should be updated, hence the major version.
+* [BREAKING] prismarine classes (Block, Entity, Recipe, ...) are now available only by requiring them, not in reinarpg-bot.X. It was required to make cross version possible. minecraft-data is also to be required directly and not available as reinarpg-bot.blocks. The code depending on this should be updated, hence the major version.
 
 ## 1.8.0
 
@@ -538,7 +538,7 @@ lot of new features from @wvffle :
 ## 1.5.2
 
  * use prismarine-recipe and prismarine-windows
- * use require-self to be able to do require('mineflayer') in the examples
+ * use require-self to be able to do require('reinarpg-bot') in the examples
  * fix viewDistance sending
 
 ## 1.5.1
@@ -549,7 +549,7 @@ lot of new features from @wvffle :
 
  * fix achievements parsing in toString()
  * update to nmp 0.16
- * use prismarine-item
+ * use reinarpg-item
  * add example to run multiple bots
  * uuid is now a dashed string
  * remove digging interruption : this doesn't happen in 1.8 servers (and caused problem in some spigot servers)
@@ -601,7 +601,7 @@ lot of new features from @wvffle :
 
 ## 1.1.0
 
-Lot of fixes and improvements in this version in order to support mineflayer 1.8.3, including :
+Lot of fixes and improvements in this version in order to support reinarpg-bot 1.8.3, including :
 
  * minecraft 1.8.3 support
  * update minecraft protocol to 0.13.4
@@ -617,7 +617,7 @@ Lot of fixes and improvements in this version in order to support mineflayer 1.8
 ## 1.0.0
 
  * updated minecraft protocol to 0.11 (Minecraft 1.6.2 support).
- * small changes in the arguments of some events: `chat`, `whisper` and `message`. See [doc/api.md](https://github.com/andrewrk/mineflayer/blob/master/doc/api.md).
+ * small changes in the arguments of some events: `chat`, `whisper` and `message`. See [doc/api.md](https://github.com/andrewrk/reinarpg-bot/blob/master/doc/api.md).
 
 ## 0.1.1
 
@@ -658,13 +658,13 @@ eliminating the problems with 1.5.1 protocol update and node 0.10 update!
 
  * only stationary water has a negative effect on digging
  * digging: if you dig while already digging, instead of crashing,
-   mineflayer will cancel the in progress dig and start the new one.
+   reinarpg-bot will cancel the in progress dig and start the new one.
  * digging: in creative mode dig time is 0
  * digging interruption error has a code so you can check for it
 
 ## 0.0.30
 
- * expose the materials enum as `mineflayer.materials`
+ * expose the materials enum as `reinarpg-bot.materials`
 
 ## 0.0.29
 
@@ -686,7 +686,7 @@ eliminating the problems with 1.5.1 protocol update and node 0.10 update!
 
 ## 0.0.27
 
- * add `mineflayer.Location` which can help you locate chunk boundaries
+ * add `reinarpg-bot.Location` which can help you locate chunk boundaries
  * `entity.metadata` is formatted as an object instead of an array for
    easier access
  * `canDigBlock` returns `false` if `block` is `null` instead of crashing.
@@ -718,7 +718,7 @@ eliminating the problems with 1.5.1 protocol update and node 0.10 update!
 ## 0.0.21
 
 This release is feature-complete with the old
-[C++/Qt based version of mineflayer](https://github.com/andrewrk/mineflayer/blob/cpp-qt-end).
+[C++/Qt based version of reinarpg-bot](https://github.com/andrewrk/reinarpg-bot/blob/cpp-qt-end).
 
  * add `bot.activateItem()`
  * add `bot.deactivateItem()`
@@ -727,22 +727,22 @@ This release is feature-complete with the old
 ## 0.0.20
 
  * add dispenser support
-   - add `mineflayer.Dispenser`
+   - add `reinarpg-bot.Dispenser`
    - add `bot.openDispenser(dispenserBlock)`
 
 ## 0.0.19
 
  * add furnace support
-   - add `mineflayer.Furnace`
+   - add `reinarpg-bot.Furnace`
    - add `bot.openFurnace(furnaceBlock)`
- * `mineflayer.Chest`: "update" event renamed to "updateSlot"
+ * `reinarpg-bot.Chest`: "update" event renamed to "updateSlot"
  * `bot.equip(itemType, destination, [callback])` changed to
    `bot.equip(item, destination, [callback])`. Use `bot.inventory.items()`
    to get a list of what items you can choose from to equip.
  * fix `bot.openChest` not working for ender chests
  * fix incorrectly scaled fuel percentage
  * upgrade to minecraft-protocol 0.7.0
-   - `mineflayer.createBot` no longer takes a `email` argument.
+   - `reinarpg-bot.createBot` no longer takes a `email` argument.
    - The `username` and `password` arguments are used to authenticate with the
      official minecraft servers and determine the case-correct username. If
      you have migrated your user account to a mojang login, `username` looks
@@ -762,7 +762,7 @@ recalled
 ## 0.0.16
 
  * add chest support
-   - add `mineflayer.Chest`
+   - add `reinarpg-bot.Chest`
    - add `bot.openChest(chestBlock)`
  * `block.meta` renamed to `block.metadata`
  * `item.meta` renamed to `item.metadata`
@@ -776,13 +776,13 @@ recalled
  * add "sleep" event
  * add "wake" event
  * `bot.sleep(bedPoint)` changed to `bot.sleep(bedBlock)`
- * fix `mineflayer.Recipe` not exposed
+ * fix `reinarpg-bot.Recipe` not exposed
 
 ## 0.0.14
 
  * add crafting support
-   - add `mineflayer.windows`
-   - add `mineflayer.Recipe`
+   - add `reinarpg-bot.windows`
+   - add `reinarpg-bot.Recipe`
    - `bot.inventory` is now an instance of `InventoryWindow`
    - `bot.inventory.count` is no longer a map of id to count.
      `Window` instances have a `count(itemType, [metadata])` method.
@@ -806,13 +806,13 @@ recalled
 
  * fix `bot.equip` when already equipping the item
  * fix some incorrect block physics
- * add `mineflayer.recipes` enum
+ * add `reinarpg-bot.recipes` enum
  * fix crash when digging at a high elevation
 
 ## 0.0.12
 
  * add inventory support
-   - add `Item` class which is exposed on `mineflayer`
+   - add `Item` class which is exposed on `reinarpg-bot`
    - add `bot.inventory` (see docs for more details)
    - add `bot.equip(itemType, destination, [callback])`
    - add `bot.tossStack(item, [callback])`
@@ -823,7 +823,7 @@ recalled
  * add building support
    - add `bot.placeBlock(referenceBlock, faceVector)`
  * add `block.painting`
- * add `Painting` class which is exposed on `mineflayer`
+ * add `Painting` class which is exposed on `reinarpg-bot`
  * add experience orb support
    - `entity.type` can be `orb` now
    - `entity.count` is how much experience you get for collecting it
@@ -891,7 +891,7 @@ recalled
 ## 0.0.3
 
  * add `bot.blockAt(point)` which returns a `Block`
- * add `mineflayer.blocks`, `mineflayer.biomes`, and `mineflayer.items`
+ * add `reinarpg-bot.blocks`, `reinarpg-bot.biomes`, and `reinarpg-bot.items`
  * 添加机器人 `chunk` 事件
  * 修复`spawn` 事件和 `settings.showCape`
  * added chatterbox example

@@ -1,10 +1,10 @@
 {
-  "name": "mineflayer-example",
+  "name": "reinarpg-bot-example",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
     "prismarine-viewer": "^1.0.3",
-    "mineflayer": "file:../../"
+    "reinarpg-bot": "file:../../"
   },
-  "description": "A mineflayer example"
+  "description": "A reinarpg-bot example"
 }

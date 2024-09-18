@@ -1,5 +1,5 @@
 /*
- * This example is a very simple way how to connect a discord bot with a mineflayer bot.
+ * This example is a very simple way how to connect a discord bot with a reinarpg-bot bot.
  * For this example you will need discord.js installed. You can install with: npm install discord.js
  * This example uses discord.js v14
  * You need to do this before running this example:
@@ -25,8 +25,8 @@ const token = process.argv[2]
 const client = new Client({ intents: [Guilds, GuildMessages, MessageContent] })
 client.login(token)
 
-// load mineflayer
-const mineflayer = require('mineflayer')
+// load reinarpg-bot
+const reinarpg-bot = require('reinarpg-bot')
 
 // bot options
 const options = {
@@ -37,7 +37,7 @@ const options = {
 }
 
 // join server
-const bot = mineflayer.createBot(options)
+const bot = reinarpg-bot.createBot(options)
 bot.on('spawn', () => {
   console.log(`Mineflayer bot logged in as ${bot.username}`)
 })

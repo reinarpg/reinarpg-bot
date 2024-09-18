@@ -15,9 +15,9 @@ if (process.argv.length < 6 || process.argv.length > 8) {
 const { Telegraf } = require('telegraf')
 const telegram = new Telegraf(process.argv[2])
 
-// Load mineflayer
-const mineflayer = require('mineflayer')
-const bot = mineflayer.createBot({
+// Load reinarpg-bot
+const reinarpg-bot = require('reinarpg-bot')
+const bot = reinarpg-bot.createBot({
   host: process.argv[4],
   port: parseInt(process.argv[5]),
   username: process.argv[6] || 'telegram',

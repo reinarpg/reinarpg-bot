@@ -1,6 +1,6 @@
-const mineflayer = require('mineflayer')
+const reinarpg-bot = require('reinarpg-bot')
 const { Vec3 } = require('vec3')
-const bot = mineflayer.createBot()
+const bot = reinarpg-bot.createBot()
 
 bot.on('chat', async (_, msg) => {
   if (msg === 'go_endcrystal') {

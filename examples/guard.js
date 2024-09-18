@@ -1,5 +1,5 @@
 /**
- * This bot example shows the basic usage of the mineflayer-pvp plugin for guarding a defined area from nearby mobs.
+ * This bot example shows the basic usage of the reinarpg-bot-pvp plugin for guarding a defined area from nearby mobs.
  */
 
 if (process.argv.length < 4 || process.argv.length > 6) {
@@ -7,11 +7,11 @@ if (process.argv.length < 4 || process.argv.length > 6) {
   process.exit(1)
 }
 
-const mineflayer = require('mineflayer')
-const { pathfinder, Movements, goals } = require('mineflayer-pathfinder')
-const pvp = require('mineflayer-pvp').plugin
+const reinarpg-bot = require('reinarpg-bot')
+const { pathfinder, Movements, goals } = require('reinarpg-bot-pathfinder')
+const pvp = require('reinarpg-bot-pvp').plugin
 
-const bot = mineflayer.createBot({
+const bot = reinarpg-bot.createBot({
   host: process.argv[2],
   port: parseInt(process.argv[3]),
   username: process.argv[4] ? process.argv[4] : 'Guard',

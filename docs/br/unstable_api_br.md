@@ -15,6 +15,6 @@ Esses métodos e classes são úteis em alguns casos especiais, mas não são es
 
 `bot._client` é criado usando [node-minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol).
 Lida com a escrita e recepção de pacotes.
-O comportamento pode mudar (por exemplo, em cada nova versão do Minecraft), portanto, é melhor usar os métodos do mineflayer, se possível.
+O comportamento pode mudar (por exemplo, em cada nova versão do Minecraft), portanto, é melhor usar os métodos do reinarpg-bot, se possível.
 
 Esta documentação não é oficialmente mantida. Se você deseja ver as últimas novidades, por favor, consulte a documentação original: [unstable_api](../unstable_api.md)

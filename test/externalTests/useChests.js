@@ -3,7 +3,7 @@ const assert = require('assert')
 const { once, onceWithCleanup } = require('../../lib/promise_utils')
 
 module.exports = () => async (bot) => {
-  const Item = require('prismarine-item')(bot.registry)
+  const Item = require('reinarpg-item')(bot.registry)
 
   bot.test.groundY = bot.supportFeature('tallWorld') ? -60 : 4
 

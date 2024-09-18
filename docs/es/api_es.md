@@ -14,7 +14,7 @@
     - [mcdata.entities](#mcdataentities)
   - [Clases](#clases)
     - [vec3](#vec3)
-    - [mineflayer.Location](#mineflayerlocation)
+    - [reinarpg-bot.Location](#mineflayerlocation)
     - [Entity](#entity)
     - [Block](#block)
     - [Biome](#biome)
@@ -24,8 +24,8 @@
       - [window.withdraw(itemType, metadata, count, [callback])](#windowwithdrawitemtype-metadata-count-callback)
       - [window.close()](#windowclose)
     - [Recipe](#recipe)
-    - [mineflayer.Container](#mineflayercontainer)
-    - [mineflayer.Furnace](#mineflayerfurnace)
+    - [reinarpg-bot.Container](#mineflayercontainer)
+    - [reinarpg-bot.Furnace](#mineflayerfurnace)
       - [furnace "update"](#furnace-update)
       - [furnace.takeInput([callback])](#furnacetakeinputcallback)
       - [furnace.takeFuel([callback])](#furnacetakefuelcallback)
@@ -37,7 +37,7 @@
       - [furnace.outputItem()](#furnaceoutputitem)
       - [furnace.fuel](#furnacefuel)
       - [furnace.progress](#furnaceprogress)
-    - [mineflayer.EnchantmentTable](#mineflayerenchantmenttable)
+    - [reinarpg-bot.EnchantmentTable](#mineflayerenchantmenttable)
       - [enchantmentTable "ready"](#enchantmenttable-ready)
       - [enchantmentTable.targetItem()](#enchantmenttabletargetitem)
       - [enchantmentTable.xpseed](#enchantmenttablexpseed)
@@ -46,18 +46,18 @@
       - [enchantmentTable.takeTargetItem([callback])](#enchantmenttabletaketargetitemcallback)
       - [enchantmentTable.putTargetItem(item, [callback])](#enchantmenttableputtargetitemitem-callback)
       - [enchantmentTable.putLapis(item, [callback])](#enchantmenttableputlapisitem-callback)
-    - [mineflayer.anvil](#mineflayeranvil)
+    - [reinarpg-bot.anvil](#mineflayeranvil)
       - [anvil.combine(itemOne, itemTwo[, name, callback])](#anvilcombineitemone-itemtwo-name-callback)
       - [anvil.combine(item[, name, callback])](#anvilcombineitem-name-callback)
       - [villager "ready"](#villager-ready)
       - [villager.trades](#villagertrades)
       - [villager.trade(tradeIndex, [times], [cb])](#villagertradetradeindex-times-cb)
-    - [mineflayer.ScoreBoard](#mineflayerscoreboard)
+    - [reinarpg-bot.ScoreBoard](#mineflayerscoreboard)
       - [ScoreBoard.name](#scoreboardname)
       - [ScoreBoard.title](#scoreboardtitle)
       - [ScoreBoard.itemsMap](#scoreboarditemsmap)
       - [ScoreBoard.items](#scoreboarditems)
-    - [mineflayer.BossBar](#mineflayerbossbar)
+    - [reinarpg-bot.BossBar](#mineflayerbossbar)
       - [BossBar.title](#bossbartitle)
       - [BossBar.health](#bossbarhealth)
       - [BossBar.dividers](#bossbardividers)
@@ -67,7 +67,7 @@
       - [BossBar.createFog](#bossbarcreatefog)
       - [BossBar.color](#bossbarcolor)
   - [Bot](#bot)
-    - [mineflayer.createBot(options)](#mineflayercreatebotoptions)
+    - [reinarpg-bot.createBot(options)](#mineflayercreatebotoptions)
     - [Properties](#properties)
       - [bot.world](#botworld)
         - [world "blockUpdate" (oldBlock, newBlock)](#world-blockupdate-oldblock-newblock)
@@ -348,7 +348,7 @@ entidades ordenadas por id
 
 Mira [andrewrk/node-vec3](https://github.com/andrewrk/node-vec3)
 
-Todos los puntos en mineflayer son instancias de esta clase.
+Todos los puntos en reinarpg-bot son instancias de esta clase.
 
  * x - south
  * y - up
@@ -356,16 +356,16 @@ Todos los puntos en mineflayer son instancias de esta clase.
 
 Las funciones y los métodos que necesitan un punto aceptan instancias `Vec3`, un array con 3 valores, y un objeto con las propiedades `x`, `y`, y `z`.
 
-### mineflayer.Location
+### reinarpg-bot.Location
 
 ### Entity
 
 Las entidades representan jugadores, mobs, y objetos. Se emiten en muchos eventos, pero puedes acceder a tu propia entidad con `bot.entity`.
-Mira [prismarine-entity](https://github.com/PrismarineJS/prismarine-entity)
+Mira [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity)
 
 ### Block
 
-Mira [prismarine-block](https://github.com/PrismarineJS/prismarine-block)
+Mira [reinarpg-block](https://github.com/PrismarineJS/reinarpg-block)
 
 También, `block.blockEntity` es un campo adicional con los datos de la entidad del bloque como `Object`
 ```js
@@ -388,7 +388,7 @@ Mira [prismarine-biome](https://github.com/PrismarineJS/prismarine-biome)
 
 ### Item
 
-Mira [prismarine-item](https://github.com/PrismarineJS/prismarine-item)
+Mira [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item)
 
 ### windows.Window (base class)
 
@@ -420,12 +420,12 @@ Cierra la interfaz/ventana
 
 Mira [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe)
 
-### mineflayer.Container
+### reinarpg-bot.Container
 
 Extiende windows.Window para cofres, dispensadores, etc...
 Mira `bot.openContainer(chestBlock o minecartchestEntity)`.
 
-### mineflayer.Furnace
+### reinarpg-bot.Furnace
 
 Extiende windows.Window para hornos, fundidores, etc...
 Mira `bot.openFurnace(funaceBlock)`.
@@ -480,7 +480,7 @@ Cuanto combustible queda del 0 al 1
 
 Cuanto esta hecho el item del 0 al 1
 
-### mineflayer.EnchantmentTable
+### reinarpg-bot.EnchantmentTable
 
 Extiende windows.Window para mesas de encantamiento
 Mira `bot.openEnchantmentTable(enchantmentTableBlock)`.
@@ -543,7 +543,7 @@ Esta función también devueve un `Promise`, con `void` como argumento al finali
 
  * `callback(err)`
 
-### mineflayer.anvil
+### reinarpg-bot.anvil
 
 Extiende windows.Window para yunques
 Mira `bot.openAnvil(anvilBlock)`.
@@ -605,7 +605,7 @@ Se parece a:
 #### villager.trade(tradeIndex, [times], [cb])
 Es el mismo que [bot.trade(villagerInstance, tradeIndex, [times], [cb])](#bottradevillagerinstance-tradeindex-times-cb)
 
-### mineflayer.ScoreBoard
+### reinarpg-bot.ScoreBoard
 
 #### ScoreBoard.name
 
@@ -635,7 +635,7 @@ Un array con todos los items en el scoreboard en él
 ]
 ```
 
-### mineflayer.BossBar
+### reinarpg-bot.BossBar
 
 #### BossBar.title
 
@@ -671,7 +671,7 @@ Determina el color de la barra entre `pink`, `blue`, `red`, `green`, `yellow`, `
 
 ## Bot
 
-### mineflayer.createBot(options)
+### reinarpg-bot.createBot(options)
 
 Crea y devuelve una instancia de la clase Bot.
 `options` es un object que contiene las propiedades opcionales :
@@ -688,8 +688,8 @@ Crea y devuelve una instancia de la clase Bot.
  * keepAlive : manda paquetes keepAlive : el valor predeterminado es true
  * checkTimeoutInterval : el valor predeterminado es `30*1000` (30s), comprueba si el paquete keepAlive ha sido recibido en ese periodo, desconectar el bot si no ha sido recibido.
  * loadInternalPlugins : (cargarPluginsInternos) el valor predeterminado es true
- * storageBuilder : una función opcional, toma como argumentos la versión y el nombre del mundo (worldName) y devuelve una instancia de algo con la misma API que prismarine-provider-anvil. Se usará para guardar el mundo.
- * client : una instancia de node-minecraft-protocol, si no se especifíca, mineflayer creará su propio cliente. Esto sirve para usar mineflayer a través de un proxy de muchos clientes o para un cliente vanilla y un cliente mineflayer.
+ * storageBuilder : una función opcional, toma como argumentos la versión y el nombre del mundo (worldName) y devuelve una instancia de algo con la misma API que reinarpg-anvil. Se usará para guardar el mundo.
+ * client : una instancia de node-minecraft-protocol, si no se especifíca, reinarpg-bot creará su propio cliente. Esto sirve para usar reinarpg-bot a través de un proxy de muchos clientes o para un cliente vanilla y un cliente reinarpg-bot.
  * plugins : object : el valor predeterminado es {}
    - pluginName : false : no cargar el plugin interno con ese nombre ej. `pluginName`
    - pluginName : true : carga el plugin interno con ese nombre ej. `pluginName` incluso si loadInternalPlugins está en false
@@ -706,7 +706,7 @@ Crea y devuelve una instancia de la clase Bot.
 
 #### bot.world
 
-Una representación sincronizada del mundo. Mira su documentación en http://github.com/PrismarineJS/prismarine-world
+Una representación sincronizada del mundo. Mira su documentación en http://github.com/PrismarineJS/reinarpg-world
 
 ##### world "blockUpdate" (oldBlock, newBlock)
 
@@ -739,7 +739,7 @@ Coordenadas del punto de spawn, donde todas las brújulas apuntan.
 
 #### bot.heldItem
 
-El item en la mano del bot, presentado como una instancia [prismarine-item](https://github.com/PrismarineJS/prismarine-item) especificado con su metadata, nbtdata, etc.
+El item en la mano del bot, presentado como una instancia [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) especificado con su metadata, nbtdata, etc.
 
 #### bot.game.levelType
 
@@ -1588,7 +1588,7 @@ function somePlugin (bot, options) {
   bot.myPlugin.someFunction = someFunction
 }
 
-const bot = mineflayer.createBot({})
+const bot = reinarpg-bot.createBot({})
 bot.loadPlugin(somePlugin)
 bot.once('login', function () {
   bot.myPlugin.someFunction() // Yay!
@@ -1916,7 +1916,7 @@ Todas las opciones tienen como predeterminado false, excepto modo que es 2 (para
 
 Esto puede usarse para ver si una característica está disponible en la versión del bot de Minecraft. Normalmente esto es solo para manejar funciones que son específicas de una versión.
 
-Puedes encontrar la lista de características en [./lib/features.json](https://github.com/PrismarineJS/mineflayer/blob/master/lib/features.json) file.
+Puedes encontrar la lista de características en [./lib/features.json](https://github.com/reinarpg/reinarpg-bot/blob/master/lib/features.json) file.
 
 #### bot.waitForTicks(ticks)
 
@@ -1933,7 +1933,7 @@ Esta función también devueve un `Promise`, con `void` como argumento al finali
 Hacer click en la ventana/interfaz actual, los detalles están en https://wiki.vg/Protocol#Click_Window
  * slot - número que representa la casilla de la ventan
  * mouseButton - 0 para click izquierdo, y 1 para click derecho
- * mode - mineflayer solo tiene disponible el modo 0
+ * mode - reinarpg-bot solo tiene disponible el modo 0
 
 #### bot.putSelectedItemRange(start, end, window, slot)
 
@@ -2012,7 +2012,7 @@ Proporciona al bot el item especificado en la casilla especificada.
 Si se ejecuta dos veces antes de que la primera ejecución no haya terminado, la primera ejecución contendrá un error.
 
  * `slot` es un número de casilla del inventario (donde 36 es la primera casilla, etc.).
- * `item` es una instancia [prismarine-item](https://github.com/PrismarineJS/prismarine-item) con su metadata, nbtdata, etc.
+ * `item` es una instancia [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) con su metadata, nbtdata, etc.
     Si `item` es `null`, el item en esa casilla será eliminado
  * `callback(err)` (opcional) es un callback que es ejecutado cuando el servidor acepta la transacción o cuando falla al hacerlo.
 
