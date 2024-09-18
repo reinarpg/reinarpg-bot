@@ -137,19 +137,19 @@ Estes são os principais módulos que compõem o Mineflayer:
 
 | Módulo | Descrição |
 |---|---|
-| [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | Analisa e cria pacotes do Minecraft, autenticação e criptografia.
+| [reinarpg-protocol](https://github.com/PrismarineJS/node-reinarpg-protocol) | Analisa e cria pacotes do Minecraft, autenticação e criptografia.
 | [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data) | Módulo independente de linguagem que fornece dados do Minecraft para clientes, servidores e bibliotecas.
-| [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics) | Motor de física para entidades do Minecraft
+| [reinarpg-physics](https://github.com/PrismarineJS/reinarpg-physics) | Motor de física para entidades do Minecraft
 | [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk) | Representa um pedaço do Minecraft
 | [node-vec3](https://github.com/PrismarineJS/node-vec3) | Usa vetores 3D com testes sólidos
 | [reinarpg-block](https://github.com/PrismarineJS/reinarpg-block) | Representa um bloco e suas informações associadas no Minecraft
-| [prismarine-chat](https://github.com/PrismarineJS/prismarine-chat) | Analisador de mensagens de chat do Minecraft (retirado do Mineflayer)
+| [reinarpg-chat](https://github.com/PrismarineJS/reinarpg-chat) | Analisador de mensagens de chat do Minecraft (retirado do Mineflayer)
 | [node-yggdrasil](https://github.com/PrismarineJS/node-yggdrasil) | Biblioteca Node.js para interagir com o sistema de autenticação da Mojang conhecido como Yggdrasil.
 | [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world) | Implementação principal dos mundos do Minecraft para o Prismarine
-| [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows) | Representa as interfaces do Minecraft
+| [reinarpg-windows](https://github.com/PrismarineJS/reinarpg-windows) | Representa as interfaces do Minecraft
 | [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) | Representa um item e suas informações associadas no Minecraft
-| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | Analisador de NBT para node-minecraft-protocol
-| [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe) | Representa receitas de crafting do Minecraft
+| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | Analisador de NBT para node-reinarpg-protocol
+| [reinarpg-recipe](https://github.com/PrismarineJS/reinarpg-recipe) | Representa receitas de crafting do Minecraft
 | [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome) | Representa um bioma e suas informações associadas no Minecraft
 | [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity) | Representa uma entidade e suas informações associadas no Minecraft
 
@@ -158,12 +158,12 @@ Estes são os principais módulos que compõem o Mineflayer:
 Você pode habilitar a depuração do protocolo usando a variável de ambiente `DEBUG`:
 
 ```bash
-DEBUG="minecraft-protocol" node [...]
+DEBUG="reinarpg-protocol" node [...]
 ```
 
 No Windows:
 ```
-set DEBUG=minecraft-protocol
+set DEBUG=reinarpg-protocol
 node seu_arquivo.js
 ```
 

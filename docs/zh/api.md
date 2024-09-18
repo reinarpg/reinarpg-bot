@@ -417,7 +417,7 @@ See [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item)
 
 ### windows.Window (base class)
 
-See [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows)
+See [reinarpg-windows](https://github.com/PrismarineJS/reinarpg-windows)
 
 #### window.deposit(itemType, metadata, count, [callback])
 
@@ -441,7 +441,7 @@ This function also returns a `Promise`, with `void` as its argument upon complet
 
 ### Recipe
 
-See [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe)
+See [reinarpg-recipe](https://github.com/PrismarineJS/reinarpg-recipe)
 
 ### reinarpg-bot.Container
 
@@ -747,7 +747,7 @@ Determines what color the boss bar color is,  `pink`, `blue`, `red`, `green`, `y
  * checkTimeoutInterval : 默认 `30*1000` (30s), 检查是否在此期间收到keepalive，否则断开连接。
  * loadInternalPlugins : 默认为true
  * storageBuilder : 可选功能,将version和worldName作为参数，并返回与prismarine-provider-anvil具有相同API的某个对象的实例 ，将被用来保存世界
- * client : node-minecraft-protocol 实例, 如果未指定，mineflayer将创建自己的客户端.这可用于通过许多客户端的代理或普通客户端和mineflayer客户端来启用mineflayer
+ * client : node-reinarpg-protocol 实例, 如果未指定，mineflayer将创建自己的客户端.这可用于通过许多客户端的代理或普通客户端和mineflayer客户端来启用mineflayer
  * plugins : object : 默认为{}
    - pluginName : false : don't load internal plugin with given name ie. `pluginName`
    - pluginName : true : load internal plugin with given name ie. `pluginName` 即使loadInternalplugins设置为false
@@ -1020,7 +1020,7 @@ Realistically though you'll probably never need to use bot.time.bigAge as it wil
 
 #### bot.inventory
 
-A [`Window`](https://github.com/PrismarineJS/prismarine-windows#windowswindow-base-class) instance representing your inventory.
+A [`Window`](https://github.com/PrismarineJS/reinarpg-windows#windowswindow-base-class) instance representing your inventory.
 
 #### bot.targetDigBlock
 

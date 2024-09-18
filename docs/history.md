@@ -65,9 +65,9 @@
 * [Mineflayer physics refactor (#2492)](https://github.com/reinarpg/reinarpg-bot/commit/d0eb3a1afe6cda7b04ae2f88052cd868ba0c0c4f) (thanks @U5B)
 
 ## 4.11.0
-* [Import changedSlots computation from prismarine-windows (#3134)](https://github.com/reinarpg/reinarpg-bot/commit/e5b5eeecf1133c1c80c0ef48d6e72fed77d84834) (thanks @kaduvert)
+* [Import changedSlots computation from reinarpg-windows (#3134)](https://github.com/reinarpg/reinarpg-bot/commit/e5b5eeecf1133c1c80c0ef48d6e72fed77d84834) (thanks @kaduvert)
 * [Make the place block success check ignore block updates received with no block type changes (#3090)](https://github.com/reinarpg/reinarpg-bot/commit/bbdd93afe2e31d1f1e899176e7edf8e73af5d5d3) (thanks @PondWader)
-* [Use node-minecraft-protocol for chat (#3110)](https://github.com/reinarpg/reinarpg-bot/commit/385fba65ed6ebe632c870c7cf234666cacf5a766) (thanks @lkwilson)
+* [Use node-reinarpg-protocol for chat (#3110)](https://github.com/reinarpg/reinarpg-bot/commit/385fba65ed6ebe632c870c7cf234666cacf5a766) (thanks @lkwilson)
 * [Extended useChests.js tests (#3132)](https://github.com/reinarpg/reinarpg-bot/commit/131a7ea63c9c6b2cce41ebb29a26c898f859471d) (thanks @kaduvert)
 * [Allow more click modes (#3133)](https://github.com/reinarpg/reinarpg-bot/commit/a315653bb94274113c9d6078d4c2ab840af0f62a) (thanks @kaduvert)
 * [Add nether test (#2932)](https://github.com/reinarpg/reinarpg-bot/commit/6b1d6ea15c72edc5b761b78765a53d2ab7d0d274) (thanks @frej4189)
@@ -172,7 +172,7 @@
 * add missing extraInfos argument to Bot.blockAt function (@dumbasPL)
 * Emit window close event AFTER updating the inventory (@imharvol)
 * Move supportFeature to mcdata (@U9G)
-* Update lib/ and test/ to use prismarine-registry (@extremeheat)
+* Update lib/ and test/ to use reinarpg-registry (@extremeheat)
 * only open chests with openContainer (@U9G)
 * Add bot.creative.clearSlot and bot.creative.clearInventory (@U9G)
 * remove transaction warning
@@ -492,7 +492,7 @@
 * fix off by 1 error in findBlocks (thanks @Karang)
 * physics.js look fix (thanks @thesourceoferror)
 * fix chat message bracketing (thanks @Nurutomo)
-* use prismarine-physics
+* use reinarpg-physics
 
 ## 2.22.0
 * Improve digTime computation (thanks @Karang)
@@ -720,7 +720,7 @@ lot of new features from @wvffle :
 
 ## 1.7.1
 
- * update minecraft-protocol, reinarpg-data and protodef
+ * update reinarpg-protocol, reinarpg-data and protodef
 
 ## 1.7.0
 
@@ -729,7 +729,7 @@ lot of new features from @wvffle :
  * remove chat filter : fix utf8 in chat
  * add extra tolerance for malformed sign packets (thanks @G07cha)
  * adapt to new minecraft data entities format
- * update minecraft-protocol to 0.17.2
+ * update reinarpg-protocol to 0.17.2
 
 
 ## 1.6.0
@@ -746,7 +746,7 @@ lot of new features from @wvffle :
 
 ## 1.5.2
 
- * use prismarine-recipe and prismarine-windows
+ * use reinarpg-recipe and reinarpg-windows
  * use require-self to be able to do require('reinarpg-bot') in the examples
  * fix viewDistance sending
 
@@ -784,7 +784,7 @@ lot of new features from @wvffle :
 
 ## 1.2.0
 
- * update minecraft-protocol to 0.14.0 : several fixes (error are now catchable, packets are in-order, packets fixes, etc.)
+ * update reinarpg-protocol to 0.14.0 : several fixes (error are now catchable, packets are in-order, packets fixes, etc.)
  * add ContainerWindow to support non-Vanilla plugins and add /invsee example (thanks Pietro210)
  * add a callback to bot.look and bot.lookAt
  * when receiving a remove effect packet : if the corresponding effect doesn't exist yet, emit an event with just the id of the effect (thanks Pietro210)
@@ -837,7 +837,7 @@ Lot of fixes and improvements in this version in order to support reinarpg-bot 1
 Huge thanks to [zuazo](https://github.com/zuazo) for debugging and
 eliminating the problems with 1.5.1 protocol update and node 0.10 update!
 
- * update minecraft-protocol to 0.9.0 - includes many fixes
+ * update reinarpg-protocol to 0.9.0 - includes many fixes
  * blocks: fix buffer length assertion error (thanks zuazo)
  * physics: fix assertion error (thanks zuazo)
 
@@ -950,7 +950,7 @@ This release is feature-complete with the old
    to get a list of what items you can choose from to equip.
  * fix `bot.openChest` not working for ender chests
  * fix incorrectly scaled fuel percentage
- * upgrade to minecraft-protocol 0.7.0
+ * upgrade to reinarpg-protocol 0.7.0
    - `reinarpg-bot.createBot` no longer takes a `email` argument.
    - The `username` and `password` arguments are used to authenticate with the
      official minecraft servers and determine the case-correct username. If
@@ -976,7 +976,7 @@ recalled
  * `block.meta` renamed to `block.metadata`
  * `item.meta` renamed to `item.metadata`
  * fix crash when player causes entityGone message
- * update to minecraft-protocol 0.6.6
+ * update to reinarpg-protocol 0.6.6
 
 ## 0.0.15
 

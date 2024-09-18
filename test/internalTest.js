@@ -2,19 +2,19 @@
 
 const reinarpg-bot = require('../')
 const vec3 = require('vec3')
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 const assert = require('assert')
 const { sleep } = require('../lib/promise_utils')
 const nbt = require('reinarpg-nbt')
 
 for (const supportedVersion of reinarpg-bot.testedVersions) {
-  const registry = require('prismarine-registry')(supportedVersion)
+  const registry = require('reinarpg-registry')(supportedVersion)
   const version = registry.version
   const Chunk = require('reinarpg-chunk')(supportedVersion)
   const hasSignedChat = registry.supportFeature('signedChat')
 
   function chatText (text) {
-    // TODO: move this to prismarine-chat in a new ChatMessage(text).toNotch(asNbt) method
+    // TODO: move this to reinarpg-chat in a new ChatMessage(text).toNotch(asNbt) method
     return registry.supportFeature('chatPacketsUseNbtComponents')
       ? nbt.comp({ text: nbt.string(text) })
       : JSON.stringify({ text })

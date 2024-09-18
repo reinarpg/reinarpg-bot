@@ -78,7 +78,7 @@ bot.inventory.items() 返回机器人的物品数组. 您可以使用递归函�
 
 ### 我希望即使在服务器有延迟的情况下也能避免断开连接，如何实现这一点 ?
 
-一种方法是增加 [checkTimeoutInterval](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/API.md#mccreateclientoptions) 选项的值(在createBot中设置)  (例如 `300*1000` 这是5分钟，而不是默认的30秒). 如果仍然断开连接，可以使用类似于此示例的方法自动重新连接 https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js
+一种方法是增加 [checkTimeoutInterval](https://github.com/PrismarineJS/node-reinarpg-protocol/blob/master/docs/API.md#mccreateclientoptions) 选项的值(在createBot中设置)  (例如 `300*1000` 这是5分钟，而不是默认的30秒). 如果仍然断开连接，可以使用类似于此示例的方法自动重新连接 https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js
 
 ### 如何获取物品的 lore / text?
 
@@ -92,7 +92,7 @@ function getLore (item) {
   if (item.nbt == null) return message
 
   const nbt = require('reinarpg-nbt')
-  const ChatMessage = require('prismarine-chat')(bot.version)
+  const ChatMessage = require('reinarpg-chat')(bot.version)
 
   const data = nbt.simplify(item.nbt)
   const display = data.display

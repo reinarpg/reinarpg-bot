@@ -135,19 +135,19 @@ bot.once('spawn', () => {
 
 | Модуль                                                                        | Описание                                                                                |
 | ----------------------------------------------------------------------------- |---------------------------------------------------------------------------------------- |
-| [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | Парсинг пакетов Minecraft, аутентификация и шифрование                                  |
+| [reinarpg-protocol](https://github.com/PrismarineJS/node-reinarpg-protocol) | Парсинг пакетов Minecraft, аутентификация и шифрование                                  |
 | [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data)              | Независимый от языка модуль, предоставляющий данные Minecraft для клиента и сервера     |
-| [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics)      | Взаимодействие с физикой                                                                |
+| [reinarpg-physics](https://github.com/PrismarineJS/reinarpg-physics)      | Взаимодействие с физикой                                                                |
 | [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk)          | Хранение чанков Minecraft                                                               |
 | [node-vec3](https://github.com/PrismarineJS/node-vec3)                        | Векторная обработка координат                                                           |
 | [reinarpg-block](https://github.com/PrismarineJS/reinarpg-block)          | Взаимодействие с блоками и их данными                                                   |
-| [prismarine-chat](https://github.com/PrismarineJS/prismarine-chat)            | Парсер чата Minecraft (вырезано из Mineflayer)                                          |
+| [reinarpg-chat](https://github.com/PrismarineJS/reinarpg-chat)            | Парсер чата Minecraft (вырезано из Mineflayer)                                          |
 | [node-yggdrasil](https://github.com/PrismarineJS/node-yggdrasil)              | Библиотека для взаимодействия с системой аутентификации Mojang, известная как Yggdrasil |
 | [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world)          | Реализация миров для prismarine                                                         |
-| [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows)      | Взаимодействие с GUI                                                                    |
+| [reinarpg-windows](https://github.com/PrismarineJS/reinarpg-windows)      | Взаимодействие с GUI                                                                    |
 | [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item)            | Взаимодействие с предметами и их данными                                                |
-| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt)              | Парсер NBT для node-minecraft-protocol                                                  |
-| [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe)        | Взаимодействие с рецептами крафта                                                       |
+| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt)              | Парсер NBT для node-reinarpg-protocol                                                  |
+| [reinarpg-recipe](https://github.com/PrismarineJS/reinarpg-recipe)        | Взаимодействие с рецептами крафта                                                       |
 | [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome)          | Взаимодействие с биомами                                                                |
 | [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity)        | Взаимодействие с сущностями                                                             |
 
@@ -157,12 +157,12 @@ bot.once('spawn', () => {
 Вы можете отлавливать ошибки с помощью переменной окружения `DEBUG`:
 
 ```bash
-DEBUG="minecraft-protocol" node [...]
+DEBUG="reinarpg-protocol" node [...]
 ```
 
 В Windows:
 ```
-set DEBUG=minecraft-protocol
+set DEBUG=reinarpg-protocol
 node your_script.js
 ```
 

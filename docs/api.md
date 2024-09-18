@@ -458,7 +458,7 @@ See [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item)
 
 ### windows.Window (base class)
 
-See [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows)
+See [reinarpg-windows](https://github.com/PrismarineJS/reinarpg-windows)
 
 #### window.deposit(itemType, metadata, count, nbt)
 
@@ -482,7 +482,7 @@ This function returns a `Promise`, with `void` as its argument when done withdra
 
 ### Recipe
 
-See [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe)
+See [reinarpg-recipe](https://github.com/PrismarineJS/reinarpg-recipe)
 
 ### reinarpg-bot.Container
 
@@ -808,7 +808,7 @@ Create and return an instance of the class bot.
  * checkTimeoutInterval : default to `30*1000` (30s), check if keepalive received at that period, disconnect otherwise.
  * loadInternalPlugins : defaults to true
  * storageBuilder : an optional function, takes as argument version and worldName and return an instance of something with the same API as reinarpg-anvil. Will be used to save the world.
- * client : an instance of node-minecraft-protocol, if not specified, reinarpg-bot makes its own client. This can be used to enable using reinarpg-bot through a proxy of many clients or a vanilla client and a reinarpg-bot client.
+ * client : an instance of node-reinarpg-protocol, if not specified, reinarpg-bot makes its own client. This can be used to enable using reinarpg-bot through a proxy of many clients or a vanilla client and a reinarpg-bot client.
  * brand : the brand name for the client to use. Defaults to vanilla. Can be used to simulate custom clients for servers that require it.
  * respawn : when set to false disables bot from automatically respawning, defaults to true.
  * plugins : object : defaults to {}
@@ -1116,7 +1116,7 @@ Which quick bar slot is selected (0 - 8).
 
 #### bot.inventory
 
-A [`Window`](https://github.com/PrismarineJS/prismarine-windows#windowswindow-base-class) instance representing your inventory.
+A [`Window`](https://github.com/PrismarineJS/reinarpg-windows#windowswindow-base-class) instance representing your inventory.
 
 #### bot.targetDigBlock
 
@@ -1186,7 +1186,7 @@ Emitted for every server message which appears on the Action Bar.
 
 Emitted for every server message, including chats.
 
- * `jsonMsg` - [ChatMessage](https://github.com/PrismarineJS/prismarine-chat) object containing the formatted chat message. Might additionally have the following properties:
+ * `jsonMsg` - [ChatMessage](https://github.com/PrismarineJS/reinarpg-chat) object containing the formatted chat message. Might additionally have the following properties:
    * unsigned - Unsigned ChatMessage object. Only present in 1.19.2+, and only when the server allows insecure chat and the server modified the chat message without the user's signature
 
  * `position` - (>= 1.8.1): position of Chat message can be

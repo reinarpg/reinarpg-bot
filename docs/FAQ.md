@@ -84,7 +84,7 @@ Enabled debug mode https://github.com/reinarpg/reinarpg-bot#debug
 
 ### I want to avoid disconnection even in case of server lag, how can I achieve this ?
 
-One way is to increase the [checkTimeoutInterval](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/API.md#mccreateclientoptions) option (to set in createBot) to an higher value (for example `300*1000` which is 5min instead of the default 30s). If you still get disconnected, you can auto reconnect using something like this example https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js
+One way is to increase the [checkTimeoutInterval](https://github.com/PrismarineJS/node-reinarpg-protocol/blob/master/docs/API.md#mccreateclientoptions) option (to set in createBot) to an higher value (for example `300*1000` which is 5min instead of the default 30s). If you still get disconnected, you can auto reconnect using something like this example https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js
 
 ### How to get the lore / text of an item ?
 
@@ -97,7 +97,7 @@ function getLore (item) {
   if (item.nbt == null) return message
 
   const nbt = require('reinarpg-nbt')
-  const ChatMessage = require('prismarine-chat')(bot.version)
+  const ChatMessage = require('reinarpg-chat')(bot.version)
 
   const data = nbt.simplify(item.nbt)
   const display = data.display

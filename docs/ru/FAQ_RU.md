@@ -84,7 +84,7 @@ bot.chat('/give @p diamond')
 
 ### Я хочу избежать отключения бота от сервера даже в случае задержки сервера, как мне этого добиться?
 
-Один из способов - увеличить параметр [checkTimeoutInterval](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/API.md#mccreateclientoptions) (передаваемый в createBot) к более высокому значению (Например `300*1000`, что составляет 5 минут вместо обычных 30 сек.). Если вы всё ещё сталкиваетесь с данной проблемой, вы можете автоматически переподключиться, используя что-то вроде этого примера https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js
+Один из способов - увеличить параметр [checkTimeoutInterval](https://github.com/PrismarineJS/node-reinarpg-protocol/blob/master/docs/API.md#mccreateclientoptions) (передаваемый в createBot) к более высокому значению (Например `300*1000`, что составляет 5 минут вместо обычных 30 сек.). Если вы всё ещё сталкиваетесь с данной проблемой, вы можете автоматически переподключиться, используя что-то вроде этого примера https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js
 
 ### Как получить описание/текст предмета?
 
@@ -97,7 +97,7 @@ function getLore (item) {
   if (item.nbt == null) return message
 
   const nbt = require('reinarpg-nbt')
-  const ChatMessage = require('prismarine-chat')(bot.version)
+  const ChatMessage = require('reinarpg-chat')(bot.version)
 
   const data = nbt.simplify(item.nbt)
   const display = data.display

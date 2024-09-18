@@ -390,7 +390,7 @@ Veja [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item)
 
 ### windows.Window (base class)
 
-Veja [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows)
+Veja [reinarpg-windows](https://github.com/PrismarineJS/reinarpg-windows)
 
 #### window.deposit(itemType, metadata, count, [callback])
 
@@ -416,7 +416,7 @@ Fecha a interface/janela.
 
 ### Recipe
 
-Veja [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe).
+Veja [reinarpg-recipe](https://github.com/PrismarineJS/reinarpg-recipe).
 
 ### reinarpg-bot.Container
 
@@ -688,7 +688,7 @@ Crie e retorne uma instância da classe Bot.
  * checkTimeoutInterval : o valor padrão é `30*1000` (30s), verifica se o pacote keepAlive foi recebido neste período, desconecta o bot se não for recebido.
  * loadInternalPlugins : o valor padrão é true
  * storageBuilder : uma função opcional, que recebe a versão e o nome do mundo (worldName) como argumentos e retorna uma instância de algo com a mesma API que reinarpg-anvil. Será usado para salvar o mundo.
- * client : uma instância de node-minecraft-protocol, se não for especificado, o reinarpg-bot criará seu próprio cliente. Isso é útil para usar o reinarpg-bot por meio de um proxy de vários clientes ou para um cliente vanilla e um cliente reinarpg-bot.
+ * client : uma instância de node-reinarpg-protocol, se não for especificado, o reinarpg-bot criará seu próprio cliente. Isso é útil para usar o reinarpg-bot por meio de um proxy de vários clientes ou para um cliente vanilla e um cliente reinarpg-bot.
  * plugins : objeto: o valor padrão é {}
    - pluginName : false : não carrega o plugin interno com esse nome, por exemplo, `pluginName`
    - pluginName : true : carrega o plugin interno com esse nome, por exemplo, `pluginName`, mesmo se loadInternalPlugins estiver definido como false

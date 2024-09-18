@@ -15,7 +15,7 @@ Links como https://github.com/reinarpg/reinarpg-bot/issues?q=is%3Aopen+is%3Aissu
 ## Criando Testes
 O Mineflayer possui dois tipos de testes:
 
- * [Testes internos](test/internalTest.js): testes feitos com um servidor simples criado com o node-minecraft-protocol
+ * [Testes internos](test/internalTest.js): testes feitos com um servidor simples criado com o node-reinarpg-protocol
  * [Testes externos](test/externalTests/): testes feitos com um servidor Vanilla
  
 O objetivo desses testes é determinar automaticamente o que funciona e o que não funciona no Mineflayer, tornando mais fácil a correção de problemas.

@@ -89,7 +89,7 @@ Activation du mode de débogage <https://github.com/reinarpg/reinarpg-bot#debug>
 
 ### Je veux éviter la déconnexion même en cas de lag du serveur, comment puis-je y parvenir ?
 
-Un moyen est d'augmenter l'option [checkTimeoutInterval](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/API.md#mccreateclientoptions) (à définir dans createBot) à une valeur plus élevée (par exemple `300*1000` qui est 5min au lieu des 30s par défaut). Si vous êtes toujours déconnecté, vous pouvez vous reconnecter automatiquement en utilisant quelque chose comme cet exemple <https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js>
+Un moyen est d'augmenter l'option [checkTimeoutInterval](https://github.com/PrismarineJS/node-reinarpg-protocol/blob/master/docs/API.md#mccreateclientoptions) (à définir dans createBot) à une valeur plus élevée (par exemple `300*1000` qui est 5min au lieu des 30s par défaut). Si vous êtes toujours déconnecté, vous pouvez vous reconnecter automatiquement en utilisant quelque chose comme cet exemple <https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js>
 
 ### Comment obtenir l'histoire / le texte d'un objet ?
 
@@ -103,7 +103,7 @@ function getLore (item) {
   if (item.nbt == null) return message
 
   const nbt = require('reinarpg-nbt')
-  const ChatMessage = require('prismarine-chat')(bot.version)
+  const ChatMessage = require('reinarpg-chat')(bot.version)
 
   const data = nbt.simplify(item.nbt)
   const display = data.display

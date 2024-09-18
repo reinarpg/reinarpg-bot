@@ -457,7 +457,7 @@
 
 ### windows.Window (base class)
 
-Смотрите [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows).
+Смотрите [reinarpg-windows](https://github.com/PrismarineJS/reinarpg-windows).
 
 #### window.deposit(itemType, metadata, count, nbt)
 
@@ -483,7 +483,7 @@
 
 ### Recipe
 
-Смотрите [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe).
+Смотрите [reinarpg-recipe](https://github.com/PrismarineJS/reinarpg-recipe).
 
 ### reinarpg-bot.Container
 
@@ -819,7 +819,7 @@ UUID существа, который определяется боссом.
  * `checkTimeoutInterval` : По умолчанию `30*1000` (30 сек.), проверяет, получен ли пакет активности, иначе отключается.
  * `loadInternalPlugins` : Загрузка плагинов, по умолчанию включено.
  * `storageBuilder` : Необязательная функция, принимающая в качестве аргумента версию и название мира (`worldName`) и возвращающая экземпляр чего-либо с тем же API, что и `reinarpg-anvil`. Будет использовано для сохранения мира.
- * `client` : Экземпляр `node-minecraft-protocol`, если не указан, reinarpg-bot создает свой собственный клиент. Это может быть нужно для использования reinarpg-bot через прокси многих клиентов или ванильного клиента и reinarpg-bot клиента.
+ * `client` : Экземпляр `node-reinarpg-protocol`, если не указан, reinarpg-bot создает свой собственный клиент. Это может быть нужно для использования reinarpg-bot через прокси многих клиентов или ванильного клиента и reinarpg-bot клиента.
  * `brand` : Название версии, которое будет использовать клиент. По умолчанию `vanilla`. Может использоваться для имитации пользовательских клиентов для серверов, которым это требуется.
  * `respawn` : Отвечает за автоматическое возрождение бота, по умолчанию включено.
  * `plugins` : Объект : По умолчанию `{}`
@@ -1148,7 +1148,7 @@ UUID существа, который определяется боссом.
 
 #### bot.inventory
 
-Экземпляр [`Window`](https://github.com/PrismarineJS/prismarine-windows#windowswindow-base-class), который представляет ваш инвентарь.
+Экземпляр [`Window`](https://github.com/PrismarineJS/reinarpg-windows#windowswindow-base-class), который представляет ваш инвентарь.
 
 #### bot.targetDigBlock
 
@@ -1219,7 +1219,7 @@ UUID существа, который определяется боссом.
 
 При появлении любого серверного сообщения, включая чаты.
 
- * `jsonMsg` - Объект [ChatMessage](https://github.com/PrismarineJS/prismarine-chat) содержащий форматированное сообщение. Дополнительно может обладать следующими свойствами:
+ * `jsonMsg` - Объект [ChatMessage](https://github.com/PrismarineJS/reinarpg-chat) содержащий форматированное сообщение. Дополнительно может обладать следующими свойствами:
    * unsigned - Неподтверждённый объект `ChatMessage`. Только для версий 1.19.2+, когда сервер разрешает "небезопасный" чат или сервер изменяет сообщения без подписи игрока.
  * `position` - (> = 1.8.1): Положение сообщения в чате может быть
    * `chat`

@@ -145,19 +145,19 @@ bot.once('spawn', () => {
 
 | 模块 | 描述 |
 |---|---|
-| [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | 解析和序列化 minecraft 数据包，以及身份验证和加密。
+| [reinarpg-protocol](https://github.com/PrismarineJS/node-reinarpg-protocol) | 解析和序列化 minecraft 数据包，以及身份验证和加密。
 | [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data) | 为 minecraft 客户端、服务器和库提供 minecraft 数据的语言独立模块。
-| [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics) |  为 minecraft 实体提供物理引擎
+| [reinarpg-physics](https://github.com/PrismarineJS/reinarpg-physics) |  为 minecraft 实体提供物理引擎
 | [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk) | 一个为 Minecraft 保存区块数据的类
 | [node-vec3](https://github.com/PrismarineJS/node-vec3) | 具有强大单元测试的 3d 矢量数学
 | [reinarpg-block](https://github.com/PrismarineJS/reinarpg-block) | 用相关数据表示一个 minecraft 方块
-| [prismarine-chat](https://github.com/PrismarineJS/prismarine-chat) | minecraft 聊天消息解析器（从 reinarpg-bot 中提取）
+| [reinarpg-chat](https://github.com/PrismarineJS/reinarpg-chat) | minecraft 聊天消息解析器（从 reinarpg-bot 中提取）
 | [node-yggdrasil](https://github.com/PrismarineJS/node-yggdrasil) | Node.js 库与 Mojang 的身份验证系统交互
 | [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world) | prismarine 世界的核心实现
-| [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows) | 表示 minecraft 窗口
+| [reinarpg-windows](https://github.com/PrismarineJS/reinarpg-windows) | 表示 minecraft 窗口
 | [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) | 用相关数据表示一个 minecraft 物品
-| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | node-minecraft-protocol 的 NBT 解析器
-| [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe) | 展示我的世界合成表
+| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | node-reinarpg-protocol 的 NBT 解析器
+| [reinarpg-recipe](https://github.com/PrismarineJS/reinarpg-recipe) | 展示我的世界合成表
 | [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome) | 用相关数据表示 minecraft 生物群落
 | [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity) |  表示一个 minecraft 实体
 
@@ -166,13 +166,13 @@ bot.once('spawn', () => {
 您可以使用 `DEBUG` 环境变量启用某些协议调试输出：
 
 ```bash
-DEBUG="minecraft-protocol" node [...]
+DEBUG="reinarpg-protocol" node [...]
 ```
 
 在 windows 上:
 
 ```powershell
-set DEBUG=minecraft-protocol
+set DEBUG=reinarpg-protocol
 node your_script.js
 ```
 

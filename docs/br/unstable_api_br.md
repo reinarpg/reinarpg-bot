@@ -13,7 +13,7 @@ Esses métodos e classes são úteis em alguns casos especiais, mas não são es
 
 ## bot._client
 
-`bot._client` é criado usando [node-minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol).
+`bot._client` é criado usando [node-reinarpg-protocol](https://github.com/PrismarineJS/node-reinarpg-protocol).
 Lida com a escrita e recepção de pacotes.
 O comportamento pode mudar (por exemplo, em cada nova versão do Minecraft), portanto, é melhor usar os métodos do reinarpg-bot, se possível.
 

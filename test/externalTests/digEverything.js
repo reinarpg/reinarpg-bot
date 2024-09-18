@@ -48,7 +48,7 @@ const excludedBlocks = [
 ]
 
 module.exports = (version) => {
-  const registry = require('prismarine-registry')(version)
+  const registry = require('reinarpg-registry')(version)
 
   const funcs = {}
   for (const id in registry.blocks) {

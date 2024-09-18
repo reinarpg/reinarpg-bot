@@ -13,7 +13,7 @@
 
 ## bot._client
 
-`bot._client` создан при помощи [node-minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol).
+`bot._client` создан при помощи [node-reinarpg-protocol](https://github.com/PrismarineJS/node-reinarpg-protocol).
 Он обрабатывает запись и чтение пакетов.
 Работа данного метода постоянно меняется, так как версии Minecraft постоянно обновляются.
 Рекомендуем использовать стандартные методы Mineflayer, если это возможно

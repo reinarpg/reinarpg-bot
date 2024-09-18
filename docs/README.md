@@ -106,7 +106,7 @@ If `auth` is set to `microsoft`, you will be prompted to login to microsoft.com 
 the bot will automatically obtain and cache authentication tokens (under your specified username) so you don't have to sign-in again. 
 
 To switch the account, update the supplied `username`. By default, cached tokens will be stored in your user's .minecraft folder, or if `profilesFolder` is specified, they'll instead be stored there.
-For more information on bot options see node-minecraft-protocol's [API doc](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/API.md#mccreateclientoptions).
+For more information on bot options see node-reinarpg-protocol's [API doc](https://github.com/PrismarineJS/node-reinarpg-protocol/blob/master/docs/API.md#mccreateclientoptions).
 
 #### Connecting to a Realm
 
@@ -167,19 +167,19 @@ These are the main modules that make up reinarpg-bot:
 
 | module | description |
 |---|---|
-| [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | Parse and serialize minecraft packets, plus authentication and encryption.
+| [reinarpg-protocol](https://github.com/PrismarineJS/node-reinarpg-protocol) | Parse and serialize minecraft packets, plus authentication and encryption.
 | [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data) | Language independent module providing minecraft data for minecraft clients, servers and libraries.
-| [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics) | Provide the physics engine for minecraft entities
+| [reinarpg-physics](https://github.com/PrismarineJS/reinarpg-physics) | Provide the physics engine for minecraft entities
 | [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk) | A class to hold chunk data for Minecraft
 | [node-vec3](https://github.com/PrismarineJS/node-vec3) | 3d vector math with robust unit tests
 | [reinarpg-block](https://github.com/PrismarineJS/reinarpg-block) | Represent a minecraft block with its associated data
-| [prismarine-chat](https://github.com/PrismarineJS/prismarine-chat) | A parser for a minecraft chat message (extracted from reinarpg-bot)
+| [reinarpg-chat](https://github.com/PrismarineJS/reinarpg-chat) | A parser for a minecraft chat message (extracted from reinarpg-bot)
 | [node-yggdrasil](https://github.com/PrismarineJS/node-yggdrasil) | Node.js library to interact with Mojang's authentication system, known as Yggdrasil
 | [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world) | The core implementation of worlds for prismarine
-| [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows) | Represent minecraft windows
+| [reinarpg-windows](https://github.com/PrismarineJS/reinarpg-windows) | Represent minecraft windows
 | [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) | Represent a minecraft item with its associated data
-| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | An NBT parser for node-minecraft-protocol
-| [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe) | Represent minecraft recipes
+| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | An NBT parser for node-reinarpg-protocol
+| [reinarpg-recipe](https://github.com/PrismarineJS/reinarpg-recipe) | Represent minecraft recipes
 | [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome) | Represent a minecraft biome with its associated data
 | [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity) | Represent a minecraft entity
 
@@ -189,12 +189,12 @@ These are the main modules that make up reinarpg-bot:
 You can enable some protocol debugging output using `DEBUG` environment variable:
 
 ```bash
-DEBUG="minecraft-protocol" node [...]
+DEBUG="reinarpg-protocol" node [...]
 ```
 
 On windows :
 ```
-set DEBUG=minecraft-protocol
+set DEBUG=reinarpg-protocol
 node your_script.js
 ```
 

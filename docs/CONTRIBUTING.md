@@ -17,7 +17,7 @@ Links like https://github.com/reinarpg/reinarpg-bot/issues?q=is%3Aopen+is%3Aissu
 ## Creating tests
 Mineflayer has two kind of tests :
 
- * [internal tests](test/internalTest.js) : tests that are done against a simple server created with node-minecraft-protocol
+ * [internal tests](test/internalTest.js) : tests that are done against a simple server created with node-reinarpg-protocol
  * [external tests](test/externalTests/) : tests that are done against the vanilla server
  
 The objective of these tests is to know automatically what works and what doesn't in reinarpg-bot, so it's easier to make reinarpg-bot work.

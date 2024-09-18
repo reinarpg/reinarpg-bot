@@ -392,7 +392,7 @@ Mira [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item)
 
 ### windows.Window (base class)
 
-Mira [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows)
+Mira [reinarpg-windows](https://github.com/PrismarineJS/reinarpg-windows)
 
 #### window.deposit(itemType, metadata, count, [callback])
 
@@ -418,7 +418,7 @@ Cierra la interfaz/ventana
 
 ### Recipe
 
-Mira [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe)
+Mira [reinarpg-recipe](https://github.com/PrismarineJS/reinarpg-recipe)
 
 ### reinarpg-bot.Container
 
@@ -689,7 +689,7 @@ Crea y devuelve una instancia de la clase Bot.
  * checkTimeoutInterval : el valor predeterminado es `30*1000` (30s), comprueba si el paquete keepAlive ha sido recibido en ese periodo, desconectar el bot si no ha sido recibido.
  * loadInternalPlugins : (cargarPluginsInternos) el valor predeterminado es true
  * storageBuilder : una función opcional, toma como argumentos la versión y el nombre del mundo (worldName) y devuelve una instancia de algo con la misma API que reinarpg-anvil. Se usará para guardar el mundo.
- * client : una instancia de node-minecraft-protocol, si no se especifíca, reinarpg-bot creará su propio cliente. Esto sirve para usar reinarpg-bot a través de un proxy de muchos clientes o para un cliente vanilla y un cliente reinarpg-bot.
+ * client : una instancia de node-reinarpg-protocol, si no se especifíca, reinarpg-bot creará su propio cliente. Esto sirve para usar reinarpg-bot a través de un proxy de muchos clientes o para un cliente vanilla y un cliente reinarpg-bot.
  * plugins : object : el valor predeterminado es {}
    - pluginName : false : no cargar el plugin interno con ese nombre ej. `pluginName`
    - pluginName : true : carga el plugin interno con ese nombre ej. `pluginName` incluso si loadInternalPlugins está en false
@@ -972,7 +972,7 @@ Que casilla está seleccionada en la barra de acceso rápido (0 - 8).
 
 #### bot.inventory
 
-Una instancia [`Window`](https://github.com/PrismarineJS/prismarine-windows#windowswindow-base-class) (ventana/interfaz) representando tu inventario.
+Una instancia [`Window`](https://github.com/PrismarineJS/reinarpg-windows#windowswindow-base-class) (ventana/interfaz) representando tu inventario.
 
 #### bot.targetDigBlock
 

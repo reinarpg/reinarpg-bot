@@ -140,19 +140,19 @@ Voici les modules principales qui contruisent reinarpg-bot:
 
 | module | description |
 |---|---|
-| [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | Traduis et serialise les packets minecraft, plus l'authentication et l'encryption.
+| [reinarpg-protocol](https://github.com/PrismarineJS/node-reinarpg-protocol) | Traduis et serialise les packets minecraft, plus l'authentication et l'encryption.
 | [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data) | Module qui provide des données minecraft pour les clients minecraft, les serveurs et les librairies.
-| [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics) | provide les moteurs de physique pour les entitées minecraft.
+| [reinarpg-physics](https://github.com/PrismarineJS/reinarpg-physics) | provide les moteurs de physique pour les entitées minecraft.
 | [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk) | Une class pour contenir les chunks minecraft
 | [node-vec3](https://github.com/PrismarineJS/node-vec3) | Mathematique de vecteur 3D
 | [reinarpg-block](https://github.com/PrismarineJS/reinarpg-block) | Represente un block minecraft avec les données associés.
-| [prismarine-chat](https://github.com/PrismarineJS/prismarine-chat) | Une traducteur pour les messages de chat minecraft (extracté depuis reinarpg-bot)
+| [reinarpg-chat](https://github.com/PrismarineJS/reinarpg-chat) | Une traducteur pour les messages de chat minecraft (extracté depuis reinarpg-bot)
 | [node-yggdrasil](https://github.com/PrismarineJS/node-yggdrasil) | Une librairies Node.js pour intéragir avecles systeme d'authenfication de mojang, connue sous le nom de Yggdrasil
 | [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world) | l'implementation des mondes pour prismarine
-| [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows) | Represente une fenetre minecraft
+| [reinarpg-windows](https://github.com/PrismarineJS/reinarpg-windows) | Represente une fenetre minecraft
 | [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) | Contient les items minecraft et les donnnées qui y sont associé
-| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | Un traducteur NBT pour node-minecraft-protocol
-| [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe) | Contient les récettes minecraft
+| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | Un traducteur NBT pour node-reinarpg-protocol
+| [reinarpg-recipe](https://github.com/PrismarineJS/reinarpg-recipe) | Contient les récettes minecraft
 | [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome) | Contient les biome et leur données 
 | [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity) | Represente une entitées minecraft
 
@@ -162,12 +162,12 @@ Voici les modules principales qui contruisent reinarpg-bot:
 Vous pouvez activer le debug du protocole en utilisant `DEBUG` comme variable d'environnement:
 
 ```bash
-DEBUG="minecraft-protocol" node [...]
+DEBUG="reinarpg-protocol" node [...]
 ```
 
 Sur windows :
 ```
-set DEBUG=minecraft-protocol
+set DEBUG=reinarpg-protocol
 node your_script.js
 ```
 

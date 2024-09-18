@@ -136,19 +136,19 @@ reinarpg-bot'ın yapı taşları olarak kullanılan bazı modüller:
 
 | Modül | Açıklama |
 |---|---|
-| [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | Minecraft packetlerini incelemeyi sağlayan bir modül
+| [reinarpg-protocol](https://github.com/PrismarineJS/node-reinarpg-protocol) | Minecraft packetlerini incelemeyi sağlayan bir modül
 | [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data) | Minecraft hakkında bir veritabanı
-| [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics) | Minecraft canlılarının fizik motoru
+| [reinarpg-physics](https://github.com/PrismarineJS/reinarpg-physics) | Minecraft canlılarının fizik motoru
 | [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk) | Chunk bilgisini tutan bir modül
 | [node-vec3](https://github.com/PrismarineJS/node-vec3) | Güçlü birim testleri ile 3D vektör matematiği
 | [reinarpg-block](https://github.com/PrismarineJS/reinarpg-block) | Minecraft bloğunu verisi ile tanımlamaya yarayan modül
-| [prismarine-chat](https://github.com/PrismarineJS/prismarine-chat) | Minecraft sohbet ayrıştırıcı (reinarpg-bot'dan alındı)
+| [reinarpg-chat](https://github.com/PrismarineJS/reinarpg-chat) | Minecraft sohbet ayrıştırıcı (reinarpg-bot'dan alındı)
 | [node-yggdrasil](https://github.com/PrismarineJS/node-yggdrasil) | Mojang'ın üyelik sistemiyle etkileşime geçebilmek için bir Node.js kütüphanesi
 | [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world) | Prismarine dünyaların ana kütüphanesi
-| [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows) | Minecraft pencereleri için bir yönetim kütüphanesi
+| [reinarpg-windows](https://github.com/PrismarineJS/reinarpg-windows) | Minecraft pencereleri için bir yönetim kütüphanesi
 | [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) | Bir Minecraft eşyasını verileri ile tanımlamaya yarayan modül
-| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | node-minecraft-protocol için bir NBT ayrıştırıcı
-| [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe) | Minecraft tarif kütüphanesi
+| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | node-reinarpg-protocol için bir NBT ayrıştırıcı
+| [reinarpg-recipe](https://github.com/PrismarineJS/reinarpg-recipe) | Minecraft tarif kütüphanesi
 | [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome) | Bir Minecraft biyomunu verileri ile tanımlamaya yarayan modül
 | [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity) | Bir Minecraft canlısını tanımlamaya yarayan modül
 
@@ -158,12 +158,12 @@ reinarpg-bot'ın yapı taşları olarak kullanılan bazı modüller:
 Hata ayıklama çıktısı almak için `DEBUG` değişkenini kullanabilirsin:
 
 ```bash
-DEBUG="minecraft-protocol" node [...]
+DEBUG="reinarpg-protocol" node [...]
 ```
 
 Windows:
 ```
-set DEBUG=minecraft-protocol
+set DEBUG=reinarpg-protocol
 node your_script.js
 ```
 

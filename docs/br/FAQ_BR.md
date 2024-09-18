@@ -91,7 +91,7 @@ function getLore (item) {
   if (item.nbt == null) return message
 
   const nbt = require('reinarpg-nbt')
-  const ChatMessage = require('prismarine-chat')(bot.version)
+  const ChatMessage = require('reinarpg-chat')(bot.version)
 
   const data = nbt.simplify(item.nbt)
   const display = data.display

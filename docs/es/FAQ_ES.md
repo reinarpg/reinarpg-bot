@@ -78,7 +78,7 @@ Activa el modo de depuración https://github.com/reinarpg/reinarpg-bot/blob/mast
 
 ### Quiero prevenir una desconexión en caso de lag en el servidor, como puedo hacerlo?
 
-Una forma de hacerlo es aumentar el valor en la opción [checkTimeoutInterval](https://github.com/PrismarineJS/node-minecraft-protocol/blob/master/docs/API.md#mccreateclientoptions) (por ejemplo `300*1000` que es 5 minutos en vez del valor predeterminado, que es 30 segundos). Si con eso todavía te desconecta del servidor, puedes reconectarte automáticamente con este ejemplo https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js
+Una forma de hacerlo es aumentar el valor en la opción [checkTimeoutInterval](https://github.com/PrismarineJS/node-reinarpg-protocol/blob/master/docs/API.md#mccreateclientoptions) (por ejemplo `300*1000` que es 5 minutos en vez del valor predeterminado, que es 30 segundos). Si con eso todavía te desconecta del servidor, puedes reconectarte automáticamente con este ejemplo https://github.com/reinarpg/reinarpg-bot/blob/master/examples/reconnector.js
 
 ### Como puedo obtener el lore / texto de un ítem?
 
@@ -91,7 +91,7 @@ function getLore (item) {
   if (item.nbt == null) return message
 
   const nbt = require('reinarpg-nbt')
-  const ChatMessage = require('prismarine-chat')(bot.version)
+  const ChatMessage = require('reinarpg-chat')(bot.version)
 
   const data = nbt.simplify(item.nbt)
   const display = data.display
