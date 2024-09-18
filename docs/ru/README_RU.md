@@ -136,7 +136,7 @@ bot.once('spawn', () => {
 | Модуль                                                                        | Описание                                                                                |
 | ----------------------------------------------------------------------------- |---------------------------------------------------------------------------------------- |
 | [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | Парсинг пакетов Minecraft, аутентификация и шифрование                                  |
-| [minecraft-data](https://github.com/PrismarineJS/minecraft-data)              | Независимый от языка модуль, предоставляющий данные Minecraft для клиента и сервера     |
+| [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data)              | Независимый от языка модуль, предоставляющий данные Minecraft для клиента и сервера     |
 | [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics)      | Взаимодействие с физикой                                                                |
 | [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk)          | Хранение чанков Minecraft                                                               |
 | [node-vec3](https://github.com/PrismarineJS/node-vec3)                        | Векторная обработка координат                                                           |
@@ -146,9 +146,9 @@ bot.once('spawn', () => {
 | [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world)          | Реализация миров для prismarine                                                         |
 | [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows)      | Взаимодействие с GUI                                                                    |
 | [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item)            | Взаимодействие с предметами и их данными                                                |
-| [prismarine-nbt](https://github.com/PrismarineJS/prismarine-nbt)              | Парсер NBT для node-minecraft-protocol                                                  |
+| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt)              | Парсер NBT для node-minecraft-protocol                                                  |
 | [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe)        | Взаимодействие с рецептами крафта                                                       |
-| [prismarine-biome](https://github.com/PrismarineJS/prismarine-biome)          | Взаимодействие с биомами                                                                |
+| [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome)          | Взаимодействие с биомами                                                                |
 | [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity)        | Взаимодействие с сущностями                                                             |
 
 
@@ -172,7 +172,7 @@ Mineflayer поддерживает сторонние плагины. Любо�
 
 Наиболее обновлённые и полезные:
 
- * [pathfinder](https://github.com/Karang/reinarpg-bot-pathfinder) - Продвинутый A* поиск пути с множеством настраиваемых функций
+ * [pathfinder](https://github.com/Karang/mineflayer-pathfinder) - Продвинутый A* поиск пути с множеством настраиваемых функций
  * [prismarine-viewer](https://github.com/PrismarineJS/prismarine-viewer) - Простой web клиент для просмотра чанков
  * [web-inventory](https://github.com/ImHarvol/reinarpg-bot-web-inventory) - Веб клиент для взаимодействия с инвентарём
  * [statemachine](https://github.com/reinarpg/reinarpg-bot-statemachine) - API для более сложного поведения бота

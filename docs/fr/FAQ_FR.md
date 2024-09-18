@@ -93,7 +93,7 @@ Un moyen est d'augmenter l'option [checkTimeoutInterval](https://github.com/Pris
 
 ### Comment obtenir l'histoire / le texte d'un objet ?
 
-Vous pouvez utiliser la propriété `item.nbt`. Il est également recommandé d'utiliser la bibliothèque `prismarine-nbt`. La méthode `nbt.simplify()` peut être utile.
+Vous pouvez utiliser la propriété `item.nbt`. Il est également recommandé d'utiliser la bibliothèque `reinarpg-nbt`. La méthode `nbt.simplify()` peut être utile.
 
 **Exemple:**
 
@@ -102,7 +102,7 @@ function getLore (item) {
   let message = ''
   if (item.nbt == null) return message
 
-  const nbt = require('prismarine-nbt')
+  const nbt = require('reinarpg-nbt')
   const ChatMessage = require('prismarine-chat')(bot.version)
 
   const data = nbt.simplify(item.nbt)

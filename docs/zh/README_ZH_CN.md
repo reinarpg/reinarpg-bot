@@ -146,7 +146,7 @@ bot.once('spawn', () => {
 | 模块 | 描述 |
 |---|---|
 | [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | 解析和序列化 minecraft 数据包，以及身份验证和加密。
-| [minecraft-data](https://github.com/PrismarineJS/minecraft-data) | 为 minecraft 客户端、服务器和库提供 minecraft 数据的语言独立模块。
+| [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data) | 为 minecraft 客户端、服务器和库提供 minecraft 数据的语言独立模块。
 | [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics) |  为 minecraft 实体提供物理引擎
 | [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk) | 一个为 Minecraft 保存区块数据的类
 | [node-vec3](https://github.com/PrismarineJS/node-vec3) | 具有强大单元测试的 3d 矢量数学
@@ -156,9 +156,9 @@ bot.once('spawn', () => {
 | [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world) | prismarine 世界的核心实现
 | [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows) | 表示 minecraft 窗口
 | [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) | 用相关数据表示一个 minecraft 物品
-| [prismarine-nbt](https://github.com/PrismarineJS/prismarine-nbt) | node-minecraft-protocol 的 NBT 解析器
+| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | node-minecraft-protocol 的 NBT 解析器
 | [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe) | 展示我的世界合成表
-| [prismarine-biome](https://github.com/PrismarineJS/prismarine-biome) | 用相关数据表示 minecraft 生物群落
+| [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome) | 用相关数据表示 minecraft 生物群落
 | [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity) |  表示一个 minecraft 实体
 
 ### 调试
@@ -182,7 +182,7 @@ reinarpg-bot 支持插件；任何人都可以创建一个插件，在 reinarpg-
 
 最新和最有用的有：
 
-* [pathfinder](https://github.com/Karang/reinarpg-bot-pathfinder) - 具有许多可配置功能的高级 A* 寻路
+* [pathfinder](https://github.com/Karang/mineflayer-pathfinder) - 具有许多可配置功能的高级 A* 寻路
 * [prismarine-viewer](https://github.com/PrismarineJS/prismarine-viewer) - 简单的在线区块查看器
 * [web-inventory](https://github.com/ImHarvol/reinarpg-bot-web-inventory) - 在线背包查看器
 * [statemachine](https://github.com/TheDudeFromCI/reinarpg-bot-statemachine) - 用于更复杂机器人行为的状态机 API

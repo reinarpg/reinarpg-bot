@@ -4,7 +4,7 @@
 
 - [API](#api)
   - [Enums](#enums)
-    - [minecraft-data](#minecraft-data)
+    - [reinarpg-data](#reinarpg-data)
     - [mcdata.blocks](#mcdatablocks)
     - [mcdata.items](#mcdataitems)
     - [mcdata.materials](#mcdatamaterials)
@@ -357,13 +357,13 @@
 
 ## Enums
 
-These enums are stored in the language independent [minecraft-data](https://github.com/PrismarineJS/minecraft-data) project,
- and accessed through [node-minecraft-data](https://github.com/PrismarineJS/node-minecraft-data).
+These enums are stored in the language independent [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data) project,
+ and accessed through [node-reinarpg-data](https://github.com/PrismarineJS/node-reinarpg-data).
 
-### minecraft-data
-The data is available in [node-minecraft-data](https://github.com/PrismarineJS/node-minecraft-data) module
+### reinarpg-data
+The data is available in [node-reinarpg-data](https://github.com/PrismarineJS/node-reinarpg-data) module
 
-`require('minecraft-data')(bot.version)` gives you access to it.
+`require('reinarpg-data')(bot.version)` gives you access to it.
 
 ### mcdata.blocks
 blocks indexed by id
@@ -450,7 +450,7 @@ Note if you want to get a sign's plain text, you can use [`block.getSignText()`]
 
 ### Biome
 
-See [prismarine-biome](https://github.com/PrismarineJS/prismarine-biome)
+See [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome)
 
 ### Item
 
@@ -830,7 +830,7 @@ Create and return an instance of the class bot.
 
 #### bot.registry
 
-Instance of minecraft-data used by the bot. Pass this to constructors that expect an instance of minecraft-data, such as reinarpg-block.
+Instance of reinarpg-data used by the bot. Pass this to constructors that expect an instance of reinarpg-data, such as reinarpg-block.
 
 #### bot.world
 

@@ -457,7 +457,7 @@ Incorrect approach ❌:
 
 ```js
 function craft (bot) {
-  const mcData = require('minecraft-data')(bot.version)
+  const mcData = require('reinarpg-data')(bot.version)
   const plankRecipe = bot.recipesFor(mcData.itemsByName.oak_planks.id ?? mcData.itemsByName.planks.id)[0] // Get the first recipe for oak planks
   bot.craft(plankRecipe, 1) // ❌ start crafting oak planks.
 
@@ -470,7 +470,7 @@ Correct approach with promises ✔️:
 
 ```js
 async function craft (bot) {
-  const mcData = require('minecraft-data')(bot.version)
+  const mcData = require('reinarpg-data')(bot.version)
   const plankRecipe = bot.recipesFor(mcData.itemsByName.oak_planks.id ?? mcData.itemsByName.planks.id)[0]
   await bot.craft(plankRecipe, 1, null)
   const stickRecipe = bot.recipesFor(mcData.itemsByName.sticks.id)[0]

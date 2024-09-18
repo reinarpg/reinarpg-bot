@@ -8,7 +8,7 @@ if (process.argv.length < 4 || process.argv.length > 6) {
 }
 
 const reinarpg-bot = require('reinarpg-bot')
-const { pathfinder, Movements, goals } = require('reinarpg-bot-pathfinder')
+const { pathfinder, Movements, goals } = require('mineflayer-pathfinder')
 const pvp = require('reinarpg-bot-pvp').plugin
 
 const bot = reinarpg-bot.createBot({

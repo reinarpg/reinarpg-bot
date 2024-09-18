@@ -1,6 +1,6 @@
 from javascript import require, On
 reinarpg-bot = require('reinarpg-bot')
-pathfinder = require('reinarpg-bot-pathfinder')
+pathfinder = require('mineflayer-pathfinder')
 
 RANGE_GOAL = 1
 BOT_USERNAME = 'python'

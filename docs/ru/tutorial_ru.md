@@ -458,7 +458,7 @@ async function consume (bot) {
 
 ```js
 function craft (bot) {
-  const mcData = require('minecraft-data')(bot.version)
+  const mcData = require('reinarpg-data')(bot.version)
   const plankRecipe = bot.recipesFor(mcData.itemsByName.oak_planks.id ?? mcData.itemsByName.planks.id)[0] // Получение рецепта для дубовых досок
   bot.craft(plankRecipe, 1) // ❌ Начинает создавать дубовые доски
 
@@ -471,7 +471,7 @@ function craft (bot) {
 
 ```js
 async function craft (bot) {
-  const mcData = require('minecraft-data')(bot.version)
+  const mcData = require('reinarpg-data')(bot.version)
   const plankRecipe = bot.recipesFor(mcData.itemsByName.oak_planks.id ?? mcData.itemsByName.planks.id)[0]
   await bot.craft(plankRecipe, 1, null)
   const stickRecipe = bot.recipesFor(mcData.itemsByName.sticks.id)[0]

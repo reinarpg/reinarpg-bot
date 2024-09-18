@@ -137,7 +137,7 @@ reinarpg-bot'ın yapı taşları olarak kullanılan bazı modüller:
 | Modül | Açıklama |
 |---|---|
 | [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | Minecraft packetlerini incelemeyi sağlayan bir modül
-| [minecraft-data](https://github.com/PrismarineJS/minecraft-data) | Minecraft hakkında bir veritabanı
+| [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data) | Minecraft hakkında bir veritabanı
 | [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics) | Minecraft canlılarının fizik motoru
 | [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk) | Chunk bilgisini tutan bir modül
 | [node-vec3](https://github.com/PrismarineJS/node-vec3) | Güçlü birim testleri ile 3D vektör matematiği
@@ -147,9 +147,9 @@ reinarpg-bot'ın yapı taşları olarak kullanılan bazı modüller:
 | [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world) | Prismarine dünyaların ana kütüphanesi
 | [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows) | Minecraft pencereleri için bir yönetim kütüphanesi
 | [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) | Bir Minecraft eşyasını verileri ile tanımlamaya yarayan modül
-| [prismarine-nbt](https://github.com/PrismarineJS/prismarine-nbt) | node-minecraft-protocol için bir NBT ayrıştırıcı
+| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | node-minecraft-protocol için bir NBT ayrıştırıcı
 | [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe) | Minecraft tarif kütüphanesi
-| [prismarine-biome](https://github.com/PrismarineJS/prismarine-biome) | Bir Minecraft biyomunu verileri ile tanımlamaya yarayan modül
+| [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome) | Bir Minecraft biyomunu verileri ile tanımlamaya yarayan modül
 | [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity) | Bir Minecraft canlısını tanımlamaya yarayan modül
 
 
@@ -173,7 +173,7 @@ reinarpg-bot eklenti desteği sağlar; isteyen herkes reinarpg-bot'ın üstüne 
 
 En çok güncellenen ve en kullanışlı olan bazıları:
 
- * [pathfinder](https://github.com/Karang/reinarpg-bot-pathfinder) - konfigüre edilebilen tonlarca özellik ile gelişmiş A* yön bulma
+ * [pathfinder](https://github.com/Karang/mineflayer-pathfinder) - konfigüre edilebilen tonlarca özellik ile gelişmiş A* yön bulma
  * [prismarine-viewer](https://github.com/PrismarineJS/prismarine-viewer) - basit tarayıcı chunk gösterici
  * [web-inventory](https://github.com/ImHarvol/reinarpg-bot-web-inventory) - web bazlı envanter gösterici
  * [statemachine](https://github.com/TheDudeFromCI/reinarpg-bot-statemachine) - daha kompleks bot eventleri için bir API

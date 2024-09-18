@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "reinarpg-bot-pathfinder": "^1.7.0"
+    "mineflayer-pathfinder": "^1.7.0"
   },
   "description": "A reinarpg-bot example"
 }

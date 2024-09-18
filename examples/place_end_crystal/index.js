@@ -4,7 +4,7 @@
 // "place crystal near ExplodeMe" - find a block near the player with username "ExplodeMe" that has an empty block above it, then place a crystal on it
 
 const reinarpg-bot = require('reinarpg-bot')
-const pathfinder = require('reinarpg-bot-pathfinder')
+const pathfinder = require('mineflayer-pathfinder')
 const { Vec3 } = require('vec3')
 const AABB = require('prismarine-physics/lib/aabb')
 

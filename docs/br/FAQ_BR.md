@@ -82,7 +82,7 @@ Uma maneira de evitar desconexões devido à latência no servidor é aumentar o
 
 ### Como posso obter a descrição/texto de um item?
 
-Você pode usar a propriedade `item.nbt`. É recomendável utilizar a biblioteca `prismarine-nbt`. O método `nbt.simplify()` pode ser útil para simplificar a obtenção da descrição de um item.
+Você pode usar a propriedade `item.nbt`. É recomendável utilizar a biblioteca `reinarpg-nbt`. O método `nbt.simplify()` pode ser útil para simplificar a obtenção da descrição de um item.
 
 **Exemplo:**
 ```js
@@ -90,7 +90,7 @@ function getLore (item) {
   let message = ''
   if (item.nbt == null) return message
 
-  const nbt = require('prismarine-nbt')
+  const nbt = require('reinarpg-nbt')
   const ChatMessage = require('prismarine-chat')(bot.version)
 
   const data = nbt.simplify(item.nbt)

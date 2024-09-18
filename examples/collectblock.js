@@ -1,8 +1,8 @@
 /**
- * A quick and easy implementation of the collect block plugin. (Requires reinarpg-bot-pathfinder and reinarpg-bot-collectblock)
+ * A quick and easy implementation of the collect block plugin. (Requires mineflayer-pathfinder and reinarpg-bot-collectblock)
  */
 const reinarpg-bot = require('reinarpg-bot')
-const pathfinder = require('reinarpg-bot-pathfinder').pathfinder
+const pathfinder = require('mineflayer-pathfinder').pathfinder
 const collectBlock = require('reinarpg-bot-collectblock').plugin
 
 if (process.argv.length < 4 || process.argv.length > 6) {

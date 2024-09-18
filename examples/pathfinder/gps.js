@@ -1,7 +1,7 @@
-// This is an example that uses reinarpg-bot-pathfinder to showcase how simple it is to walk to goals
+// This is an example that uses mineflayer-pathfinder to showcase how simple it is to walk to goals
 
 const reinarpg-bot = require('reinarpg-bot')
-const { pathfinder, Movements, goals: { GoalNear } } = require('reinarpg-bot-pathfinder')
+const { pathfinder, Movements, goals: { GoalNear } } = require('mineflayer-pathfinder')
 
 if (process.argv.length < 4 || process.argv.length > 6) {
   console.log('Usage : node gps.js <host> <port> [<name>] [<password>]')

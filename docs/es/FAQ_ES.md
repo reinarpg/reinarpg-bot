@@ -82,7 +82,7 @@ Una forma de hacerlo es aumentar el valor en la opción [checkTimeoutInterval](h
 
 ### Como puedo obtener el lore / texto de un ítem?
 
-Puedes usar la propiedad `item.nbt`. Está recomendado usar la librería `prismarine-nbt`. El método nbt.simplify() podría ser útil.
+Puedes usar la propiedad `item.nbt`. Está recomendado usar la librería `reinarpg-nbt`. El método nbt.simplify() podría ser útil.
 
 **Ejemplo:**
 ```js
@@ -90,7 +90,7 @@ function getLore (item) {
   let message = ''
   if (item.nbt == null) return message
 
-  const nbt = require('prismarine-nbt')
+  const nbt = require('reinarpg-nbt')
   const ChatMessage = require('prismarine-chat')(bot.version)
 
   const data = nbt.simplify(item.nbt)

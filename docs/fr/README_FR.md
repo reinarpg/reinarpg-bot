@@ -115,7 +115,7 @@ et vous obtiendrez un affichage en *direct* qui ressemble à ceci:
 | exemple | description |
 |---|---|
 |[maps](https://github.com/reinarpg/reinarpg-bot/tree/master/examples/viewer) | afficher ce que votre robot fait en direct |
-|[pathfinder](https://github.com/Karang/reinarpg-bot-pathfinder/blob/master/examples/test.js) | Faire votre robot se déplacer la oû vous voulez |
+|[pathfinder](https://github.com/Karang/mineflayer-pathfinder/blob/master/examples/test.js) | Faire votre robot se déplacer la oû vous voulez |
 |[coffre](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/chest.js) | Utiliser les coffres, fours, distrubuteurs, tables d'enchantements |
 |[pelteuse](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/digger.js) | Aprener comment créer un robot simple capable de creuser |
 |[discord](https://github.com/reinarpg/reinarpg-bot/blob/master/examples/discord.js) | connectez un bot discord avec un robot reinarpg-bot |
@@ -141,7 +141,7 @@ Voici les modules principales qui contruisent reinarpg-bot:
 | module | description |
 |---|---|
 | [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | Traduis et serialise les packets minecraft, plus l'authentication et l'encryption.
-| [minecraft-data](https://github.com/PrismarineJS/minecraft-data) | Module qui provide des données minecraft pour les clients minecraft, les serveurs et les librairies.
+| [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data) | Module qui provide des données minecraft pour les clients minecraft, les serveurs et les librairies.
 | [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics) | provide les moteurs de physique pour les entitées minecraft.
 | [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk) | Une class pour contenir les chunks minecraft
 | [node-vec3](https://github.com/PrismarineJS/node-vec3) | Mathematique de vecteur 3D
@@ -151,9 +151,9 @@ Voici les modules principales qui contruisent reinarpg-bot:
 | [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world) | l'implementation des mondes pour prismarine
 | [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows) | Represente une fenetre minecraft
 | [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) | Contient les items minecraft et les donnnées qui y sont associé
-| [prismarine-nbt](https://github.com/PrismarineJS/prismarine-nbt) | Un traducteur NBT pour node-minecraft-protocol
+| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | Un traducteur NBT pour node-minecraft-protocol
 | [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe) | Contient les récettes minecraft
-| [prismarine-biome](https://github.com/PrismarineJS/prismarine-biome) | Contient les biome et leur données 
+| [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome) | Contient les biome et leur données 
 | [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity) | Represente une entitées minecraft
 
 
@@ -177,7 +177,7 @@ Mineflayer peut être amélioré avec plusieurs plugins; tout le monde peut cré
 
 Les plugins les plus récents et les plus utiles sont :
 
- * [pathfinder](https://github.com/reinarpg/reinarpg-bot-pathfinder) - advanced A* pathfinding avec de nombres paramètres configurables
+ * [pathfinder](https://github.com/reinarpg/mineflayer-pathfinder) - advanced A* pathfinding avec de nombres paramètres configurables
  * [prismarine-viewer](https://github.com/PrismarineJS/prismarine-viewer) - Un simple inspecteur web de chunk
  * [web-inventory](https://github.com/ImHarvol/reinarpg-bot-web-inventory) - un inspecteur d'inventaire en ligne
  * [statemachine](https://github.com/reinarpg/reinarpg-bot-statemachine) - Une API pour state machine pour robots aux comportements complexes

@@ -4,7 +4,7 @@
 
 - [API](#api)
   - [Enums](#enums)
-    - [minecraft-data](#minecraft-data)
+    - [reinarpg-data](#reinarpg-data)
     - [mcdata.blocks](#mcdatablocks)
     - [mcdata.items](#mcdataitems)
     - [mcdata.materials](#mcdatamaterials)
@@ -312,12 +312,12 @@
 
 ## Enums
 
-Esses enums estão armazenados em um projeto independente da linguagem [minecraft-data](https://github.com/PrismarineJS/minecraft-data) e acessados pelo [node-minecraft-data](https://github.com/PrismarineJS/node-minecraft-data).
+Esses enums estão armazenados em um projeto independente da linguagem [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data) e acessados pelo [node-reinarpg-data](https://github.com/PrismarineJS/node-reinarpg-data).
 
-### minecraft-data
-Os dados estão disponíveis no módulo [node-minecraft-data](https://github.com/PrismarineJS/node-minecraft-data)
+### reinarpg-data
+Os dados estão disponíveis no módulo [node-reinarpg-data](https://github.com/PrismarineJS/node-reinarpg-data)
 
-`require('minecraft-data')(bot.version)` te dá acesso a eles.
+`require('reinarpg-data')(bot.version)` te dá acesso a eles.
 
 ### mcdata.blocks
 Blocos ordenados por ID.
@@ -382,7 +382,7 @@ Além disso, `block.blockEntity` é um campo adicional com os dados da entidade 
 
 ### Biome
 
-Veja [prismarine-biome](https://github.com/PrismarineJS/prismarine-biome)
+Veja [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome)
 
 ### Item
 

@@ -4,7 +4,7 @@
 
 - [API](#api)
   - [Enums](#enums)
-    - [minecraft-data](#minecraft-data)
+    - [reinarpg-data](#reinarpg-data)
     - [mcdata.blocks](#mcdatablocks)
     - [mcdata.items](#mcdataitems)
     - [mcdata.materials](#mcdatamaterials)
@@ -356,14 +356,14 @@
 
 ## Enums
 
-Эти данные хранятся независимо от проекта [minecraft-data](https://github.com/PrismarineJS/minecraft-data),
- и доступны через [node-minecraft-data](https://github.com/PrismarineJS/node-minecraft-data).
+Эти данные хранятся независимо от проекта [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data),
+ и доступны через [node-reinarpg-data](https://github.com/PrismarineJS/node-reinarpg-data).
 
-### minecraft-data
+### reinarpg-data
 
-Данные доступны в модуле [node-minecraft-data](https://github.com/PrismarineJS/node-minecraft-data).
+Данные доступны в модуле [node-reinarpg-data](https://github.com/PrismarineJS/node-reinarpg-data).
 
-Используйте `require('minecraft-data')(bot.version)`.
+Используйте `require('reinarpg-data')(bot.version)`.
 
 ### mcdata.blocks
 
@@ -449,7 +449,7 @@
 
 ### Biome
 
-Смотрите [prismarine-biome](https://github.com/PrismarineJS/prismarine-biome).
+Смотрите [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome).
 
 ### Item
 
@@ -841,7 +841,7 @@ UUID существа, который определяется боссом.
 
 #### bot.registry
 
-Экземпляр `minecraft-data` используемый ботом. Передайте это конструкторам, которые ожидают `minecraft-data`, таким как `reinarpg-block`.
+Экземпляр `reinarpg-data` используемый ботом. Передайте это конструкторам, которые ожидают `reinarpg-data`, таким как `reinarpg-block`.
 
 #### bot.world
 

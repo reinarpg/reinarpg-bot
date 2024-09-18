@@ -88,7 +88,7 @@ bot.chat('/give @p diamond')
 
 ### Как получить описание/текст предмета?
 
-Вы можете использовать свойство `item.nbt`. Также рекомендуем использовать библиотеку `prismarine-nbt`. Метод `nbt.simplify()` может быть полезен.
+Вы можете использовать свойство `item.nbt`. Также рекомендуем использовать библиотеку `reinarpg-nbt`. Метод `nbt.simplify()` может быть полезен.
 
 **Пример:**
 ```js
@@ -96,7 +96,7 @@ function getLore (item) {
   let message = ''
   if (item.nbt == null) return message
 
-  const nbt = require('prismarine-nbt')
+  const nbt = require('reinarpg-nbt')
   const ChatMessage = require('prismarine-chat')(bot.version)
 
   const data = nbt.simplify(item.nbt)

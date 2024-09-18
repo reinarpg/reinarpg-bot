@@ -5,7 +5,7 @@ const vec3 = require('vec3')
 const mc = require('minecraft-protocol')
 const assert = require('assert')
 const { sleep } = require('../lib/promise_utils')
-const nbt = require('prismarine-nbt')
+const nbt = require('reinarpg-nbt')
 
 for (const supportedVersion of reinarpg-bot.testedVersions) {
   const registry = require('prismarine-registry')(supportedVersion)
@@ -78,7 +78,7 @@ for (const supportedVersion of reinarpg-bot.testedVersions) {
           let loginPacket
           if (bot.supportFeature('usesLoginPacket')) {
             loginPacket = registry.loginPacket
-            loginPacket.entityId = 0 // Default login packet in minecraft-data 1.16.5 is 1, so set it to 0
+            loginPacket.entityId = 0 // Default login packet in reinarpg-data 1.16.5 is 1, so set it to 0
           } else {
             loginPacket = {
               entityId: 0,
@@ -517,7 +517,7 @@ for (const supportedVersion of reinarpg-bot.testedVersions) {
         const loginPacket = bot.test.generateLoginPacket()
         server.on('playerJoin', (client) => {
           if (bot.supportFeature('usesLoginPacket')) {
-            loginPacket.entityId = 0 // Default login packet in minecraft-data 1.16.5 is 1, so set it to 0
+            loginPacket.entityId = 0 // Default login packet in reinarpg-data 1.16.5 is 1, so set it to 0
           }
           client.write('login', loginPacket)
           bot.once('login', () => {

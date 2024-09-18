@@ -695,7 +695,7 @@ lot of new features from @wvffle :
 
 * added support for minecraft chests (thanks @plexigras)
 * cross version support : 1.8, 1.9, 1.10 and 1.11 now supported
-* [BREAKING] prismarine classes (Block, Entity, Recipe, ...) are now available only by requiring them, not in reinarpg-bot.X. It was required to make cross version possible. minecraft-data is also to be required directly and not available as reinarpg-bot.blocks. The code depending on this should be updated, hence the major version.
+* [BREAKING] prismarine classes (Block, Entity, Recipe, ...) are now available only by requiring them, not in reinarpg-bot.X. It was required to make cross version possible. reinarpg-data is also to be required directly and not available as reinarpg-bot.blocks. The code depending on this should be updated, hence the major version.
 
 ## 1.8.0
 
@@ -708,7 +708,7 @@ lot of new features from @wvffle :
 
 ## 1.7.4
 
-* update minecraft-data
+* update reinarpg-data
 
 ## 1.7.3
 
@@ -720,7 +720,7 @@ lot of new features from @wvffle :
 
 ## 1.7.1
 
- * update minecraft-protocol, minecraft-data and protodef
+ * update minecraft-protocol, reinarpg-data and protodef
 
 ## 1.7.0
 
@@ -735,7 +735,7 @@ lot of new features from @wvffle :
 ## 1.6.0
 
  * add functionalities to use scoreboard (thanks @jakibaki)
- * update to minecraft-data 0.16.3
+ * update to reinarpg-data 0.16.3
  * 50 -> 20 tps for physics
  * Remove requireindex, for browserify support
  * add bot.setCommandBlock
@@ -767,7 +767,7 @@ lot of new features from @wvffle :
 
  * improve placeBlock : now use lookAt before placing and has a callback
  * fix soulsand speed
- * use new multi-version version of (node-)minecraft-data
+ * use new multi-version version of (node-)reinarpg-data
 
 ## 1.3.0
 
@@ -814,7 +814,7 @@ Lot of fixes and improvements in this version in order to support reinarpg-bot 1
 
  * minecraft 1.8.3 support
  * update minecraft protocol to 0.13.4
- * move enums data to minecraft-data
+ * move enums data to reinarpg-data
  * add automatic testing with a vanilla minecraft server on circle ci
  * add argv arguments to examples
  * refactor inventory.js

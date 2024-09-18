@@ -168,7 +168,7 @@ These are the main modules that make up reinarpg-bot:
 | module | description |
 |---|---|
 | [minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol) | Parse and serialize minecraft packets, plus authentication and encryption.
-| [minecraft-data](https://github.com/PrismarineJS/minecraft-data) | Language independent module providing minecraft data for minecraft clients, servers and libraries.
+| [reinarpg-data](https://github.com/PrismarineJS/reinarpg-data) | Language independent module providing minecraft data for minecraft clients, servers and libraries.
 | [prismarine-physics](https://github.com/PrismarineJS/prismarine-physics) | Provide the physics engine for minecraft entities
 | [reinarpg-chunk](https://github.com/PrismarineJS/reinarpg-chunk) | A class to hold chunk data for Minecraft
 | [node-vec3](https://github.com/PrismarineJS/node-vec3) | 3d vector math with robust unit tests
@@ -178,9 +178,9 @@ These are the main modules that make up reinarpg-bot:
 | [reinarpg-world](https://github.com/PrismarineJS/reinarpg-world) | The core implementation of worlds for prismarine
 | [prismarine-windows](https://github.com/PrismarineJS/prismarine-windows) | Represent minecraft windows
 | [reinarpg-item](https://github.com/PrismarineJS/reinarpg-item) | Represent a minecraft item with its associated data
-| [prismarine-nbt](https://github.com/PrismarineJS/prismarine-nbt) | An NBT parser for node-minecraft-protocol
+| [reinarpg-nbt](https://github.com/PrismarineJS/reinarpg-nbt) | An NBT parser for node-minecraft-protocol
 | [prismarine-recipe](https://github.com/PrismarineJS/prismarine-recipe) | Represent minecraft recipes
-| [prismarine-biome](https://github.com/PrismarineJS/prismarine-biome) | Represent a minecraft biome with its associated data
+| [reinarpg-biome](https://github.com/PrismarineJS/reinarpg-biome) | Represent a minecraft biome with its associated data
 | [reinarpg-entity](https://github.com/PrismarineJS/reinarpg-entity) | Represent a minecraft entity
 
 
@@ -205,7 +205,7 @@ higher level API on top of Mineflayer.
 
 The most updated and useful are :
 
- * [pathfinder](https://github.com/Karang/reinarpg-bot-pathfinder) - advanced A* pathfinding with a lot of configurable features
+ * [pathfinder](https://github.com/Karang/mineflayer-pathfinder) - advanced A* pathfinding with a lot of configurable features
  * [prismarine-viewer](https://github.com/PrismarineJS/prismarine-viewer) - simple web chunk viewer
  * [web-inventory](https://github.com/ImHarvol/reinarpg-bot-web-inventory) - web based inventory viewer
  * [statemachine](https://github.com/reinarpg/reinarpg-bot-statemachine) - A state machine API for more complex bot behaviors

@@ -82,7 +82,7 @@ bot.inventory.items() 返回机器人的物品数组. 您可以使用递归函�
 
 ### 如何获取物品的 lore / text?
 
-你可以使用 `item.nbt` 属性. 此外建议使用 `prismarine-nbt` 库.   `nbt.simplify()` 方法可能有用
+你可以使用 `item.nbt` 属性. 此外建议使用 `reinarpg-nbt` 库.   `nbt.simplify()` 方法可能有用
 
 **例子:**
 
@@ -91,7 +91,7 @@ function getLore (item) {
   let message = ''
   if (item.nbt == null) return message
 
-  const nbt = require('prismarine-nbt')
+  const nbt = require('reinarpg-nbt')
   const ChatMessage = require('prismarine-chat')(bot.version)
 
   const data = nbt.simplify(item.nbt)

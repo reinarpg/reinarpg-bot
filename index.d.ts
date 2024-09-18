@@ -10,7 +10,7 @@ import { Entity } from 'reinarpg-entity'
 import { ChatMessage } from 'prismarine-chat'
 import { world } from 'reinarpg-world'
 import { Registry } from 'prismarine-registry'
-import { IndexedData } from 'minecraft-data'
+import { IndexedData } from 'reinarpg-data'
 
 export function createBot (options: { client: Client } & Partial<BotOptions>): Bot
 export function createBot (options: BotOptions): Bot
